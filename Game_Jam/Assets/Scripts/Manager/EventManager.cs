@@ -24,6 +24,14 @@ public class EventManager
         events[name].AddListener(action);
     }
 
+    public static void Invoke(string name)
+    {
+        if (events.ContainsKey(name))
+        {
+            events[name].Invoke();
+        }
+    }
+
     public static void RemoveEvent(string name, UnityAction action) // 특정 이름의 이벤트 안에 있는 함수를 지움
     {
         if (events.ContainsKey(name))
