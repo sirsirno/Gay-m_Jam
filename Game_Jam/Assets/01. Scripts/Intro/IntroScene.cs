@@ -40,12 +40,11 @@ public class IntroScene : MonoBehaviour
 
         DOTween.To(() => logoCanvasGroup.alpha, value => logoCanvasGroup.alpha = value, 1, 0.5f);
 
-        Sequence seq = DOTween.Sequence();
-
         sfxManager.PlayOneShot(Audio_Trumpet, 1f);
         leftParticle.Play();
         rightParticle.Play();
 
+        Sequence seq = DOTween.Sequence();
         seq.Append(logoCanvasGroup.transform.DOScale(1, 0.75f).SetEase(Ease.OutBack));
         seq.Append(chocoFlowObj.DOAnchorPosY(-442, 3).SetEase(Ease.OutCirc));
         seq.Append(DOTween.To(() => logoCanvasGroup.alpha, value => logoCanvasGroup.alpha = value, 0, 0.5f).OnComplete(() =>
