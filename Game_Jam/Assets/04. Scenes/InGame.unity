@@ -6690,7 +6690,7 @@ GameObject:
   - component: {fileID: 1931691608}
   - component: {fileID: 1931691607}
   - component: {fileID: 1931691604}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6954,6 +6954,7 @@ MonoBehaviour:
   Audio_SFX_FireOff: {fileID: 8300000, guid: 019fdd5e9abc48344a445447d893ebef, type: 3}
   Audio_SFX_Water: {fileID: 8300000, guid: 6a9a53bf2bbbef542a3fa1793190cd07, type: 3}
   Audio_SFX_Golem: {fileID: 8300000, guid: 73969bdafef76fc4e9081b8d13962e75, type: 3}
+  Audio_SFX_UI: {fileID: 0}
 --- !u!4 &2040059788
 Transform:
   m_ObjectHideFlags: 0
@@ -8078,6 +8079,7 @@ MonoBehaviour:
   bgmBtn: {fileID: 1489191799680042852}
   sfxBtn: {fileID: 1489191799761100571}
   creditBtn: {fileID: 1489191798823360047}
+  uiPop: {fileID: 0}
 --- !u!222 &1489191799345782948
 CanvasRenderer:
   m_ObjectHideFlags: 0
