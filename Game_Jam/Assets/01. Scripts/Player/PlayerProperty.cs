@@ -90,7 +90,7 @@ public class PlayerProperty : MonoBehaviour
                     return;
                 }
 
-                if (interact.ChangeProperty(myProperty) && interact != currentObj)
+                if (interact != currentObj && interact.ChangeProperty(myProperty))
                 {
                     playerEffect.PlayParticle(ParticleType.BOMB);
                     currentObj?.ChangeProperty(Property.NONE);
