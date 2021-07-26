@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerEffect : MonoBehaviour
 {
     PlayerProperty playerProperty;
+    SpriteRenderer sr;
 
     [SerializeField] LineRenderer interactiveLine;
     [SerializeField] Texture2D lineTex;
@@ -16,6 +17,7 @@ public class PlayerEffect : MonoBehaviour
     private void Awake()
     {
         playerProperty = GetComponent<PlayerProperty>();
+        sr = GetComponent<SpriteRenderer>();
     }
 
     private void Start()
@@ -38,7 +40,6 @@ public class PlayerEffect : MonoBehaviour
                 interactiveLine.gameObject.SetActive(true);
                 interactiveLine.SetPosition(0, playerProperty.CurrentPos);
                 interactiveLine.SetPosition(1, playerProperty.TargetLerp);
-                StopParticle();
             }
         }
         else
@@ -72,5 +73,10 @@ public class PlayerEffect : MonoBehaviour
         {
             idle.Stop();
         }
+    }
+
+    public void SetAlphaValue(float alpha)
+    {
+        sr.color = new Color(sr.color.r, sr.color.g, sr.color.b, alpha);
     }
 }
