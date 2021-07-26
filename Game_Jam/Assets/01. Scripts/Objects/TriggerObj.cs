@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class TriggerObj : InteractableObj
 {
+    public string eventName;
+
     private void Start()
     {
         currentType = ObjType.TRIGGER;
@@ -11,6 +13,6 @@ public class TriggerObj : InteractableObj
 
     protected override void OnChangeProperty(Property prop)
     {
-        
+        print("ÄÑÁ³À½");
     }
 }
