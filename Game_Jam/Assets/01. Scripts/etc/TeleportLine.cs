@@ -12,9 +12,9 @@ public class TeleportLine : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+/*    void Update()
     {
         float width = lineRenderer.startWidth;
         lineRenderer.material.mainTextureScale = new Vector2(1f / width, 1.0f);
-    }
+    }*/
 }
