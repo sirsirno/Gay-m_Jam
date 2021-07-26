@@ -75,8 +75,8 @@ public class PlayerProperty : MonoBehaviour
                 IInteractable interact = obj.GetComponent<InteractableObj>();
 
                 //if()
-
-                if (interact.ChangeProperty(myProperty))
+                
+                if (interact.ChangeProperty(myProperty) && interact != currentObj)
                 {
                     playerEffect.PlayParticle(ParticleType.BOMB);
                     currentObj?.ChangeProperty(Property.NONE);
