@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 955943031}
   - component: {fileID: 955943033}
   - component: {fileID: 955943032}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: InteractiveLine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -156,7 +156,10 @@ GameObject:
   - component: {fileID: 6271277657966415140}
   - component: {fileID: 8724466954294752595}
   - component: {fileID: 1598327962384424604}
-  m_Layer: 0
+  - component: {fileID: 3507892088704243066}
+  - component: {fileID: 8441862106689092740}
+  - component: {fileID: 5855841906483149348}
+  m_Layer: 7
   m_Name: Fire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -299,6 +302,55 @@ MonoBehaviour:
   - {fileID: 4990985187169978988}
   - {fileID: 4649002828108452021}
   bombParticle: {fileID: 8470750148121669583}
+--- !u!50 &3507892088704243066
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105205206874043872}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!58 &8441862106689092740
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105205206874043872}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
+--- !u!114 &5855841906483149348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105205206874043872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b04356a7b42c1af4188a54d8502f3e7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &500936499435581081
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -309,6 +361,10 @@ PrefabInstance:
     - target: {fileID: 8321958829034275152, guid: cfb015d3f2b55dc40addec1c2444872e, type: 3}
       propertyPath: m_Name
       value: Effect_FireBomb
+      objectReference: {fileID: 0}
+    - target: {fileID: 8321958829034275152, guid: cfb015d3f2b55dc40addec1c2444872e, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8321958829034275157, guid: cfb015d3f2b55dc40addec1c2444872e, type: 3}
       propertyPath: m_RootOrder
@@ -373,9 +429,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 105205206874043874}
     m_Modifications:
+    - target: {fileID: 1977378239987336136, guid: 1fef18ca1ede6b849aba165929e93374, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8321958829034275152, guid: 1fef18ca1ede6b849aba165929e93374, type: 3}
       propertyPath: m_Name
       value: Effect_FireIdle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8321958829034275152, guid: 1fef18ca1ede6b849aba165929e93374, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8321958829034275157, guid: 1fef18ca1ede6b849aba165929e93374, type: 3}
       propertyPath: m_RootOrder
