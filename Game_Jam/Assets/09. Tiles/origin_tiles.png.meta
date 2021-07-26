@@ -154,8 +154,8 @@ TextureImporter:
       name: origin_tiles_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 16
+        x: 1
+        y: 19
         width: 16
         height: 16
       alignment: 0
@@ -175,8 +175,8 @@ TextureImporter:
       name: origin_tiles_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 16
+        x: 19
+        y: 19
         width: 16
         height: 16
       alignment: 0
@@ -196,8 +196,8 @@ TextureImporter:
       name: origin_tiles_2
       rect:
         serializedVersion: 2
-        x: 32
-        y: 16
+        x: 37
+        y: 19
         width: 16
         height: 16
       alignment: 0
@@ -214,74 +214,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: origin_tiles_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fc1fd00962929f8d0800000000000000
-      internalID: -2812171246713835057
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: origin_tiles_4
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f748a3b4c7c6d1da0800000000000000
-      internalID: -5972498249729538945
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: origin_tiles_5
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e467d40e7469e3cf0800000000000000
-      internalID: -270613692145633714
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: origin_tiles_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 1
+        y: 1
         width: 16
         height: 16
       alignment: 0
@@ -301,8 +238,8 @@ TextureImporter:
       name: origin_tiles_7
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
+        x: 19
+        y: 1
         width: 16
         height: 16
       alignment: 0
@@ -322,8 +259,8 @@ TextureImporter:
       name: origin_tiles_8
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
+        x: 37
+        y: 1
         width: 16
         height: 16
       alignment: 0
@@ -335,69 +272,6 @@ TextureImporter:
       bones: []
       spriteID: 555bd72074e9ed130800000000000000
       internalID: 3593483580509893973
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: origin_tiles_9
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 32dd4aba89f000610800000000000000
-      internalID: 1585284217223568675
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: origin_tiles_10
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b0865cd61a0161df0800000000000000
-      internalID: -209962047108716533
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: origin_tiles_11
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a77f56b8b17cd92c0800000000000000
-      internalID: -4423160337891199110
       vertices: []
       indices: 
       edges: []
