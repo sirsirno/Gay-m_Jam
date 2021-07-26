@@ -6,6 +6,8 @@ public class HumanMoveObj : InteractableObj
 {
     private bool isMove = false;
 
+    [SerializeField] private float speed = 3f;
+
     private void Start()
     {
         currentType = ObjType.HUMAN;
@@ -15,6 +17,7 @@ public class HumanMoveObj : InteractableObj
     {
         this.isMove = isMove;
 
+        /*
         if (isMove)
         {
             print("øÚ¡˜¿Œ¥Á");
@@ -22,6 +25,26 @@ public class HumanMoveObj : InteractableObj
         else
         {
             print("∏ÿ√·¥Á");
+        }
+        */
+    }
+
+    private void Update()
+    {
+        if (!isMove) return;
+
+        Move();
+    }
+
+    private void Move()
+    {
+        if (Input.GetKey(KeyCode.A))
+        {
+            transform.position += Vector3.left * speed * Time.deltaTime;
+        }
+        else if (Input.GetKey(KeyCode.D))
+        {
+            transform.position += Vector3.right * speed * Time.deltaTime;
         }
     }
 

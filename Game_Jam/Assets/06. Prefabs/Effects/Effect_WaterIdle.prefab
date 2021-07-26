@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4830108920886779231}
   - component: {fileID: 4830108920886779230}
   - component: {fileID: 4830108920886779225}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Effect_WaterIdle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4776,8 +4776,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1497795543
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_RenderMode: 0
   m_SortMode: 0

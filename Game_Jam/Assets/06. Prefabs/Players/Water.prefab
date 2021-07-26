@@ -14,7 +14,10 @@ GameObject:
   - component: {fileID: 1201988790}
   - component: {fileID: 1201988792}
   - component: {fileID: 1201988791}
-  m_Layer: 0
+  - component: {fileID: 3467311724180571649}
+  - component: {fileID: 8055089872040921087}
+  - component: {fileID: -7732443508567617466}
+  m_Layer: 7
   m_Name: Water
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76,8 +79,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -646598655
-  m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingLayer: 3
+  m_SortingOrder: 10
   m_Sprite: {fileID: -9077780528278609294, guid: 5e809b76bdcdd9848afe0af88d039e71, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -157,6 +160,55 @@ MonoBehaviour:
   idleParticles:
   - {fileID: 472690364276907397}
   bombParticle: {fileID: 6482683849518673223}
+--- !u!50 &3467311724180571649
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807037949047954140}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!58 &8055089872040921087
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807037949047954140}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
+--- !u!114 &-7732443508567617466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807037949047954140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b04356a7b42c1af4188a54d8502f3e7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5121261526345615256
 GameObject:
   m_ObjectHideFlags: 0
@@ -168,7 +220,7 @@ GameObject:
   - component: {fileID: 2504843462655575686}
   - component: {fileID: 9064664294311852096}
   - component: {fileID: 1407081785972293165}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: InteractiveLine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -226,8 +278,8 @@ LineRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -646598655
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Positions:
   - {x: 0, y: 0, z: 0}
@@ -310,10 +362,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Effect_WaterBomb
       objectReference: {fileID: 0}
-    - target: {fileID: 4830108920886779230, guid: ccb963365ff4a504d9529634471b4eaa, type: 3}
-      propertyPath: playOnAwake
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4830108920886779231, guid: ccb963365ff4a504d9529634471b4eaa, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -380,10 +428,6 @@ PrefabInstance:
     - target: {fileID: 4830108920886779224, guid: 0aa5e225b10d0fc4288ff4acc247ebbc, type: 3}
       propertyPath: m_Name
       value: Effect_WaterIdle
-      objectReference: {fileID: 0}
-    - target: {fileID: 4830108920886779230, guid: 0aa5e225b10d0fc4288ff4acc247ebbc, type: 3}
-      propertyPath: playOnAwake
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4830108920886779231, guid: 0aa5e225b10d0fc4288ff4acc247ebbc, type: 3}
       propertyPath: m_RootOrder

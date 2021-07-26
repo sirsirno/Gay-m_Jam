@@ -40,6 +40,8 @@ public class PlayerProperty : MonoBehaviour
     private bool isMoving = false;
     public bool IsMoving { get { return isMoving; } }
 
+    private bool isRiding = false;
+
     private Vector2 pathDir = Vector2.zero;
     private bool isGoingPath = false;
 
@@ -51,7 +53,7 @@ public class PlayerProperty : MonoBehaviour
         playerInput = GetComponent<PlayerInput>();
         sr = GetComponent<SpriteRenderer>();
 
-        size = transform.localScale;
+        size = transform.localScale * 1.3f;
     }
 
     private void Update()
@@ -104,18 +106,33 @@ public class PlayerProperty : MonoBehaviour
 
                     currentPos = obj.transform.position;
                     currentObj = interact;
+
+                    if (currentObj.objType.Equals(ObjType.HUMAN))
+                    {
+                        transform.SetParent(obj.transform);
+                        isRiding = true;
+                    }
+                    else
+                    {
+                        transform.SetParent(null);
+                        isRiding = false;
+                    }
                 }
             }
             else
             {
                 playerEffect.SetAlphaValue(playerAlpha);
             }
-
         }
     }
 
     private void MovePosition()
     {
+        if (isRiding)
+        {
+            currentPos = transform.parent.position;
+        }
+
         if (isMoving)                   // 누르고 있는 상태
         {
             target = playerInput.mousePos;
@@ -140,6 +157,8 @@ public class PlayerProperty : MonoBehaviour
 
     private void CheckPath()
     {
+        if (isRiding) return;
+
         bool isInput = false;
 
         if (playerInput.W)
