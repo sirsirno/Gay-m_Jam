@@ -5,15 +5,17 @@ using UnityEngine;
 public class PlayerEffect : MonoBehaviour
 {
     PlayerProperty playerProperty;
-    PlayerInput playerInput;
 
     [SerializeField] LineRenderer interactiveLine;
     [SerializeField] Texture2D lineTex;
 
+    [Header("Particles")]
+    [SerializeField] ParticleSystem idleParticle;
+    [SerializeField] ParticleSystem bombParticle;
+
     private void Awake()
     {
         playerProperty = GetComponent<PlayerProperty>();
-        playerInput = GetComponent<PlayerInput>();
     }
 
     private void Start()
@@ -44,5 +46,22 @@ public class PlayerEffect : MonoBehaviour
                 interactiveLine.gameObject.SetActive(false);
             }
         }
+    }
+
+    public void PlayParticle(ParticleType type)
+    {
+        if (type == ParticleType.IDLE)
+        {
+            idleParticle.Play();
+        }
+        else if (type == ParticleType.BOMB)
+        {
+            bombParticle.Play();
+        }
+    }
+
+    public void StopParticle() // Idle만 Looping이므로 idle만 스탑해준다
+    {
+        idleParticle.Stop();
     }
 }

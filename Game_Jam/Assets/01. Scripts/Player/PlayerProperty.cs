@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerProperty : MonoBehaviour
 {
     private PlayerInput playerInput = null;
+    private PlayerEffect playerEffect = null;
     private SpriteRenderer sr = null;
 
     private Vector2 size = Vector2.zero;
@@ -39,6 +40,7 @@ public class PlayerProperty : MonoBehaviour
 
     private void Start()
     {
+        playerEffect = GetComponent<PlayerEffect>();
         playerInput = GetComponent<PlayerInput>();
         sr = GetComponent<SpriteRenderer>();
 
@@ -76,6 +78,7 @@ public class PlayerProperty : MonoBehaviour
 
                 if (interact.ChangeProperty(myProperty))
                 {
+                    playerEffect.PlayParticle(ParticleType.BOMB);
                     currentObj?.ChangeProperty(Property.NONE);
 
                     currentPos = obj.transform.position;
