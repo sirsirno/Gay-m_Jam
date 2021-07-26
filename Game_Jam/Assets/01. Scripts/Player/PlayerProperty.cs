@@ -72,6 +72,8 @@ public class PlayerProperty : MonoBehaviour
                 // 속성 변경
                 IInteractable interact = obj.GetComponent<InteractableObj>();
 
+                //if()
+
                 if (interact.ChangeProperty(myProperty))
                 {
                     currentObj?.ChangeProperty(Property.NONE);

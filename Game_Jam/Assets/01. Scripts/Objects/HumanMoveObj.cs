@@ -6,6 +6,11 @@ public class HumanMoveObj : InteractableObj
 {
     private bool isMove = false;
 
+    private void Start()
+    {
+        currentType = ObjType.HUMAN;
+    }
+
     private void SetMove(bool isMove)
     {
         this.isMove = isMove;

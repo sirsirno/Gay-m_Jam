@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TriggerObj : InteractableObj
+public class PathObj : InteractableObj
 {
     private void Start()
     {
-        currentType = ObjType.TRIGGER;
+        currentType = ObjType.PATH;
     }
 
     protected override void OnChangeProperty(Property prop)
