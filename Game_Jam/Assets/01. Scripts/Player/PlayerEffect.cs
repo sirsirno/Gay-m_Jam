@@ -10,7 +10,7 @@ public class PlayerEffect : MonoBehaviour
     [SerializeField] Texture2D lineTex;
 
     [Header("Particles")]
-    [SerializeField] ParticleSystem idleParticle;
+    [SerializeField] ParticleSystem[] idleParticles;
     [SerializeField] ParticleSystem bombParticle;
 
     private void Awake()
@@ -21,6 +21,7 @@ public class PlayerEffect : MonoBehaviour
     private void Start()
     {
         interactiveLine.material.mainTexture = lineTex;
+        PlayParticle(ParticleType.IDLE);
     }
 
     private void Update()
@@ -37,6 +38,7 @@ public class PlayerEffect : MonoBehaviour
                 interactiveLine.gameObject.SetActive(true);
                 interactiveLine.SetPosition(0, playerProperty.CurrentPos);
                 interactiveLine.SetPosition(1, playerProperty.TargetLerp);
+                StopParticle();
             }
         }
         else
@@ -44,6 +46,7 @@ public class PlayerEffect : MonoBehaviour
             if (interactiveLine.gameObject.activeSelf)
             {
                 interactiveLine.gameObject.SetActive(false);
+                PlayParticle(ParticleType.IDLE);
             }
         }
     }
@@ -52,7 +55,10 @@ public class PlayerEffect : MonoBehaviour
     {
         if (type == ParticleType.IDLE)
         {
-            idleParticle.Play();
+            foreach (ParticleSystem idle in idleParticles)
+            {
+                idle.Play();
+            }
         }
         else if (type == ParticleType.BOMB)
         {
@@ -62,6 +68,9 @@ public class PlayerEffect : MonoBehaviour
 
     public void StopParticle() // Idle만 Looping이므로 idle만 스탑해준다
     {
-        idleParticle.Stop();
+        foreach (ParticleSystem idle in idleParticles)
+        {
+            idle.Stop();
+        }
     }
 }

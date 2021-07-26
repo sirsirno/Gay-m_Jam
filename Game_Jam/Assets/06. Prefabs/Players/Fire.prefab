@@ -295,7 +295,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactiveLine: {fileID: 955943033}
   lineTex: {fileID: 2800000, guid: 5a9ed7248ebc79e4fb90e2f65d02c9e2, type: 3}
-  idleParticle: {fileID: 4990985187169978988}
+  idleParticles:
+  - {fileID: 4990985187169978988}
+  - {fileID: 4649002828108452021}
   bombParticle: {fileID: 8470750148121669583}
 --- !u!1001 &500936499435581081
 PrefabInstance:
@@ -350,10 +352,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8321958829034275157, guid: cfb015d3f2b55dc40addec1c2444872e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8321958829034275158, guid: cfb015d3f2b55dc40addec1c2444872e, type: 3}
-      propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -423,10 +421,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8321958829034275158, guid: 1fef18ca1ede6b849aba165929e93374, type: 3}
-      propertyPath: playOnAwake
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fef18ca1ede6b849aba165929e93374, type: 3}
 --- !u!4 &4990985187169978991 stripped
@@ -437,5 +431,10 @@ Transform:
 --- !u!198 &4990985187169978988 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 8321958829034275158, guid: 1fef18ca1ede6b849aba165929e93374, type: 3}
+  m_PrefabInstance: {fileID: 3908565801044757306}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &4649002828108452021 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 8555309407099132815, guid: 1fef18ca1ede6b849aba165929e93374, type: 3}
   m_PrefabInstance: {fileID: 3908565801044757306}
   m_PrefabAsset: {fileID: 0}
