@@ -8,6 +8,9 @@ TextureImporter:
   - first:
       213: 4836988938224923172
     second: fire_fuse_line_1
+  - first:
+      213: 4192381168610408365
+    second: fire_fuse_line_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -146,6 +149,27 @@ TextureImporter:
       bones: []
       spriteID: 422f365dfcf602340800000000000000
       internalID: 4836988938224923172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_fuse_line_2
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da77f0ee5745e2a30800000000000000
+      internalID: 4192381168610408365
       vertices: []
       indices: 
       edges: []

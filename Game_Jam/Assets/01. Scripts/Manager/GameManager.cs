@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
-#endregion
+    #endregion
 
-
+    public List<PlayerProperty> playerList = new List<PlayerProperty>();
 }
