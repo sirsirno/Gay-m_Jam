@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy_Test : Enemy
+public class Enemy_Normal : Enemy
 {
     [SerializeField] private float speed = 3f;
 
-    private Move_GoLeft move = null;
+    private Move_GoRight move = null;
 
     protected void Awake()
     {
@@ -16,7 +16,7 @@ public class Enemy_Test : Enemy
         IState attack = gameObject.AddComponent<State_Empty>();
         dicState.Add(State.Attack, attack);
 
-        move = gameObject.AddComponent<Move_GoLeft>();
+        move = gameObject.AddComponent<Move_GoRight>();
         move.SetValue(speed);
         dicState.Add(State.Move, move);
 

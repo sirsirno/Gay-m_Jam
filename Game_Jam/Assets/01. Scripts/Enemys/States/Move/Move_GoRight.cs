@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Move_GoLeft : MonoBehaviour, IState
+public class Move_GoRight : MonoBehaviour, IState
 {
     private float moveSpeed = 3f;
 
@@ -22,7 +22,7 @@ public class Move_GoLeft : MonoBehaviour, IState
     {
         while (true)
         {
-            transform.position += Vector3.left * moveSpeed * Time.deltaTime;
+            transform.position += Vector3.right * moveSpeed * Time.deltaTime;
 
             yield return null;
         }
