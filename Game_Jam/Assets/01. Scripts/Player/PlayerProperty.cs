@@ -10,6 +10,7 @@ public class PlayerProperty : MonoBehaviour
     private Vector2 size = Vector2.zero;
 
     private Vector2 currentPos = Vector2.zero;
+    public Vector2 CurrentPos { get { return currentPos; } }
 
     [Header("수정값들")]
     [SerializeField] private float maxDistance = 3f;
@@ -19,9 +20,16 @@ public class PlayerProperty : MonoBehaviour
 
     [Space(10f)]
     [SerializeField] private Property myProperty = Property.FIRE;
+    public Property MyProperty { get { return myProperty; } }
 
     private Vector2 target = Vector2.zero;
+    public Vector2 Target { get { return target; } }
+
+    private Vector2 targetLerp = Vector2.zero;
+    public Vector2 TargetLerp { get { return targetLerp; } }
+
     private bool isMoving = false;
+    public bool IsMoving { get { return isMoving; } }
 
 
     private void Start()
@@ -86,7 +94,8 @@ public class PlayerProperty : MonoBehaviour
                 target = currentPos + dir.normalized * maxDistance;
             }
 
-            transform.position = Vector2.Lerp(transform.position, target, moveSpeed * Time.deltaTime);
+            targetLerp = Vector2.Lerp(transform.position, target, moveSpeed * Time.deltaTime);
+            transform.position = targetLerp;
         }
 
         if (!isMoving)
