@@ -13,6 +13,8 @@ public class PlayerEffect : MonoBehaviour
     [Header("Particles")]
     [SerializeField] ParticleSystem[] idleParticles;
     [SerializeField] ParticleSystem bombParticle;
+    private float[] idleParticlesAlpha;
+    private float bombParticleAlpha;
 
     private void Awake()
     {
@@ -24,6 +26,13 @@ public class PlayerEffect : MonoBehaviour
     {
         interactiveLine.material.mainTexture = lineTex;
         PlayParticle(ParticleType.IDLE);
+
+        idleParticlesAlpha = new float[idleParticles.Length];
+        for (int i = 0; i< idleParticles.Length;i++)
+        {
+            idleParticlesAlpha[i] = idleParticles[i].main.startColor.color.a;
+        }
+        bombParticleAlpha = bombParticle.main.startColor.color.a;
     }
 
     private void Update()
@@ -78,5 +87,16 @@ public class PlayerEffect : MonoBehaviour
     public void SetAlphaValue(float alpha)
     {
         sr.color = new Color(sr.color.r, sr.color.g, sr.color.b, alpha);
+
+        for (int i = 0; i < idleParticles.Length; i++)
+        {
+            Color idleColor = idleParticles[i].main.startColor.color;
+            var idleMain = idleParticles[i].main;
+            idleMain.startColor = new Color(idleColor.r, idleColor.g, idleColor.b, idleParticlesAlpha[i] * alpha);
+        }
+
+        Color bombColor = bombParticle.main.startColor.color;
+        var bombMain = bombParticle.main;
+        bombMain.startColor = new Color(bombColor.r, bombColor.g, bombColor.b, bombParticleAlpha * alpha);
     }
 }
