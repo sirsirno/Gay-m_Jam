@@ -46,8 +46,13 @@ public class OptionUIManager : MonoBehaviour
     [SerializeField] private Button sfxBtn;
     [SerializeField] private Button creditBtn;
 
+    public AudioClip uiPop;
+
     [NonSerialized] public bool BGMSound = true;
     [NonSerialized] public bool SFXSound = true;
+
+
+
     void Start()
     {
         
@@ -95,6 +100,7 @@ public class OptionUIManager : MonoBehaviour
 
     public void PauseBtnActiveSelf() 
     {
+        
         if (!pausePanel.gameObject.activeSelf)
         {
             OnBtn(OptionBtnIdx.PAUSE);
@@ -107,6 +113,7 @@ public class OptionUIManager : MonoBehaviour
   
     public void OnBtn(OptionBtnIdx btnIdx, CanvasGroup exitCvsGroup = null, CanvasGroup openCvsGroup = null)
     {
+        SoundManager.Instance.PlaySFXSound(SoundManager.Instance.Audio_SFX_UI, 1);
         switch (btnIdx)
         {
             case OptionBtnIdx.EXIT:
