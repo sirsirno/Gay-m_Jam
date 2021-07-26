@@ -1,34 +1,25 @@
 fileFormatVersion: 2
-guid: b1fe3caf1eefb3144ba9c7ceb0b1cf65
+guid: 88fc1d95450bd5d43baf7a4d3c78778b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -566603170274119119
-    second: enemy_Tank_01
+      213: 5858481154457836108
+    second: enemy_Speed_Ready_01
   - first:
-      213: -1959245035422608337
-    second: enemy_Tank_02
+      213: -2157782737751657979
+    second: enemy_Speed_Ready_02
   - first:
-      213: 6164689544097834366
-    second: enemy_Tank_03
+      213: 6900874511595483054
+    second: enemy_Speed_Ready_03
   - first:
-      213: -3135637578166037884
-    second: enemy_Speed_01
+      213: -9038827644526255221
+    second: enemy_Speed_Attack_01
   - first:
-      213: 1232260933200077313
-    second: enemy_Speed_02
+      213: -1936161539462163961
+    second: enemy_Speed_Attack_02
   - first:
-      213: -7732197072190152937
-    second: enemy_Speed_03
-  - first:
-      213: 6706131478426472971
-    second: enemy_Normal_01
-  - first:
-      213: -6121929733267682017
-    second: enemy_Normal_02
-  - first:
-      213: 2766019281583218075
-    second: enemy_Normal_03
+      213: -5521111801094763374
+    second: enemy_Speed_Attack_03
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -130,70 +121,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: enemy_Tank_01
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 48
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 132733b2b650328f0800000000000000
-      internalID: -566603170274119119
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemy_Tank_02
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 48
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f2410b3550d5fc4e0800000000000000
-      internalID: -1959245035422608337
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemy_Tank_03
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 48
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e75248a7a706d8550800000000000000
-      internalID: 6164689544097834366
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemy_Speed_01
+      name: enemy_Speed_Ready_01
       rect:
         serializedVersion: 2
         x: 0
@@ -207,14 +135,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4821c096c3afb74d0800000000000000
-      internalID: -3135637578166037884
+      spriteID: c4a97c602918d4150800000000000000
+      internalID: 5858481154457836108
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_Speed_02
+      name: enemy_Speed_Ready_02
       rect:
         serializedVersion: 2
         x: 24
@@ -228,14 +156,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1026bf93aced91110800000000000000
-      internalID: 1232260933200077313
+      spriteID: 502b7dd48040e02e0800000000000000
+      internalID: -2157782737751657979
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_Speed_03
+      name: enemy_Speed_Ready_03
       rect:
         serializedVersion: 2
         x: 48
@@ -249,14 +177,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71f5ac2dab7b1b490800000000000000
-      internalID: -7732197072190152937
+      spriteID: eaf223f4ec4d4cf50800000000000000
+      internalID: 6900874511595483054
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_Normal_01
+      name: enemy_Speed_Attack_01
       rect:
         serializedVersion: 2
         x: 0
@@ -270,14 +198,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b02dcac8c07f01d50800000000000000
-      internalID: 6706131478426472971
+      spriteID: b832806a522af8280800000000000000
+      internalID: -9038827644526255221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_Normal_02
+      name: enemy_Speed_Attack_02
       rect:
         serializedVersion: 2
         x: 24
@@ -291,14 +219,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1d8dacc7598a0ba0800000000000000
-      internalID: -6121929733267682017
+      spriteID: 702959c865f5125e0800000000000000
+      internalID: -1936161539462163961
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_Normal_03
+      name: enemy_Speed_Attack_03
       rect:
         serializedVersion: 2
         x: 48
@@ -312,8 +240,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9d16a0b1efd26620800000000000000
-      internalID: 2766019281583218075
+      spriteID: 29c878aa1121163b0800000000000000
+      internalID: -5521111801094763374
       vertices: []
       indices: 
       edges: []
