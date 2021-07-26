@@ -53,7 +53,7 @@ public class PlayerProperty : MonoBehaviour
         playerInput = GetComponent<PlayerInput>();
         sr = GetComponent<SpriteRenderer>();
 
-        size = transform.localScale * 1.3f;
+        size = transform.localScale * 1.7f;
     }
 
     private void Update()

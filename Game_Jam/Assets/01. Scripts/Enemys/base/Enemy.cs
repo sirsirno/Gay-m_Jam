@@ -99,7 +99,7 @@ public abstract class Enemy : MonoBehaviour
 
     protected IEnumerator Blinking()
     {
-        MyRend.color = color_Trans;
+        MyRend.color = Color.red;
         yield return colorWait;
         MyRend.color = Color.white;
     }
