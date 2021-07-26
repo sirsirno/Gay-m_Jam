@@ -14,6 +14,7 @@ public class SoundManager : MonoBehaviour
 
     [Header("SFX")]
     public AudioClip Audio_SFX_Fire;
+    public AudioClip Audio_SFX_FireOff;
     public AudioClip Audio_SFX_Water;
     public AudioClip Audio_SFX_Golem;
 

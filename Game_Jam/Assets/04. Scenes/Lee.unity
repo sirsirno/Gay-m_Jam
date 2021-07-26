@@ -614,9 +614,9 @@ MonoBehaviour:
   SFXSource: {fileID: 1182363979}
   Audio_BGM: {fileID: 0}
   Audio_SFX_Fire: {fileID: 8300000, guid: 00dfa0c2de3afa3489c3590c3b4e6d60, type: 3}
+  Audio_SFX_FireOff: {fileID: 8300000, guid: 019fdd5e9abc48344a445447d893ebef, type: 3}
   Audio_SFX_Water: {fileID: 8300000, guid: 6a9a53bf2bbbef542a3fa1793190cd07, type: 3}
   Audio_SFX_Golem: {fileID: 8300000, guid: 73969bdafef76fc4e9081b8d13962e75, type: 3}
-  Audio_SFX_Torch: {fileID: 8300000, guid: 98f68ae1cb7bd2549b03592a0615b5fa, type: 3}
 --- !u!4 &921409627
 Transform:
   m_ObjectHideFlags: 0

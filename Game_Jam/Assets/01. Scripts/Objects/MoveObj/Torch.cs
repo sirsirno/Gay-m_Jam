@@ -24,6 +24,8 @@ public class Torch : MoveObj
         else
         {
             animator.Play("Torch_Off");
+            SoundManager.Instance.PlaySFXSound(SoundManager.Instance.Audio_SFX_FireOff, 1);
+            audioSource.Stop();
         }
     }
 }
