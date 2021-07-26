@@ -10,6 +10,7 @@ public enum OptionBtnIdx
     EXIT,
     PAUSE,
     SETTING,
+    SETTINGEXIT,
     SOUND,
     CREDIT,
     EXITPANEL
@@ -103,6 +104,7 @@ public class OptionUIManager : MonoBehaviour
             OnBtn(OptionBtnIdx.EXIT);
         }
     }
+  
     public void OnBtn(OptionBtnIdx btnIdx, CanvasGroup exitCvsGroup = null, CanvasGroup openCvsGroup = null)
     {
         switch (btnIdx)
@@ -117,6 +119,9 @@ public class OptionUIManager : MonoBehaviour
                 OpenUI(pausePopup, false, 0.3f);
                 OpenUI(settingPanel, true, 0.3f);
                 break;
+            //case OptionBtnIdx.SETTINGEXIT:
+            //    OpenUI(settingPanel, false, 0.3f);
+            //    break;
             case OptionBtnIdx.SOUND:
                 OpenUI(defaultPanel, false, 0.3f);
                 OpenUI(soundPanel, true, 0.3f);
