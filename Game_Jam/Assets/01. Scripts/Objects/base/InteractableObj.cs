@@ -9,6 +9,14 @@ public abstract class InteractableObj : MonoBehaviour, IInteractable
 
     [SerializeField] protected Property propertyLimit = Property.NONE;
 
+    public ObjType objType 
+    {
+        get
+        {
+            return currentType;
+        }
+    }
+
     public bool ChangeProperty(Property prop)
     {
         if (!propertyLimit.HasFlag(prop))     // 해당 속성이 아니면
@@ -19,6 +27,16 @@ public abstract class InteractableObj : MonoBehaviour, IInteractable
         currentProperty = prop;
 
         OnChangeProperty(prop);
+
+        return true;
+    }
+
+    public bool CheckPropertyLimit(Property prop)
+    {
+        if (!propertyLimit.HasFlag(prop))     // 해당 속성이 아니면
+        {
+            return false;
+        }
 
         return true;
     }
