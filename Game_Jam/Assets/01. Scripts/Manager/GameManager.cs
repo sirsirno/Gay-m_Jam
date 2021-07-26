@@ -39,4 +39,9 @@ public class GameManager : MonoBehaviour
     #endregion
 
     public List<PlayerProperty> playerList = new List<PlayerProperty>();
+    public int chainCount = 0;
+    public int stage = 1;
+    public int remainEnemyCount = 0;
+    public int maxHp;
+    public int currentHp;
 }
