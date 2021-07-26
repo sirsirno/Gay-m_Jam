@@ -13,7 +13,7 @@ TagManager:
   - UI
   - Interactable
   - Player
-  - 
+  - PlayerAttack
   - 
   - 
   - 
@@ -51,5 +51,5 @@ TagManager:
     uniqueID: 3648368641
     locked: 0
   - name: UI
-    uniqueID: 3244892275
+    uniqueID: 4131425847
     locked: 0

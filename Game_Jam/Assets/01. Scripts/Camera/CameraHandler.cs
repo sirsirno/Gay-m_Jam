@@ -6,6 +6,8 @@ using Cinemachine;
 public class CameraHandler : MonoBehaviour
 {
     CinemachineVirtualCamera virtualCamera;
+
+    CinemachineImpulseSource source;
     bool isFireFollow = true; // true면 불 false면 물
 
     Transform fireTransform;
