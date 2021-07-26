@@ -38,7 +38,6 @@ public class OptionUIManager : MonoBehaviour
     [SerializeField] private Sprite[] SFX;
 
     [Header("버튼 관련")]
-    [SerializeField] private Button pauseBtn;
     [SerializeField] private Button resumeBtn;
     [SerializeField] private Button settingBtn;
     [SerializeField] private Button soundBtn;
@@ -50,10 +49,7 @@ public class OptionUIManager : MonoBehaviour
     [NonSerialized] public bool SFXSound = true;
     void Start()
     {
-        pauseBtn.onClick.AddListener(() =>
-        {
-            OnBtn(OptionBtnIdx.PAUSE);
-        });
+        
 
         resumeBtn.onClick.AddListener(() =>
         {
@@ -96,7 +92,17 @@ public class OptionUIManager : MonoBehaviour
         optionSequence.Append(DOTween.To(() => cvsGroup.alpha, x => cvsGroup.alpha = x, isOpen ? 1 : 0, time).SetUpdate(true));
     }
 
-    
+    public void PauseBtnActiveSelf() 
+    {
+        if (!pausePanel.gameObject.activeSelf)
+        {
+            OnBtn(OptionBtnIdx.PAUSE);
+        }
+        else if (pausePanel.gameObject.activeSelf) 
+        {
+            OnBtn(OptionBtnIdx.EXIT);
+        }
+    }
     public void OnBtn(OptionBtnIdx btnIdx, CanvasGroup exitCvsGroup = null, CanvasGroup openCvsGroup = null)
     {
         switch (btnIdx)
