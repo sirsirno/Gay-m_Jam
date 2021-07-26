@@ -13,7 +13,9 @@ public class StartPosObj : InteractableObj
 
     private void SpawnPlayer()
     {
-        Instantiate(playerPrefab, transform.position, Quaternion.identity);
+        PlayerProperty player = Instantiate(playerPrefab, transform.position, Quaternion.identity).GetComponent<PlayerProperty>();
+
+        player.Init(transform.position, this as IInteractable);
     }
 
     protected override void OnChangeProperty(Property prop)

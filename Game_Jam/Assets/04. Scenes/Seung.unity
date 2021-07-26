@@ -246,7 +246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   propertyLimit: 1
-  playerPrefab: {fileID: 2073695463480937387, guid: e1a3d55f03306aa489251ed4c0780319, type: 3}
+  playerPrefab: {fileID: 105205206874043872, guid: 14cab66fda50696499418924e95adb4b, type: 3}
 --- !u!1 &816118322
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,6 +10,8 @@ public class PlayerProperty : MonoBehaviour
     private Vector2 size = Vector2.zero;
 
     private Vector2 currentPos = Vector2.zero;
+    private IInteractable currentObj = null;
+
     public Vector2 CurrentPos { get { return currentPos; } }
 
     [Header("수정값들")]
@@ -22,11 +24,14 @@ public class PlayerProperty : MonoBehaviour
     [SerializeField] private Property myProperty = Property.FIRE;
     public Property MyProperty { get { return myProperty; } }
 
+
     private Vector2 target = Vector2.zero;
     public Vector2 Target { get { return target; } }
 
+
     private Vector2 targetLerp = Vector2.zero;
     public Vector2 TargetLerp { get { return targetLerp; } }
+
 
     private bool isMoving = false;
     public bool IsMoving { get { return isMoving; } }
@@ -38,9 +43,6 @@ public class PlayerProperty : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
 
         size = transform.localScale;
-
-        // currentPos를 시작지점으로
-        currentPos = transform.position;
     }
 
     private void Update()
@@ -72,7 +74,10 @@ public class PlayerProperty : MonoBehaviour
 
                 if (interact.ChangeProperty(myProperty))
                 {
+                    currentObj?.ChangeProperty(Property.NONE);
+
                     currentPos = obj.transform.position;
+                    currentObj = interact;
                 }
             }
 
@@ -102,5 +107,13 @@ public class PlayerProperty : MonoBehaviour
         {
             transform.position = Vector2.Lerp(transform.position, currentPos, backSpeed * Time.deltaTime);
         }
+    }
+
+    public void Init(Vector2 pos, IInteractable inter)
+    {
+        transform.position = pos;
+
+        currentPos = transform.position;
+        currentObj = inter;
     }
 }
