@@ -1,0 +1,10 @@
+diff a/Game_Jam/Assets/04. Scenes/InGame.unity b/Game_Jam/Assets/04. Scenes/InGame.unity	(rejected hunks)
+@@ -6690,7 +6690,7 @@
+   - component: {fileID: 1931691608}
+   - component: {fileID: 1931691607}
+   - component: {fileID: 1931691604}
+-  m_Layer: 0
++  m_Layer: 9
+   m_Name: Enemy
+   m_TagString: Untagged
+   m_Icon: {fileID: 0}
