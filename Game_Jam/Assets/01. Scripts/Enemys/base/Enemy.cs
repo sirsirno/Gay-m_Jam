@@ -111,7 +111,13 @@ public abstract class Enemy : MonoBehaviour
 
     protected void OnTriggerEnter2D(Collider2D coll)
     {
-        
+        IDamage damage = coll.GetComponent<IDamage>();
+
+        if (damage != null)
+        {
+            GetDamage(damage.Damage);
+            damage.SetDisable();
+        }
     }
 
     public virtual void SetDisable()
