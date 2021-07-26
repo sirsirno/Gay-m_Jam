@@ -10,7 +10,10 @@ public class PlayerProperty : MonoBehaviour
 
     private Vector2 size = Vector2.zero;
 
+    private Vector2 lastPos = Vector2.zero;
     private Vector2 currentPos = Vector2.zero;
+
+    private IInteractable lastObj = null;
     private IInteractable currentObj = null;
 
     public Vector2 CurrentPos { get { return currentPos; } }
@@ -82,7 +85,7 @@ public class PlayerProperty : MonoBehaviour
                 // 속성 변경
                 IInteractable interact = obj.GetComponent<InteractableObj>();
 
-                if (interact == null || interact.objType.Equals(ObjType.PATH))          // 패스라면 리턴
+                if (interact == null || interact.objType.Equals(ObjType.PATH) || interact.objType.Equals(ObjType.TRIGGER))          // 패스라면 리턴
                 {
                     return;
                 }
@@ -165,16 +168,28 @@ public class PlayerProperty : MonoBehaviour
 
                     PathData pathData = pathObj.GetPathEnd(obj.transform);
 
-                    currentObj = pathData.obj;
-                    currentPos = pathData.obj.transform.position;
+                    if (pathData == null)
+                    {
+                        return;
+                    }
 
-                    StartCoroutine(GoingPath(pathObj.paths, pathData.isReverse));
+                    lastObj = pathData.obj;
+                    lastPos = pathData.obj.transform.position;
+
+                    if (pathData.obj.objType.Equals(ObjType.TRIGGER))       // 맨 마지막이 트리거라면
+                    {
+                        StartCoroutine(GoingPath(pathObj.paths, pathData.isReverse, true));
+                    }
+                    else
+                    {
+                        StartCoroutine(GoingPath(pathObj.paths, pathData.isReverse, false));
+                    }
                 }
             }
         }
     }
 
-    private IEnumerator GoingPath(List<Transform> paths, bool isReverse)
+    private IEnumerator GoingPath(List<Transform> paths, bool isReverse, bool isTrigger)
     {
         int idx = isReverse ? paths.Count - 1 : 0;
 
@@ -187,7 +202,7 @@ public class PlayerProperty : MonoBehaviour
 
         isGoingPath = true;
 
-        while ((currentPos - myPos).sqrMagnitude > 0.01f)
+        while ((lastPos - myPos).sqrMagnitude > 0.01f)
         {
             if (!isPathEnd)
             {
@@ -195,7 +210,7 @@ public class PlayerProperty : MonoBehaviour
             }
             else
             {
-                target = currentPos;
+                target = lastPos;
             }
 
             transform.position = Vector2.MoveTowards(transform.position, target, moveSpeed * Time.deltaTime);
@@ -218,6 +233,55 @@ public class PlayerProperty : MonoBehaviour
 
             yield return null;
         }
+
+        lastObj.ChangeProperty(myProperty);
+
+        if (isTrigger)              // 트리거라면 다시 되돌아간다
+        {
+            lastPos = currentPos;
+            lastObj = currentObj;
+
+            isReverse = !isReverse;
+
+            idx = isReverse ? paths.Count - 1 : 0;
+            myPos = transform.position;
+            isPathEnd = false;
+
+            while ((lastPos - myPos).sqrMagnitude > 0.01f)
+            {
+                if (!isPathEnd)
+                {
+                    target = paths[idx].position;
+                }
+                else
+                {
+                    target = lastPos;
+                }
+
+                transform.position = Vector2.MoveTowards(transform.position, target, moveSpeed * Time.deltaTime);
+
+                if (!isPathEnd && transform.position.Equals(paths[idx].position))
+                {
+                    idx += isReverse ? -1 : 1;
+                }
+
+                if (isReverse && idx.Equals(-1))
+                {
+                    isPathEnd = true;
+                }
+                else if (!isReverse && idx.Equals(paths.Count))
+                {
+                    isPathEnd = true;
+                }
+
+                myPos = transform.position;
+
+                yield return null;
+            }
+        }
+
+        currentObj = lastObj;
+        currentPos = lastPos;
 
         isGoingPath = false;
     }
