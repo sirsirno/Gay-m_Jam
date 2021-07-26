@@ -173,6 +173,8 @@ public class PlayerProperty : MonoBehaviour
                         return;
                     }
 
+                    currentObj.ChangeProperty(Property.NONE);
+
                     lastObj = pathData.obj;
                     lastPos = pathData.obj.transform.position;
 
