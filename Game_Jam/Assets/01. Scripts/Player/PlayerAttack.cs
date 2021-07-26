@@ -6,7 +6,7 @@ using DG.Tweening;
 public class PlayerAttack : MonoBehaviour
 {
     PlayerProperty playerProperty = null;
-    public float attackDamage = 10f;
+
     public float attackCoolTime = 0.5f;
     private float attackCoolTimeCur = 0f;
 
@@ -26,6 +26,8 @@ public class PlayerAttack : MonoBehaviour
             if (attackCoolTimeCur >= attackCoolTime)
             {
                 Attack();
+                attackObj.Create();
+                attackCoolTimeCur = 0.01f;
             }
         }
         else
@@ -41,13 +43,10 @@ public class PlayerAttack : MonoBehaviour
 
     private void Attack()
     {
-        if(playerProperty.MyProperty.Equals(Property.FIRE))
+        if (!attackObj.gameObject.activeSelf)
         {
-            if(!attackObj.gameObject.activeSelf)
-            {
-                attackObj.gameObject.SetActive(true);
-                attackObj.Fade(1, 0.5f);
-            }
+            attackObj.gameObject.SetActive(true);
+            attackObj.Fade(1, 0.5f);
         }
     }
 }

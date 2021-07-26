@@ -6,6 +6,11 @@ using DG.Tweening;
 
 public class Projectile : MonoBehaviour
 {
+    public virtual void Create()
+    {
+
+    }
+
     public void Fade(float value, float duration, TweenCallback action = null)
     {
         SpriteRenderer[] sprites = GetComponentsInChildren<SpriteRenderer>();
