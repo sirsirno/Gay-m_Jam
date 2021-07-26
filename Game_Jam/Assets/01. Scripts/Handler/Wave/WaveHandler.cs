@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class WaveHandler : MonoBehaviour
 {
@@ -10,8 +11,14 @@ public class WaveHandler : MonoBehaviour
     [SerializeField] private float waveTime = 20f;
     private WaitForSeconds waveWait = null;
 
+    public Transform floorTrans = null;
+    private List<Transform> floors = new List<Transform>();
+
     private void Start()
     {
+        floors = floorTrans.GetComponentsInChildren<Transform>().ToList();
+        floors.RemoveAt(0);
+
         waveWait = new WaitForSeconds(waveTime);
 
         StartCoroutine(WaveLifeTime());
@@ -23,7 +30,7 @@ public class WaveHandler : MonoBehaviour
 
         while (waveIdx < waveInfos.Count)
         {
-            StartWave(waveIdx);
+            StartCoroutine(StartWave(waveIdx));
             waveIdx++;
 
             yield return waveWait;
@@ -43,6 +50,40 @@ public class WaveHandler : MonoBehaviour
 
     private void CreateEnemy(EnemyType enemyType, int floor)
     {
-        print($"{enemyType}을 {floor}에 소환");
+        // print($"{enemyType}을 {floor}에 소환");
+
+        Enemy enemy = null;
+
+        switch (enemyType)
+        {
+            case EnemyType.NORMAL:
+
+                enemy = PoolManager.GetItem<Enemy_Test>();
+                break;
+
+            case EnemyType.SPEED:
+
+                enemy = PoolManager.GetItem<Enemy_Test>();
+                break;
+
+            case EnemyType.TANK:
+
+                enemy = PoolManager.GetItem<Enemy_Test>();
+                break;
+
+            case EnemyType.BOSS:
+
+                enemy = PoolManager.GetItem<Enemy_Test>();
+                break;
+        }
+
+        enemy.transform.position = GetFloor(floor - 1);
+    }
+
+    private Vector2 GetFloor(int idx)
+    {
+        if (idx >= (floors.Count - 1)) return Vector2.zero;
+
+        return floors[idx].position;
     }
 }

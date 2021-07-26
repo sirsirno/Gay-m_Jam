@@ -99,7 +99,7 @@ public abstract class Enemy : MonoBehaviour
 
     protected IEnumerator Blinking()
     {
-        MyRend.color = color_Trans;
+        MyRend.color = Color.red;
         yield return colorWait;
         MyRend.color = Color.white;
     }
@@ -111,7 +111,13 @@ public abstract class Enemy : MonoBehaviour
 
     protected void OnTriggerEnter2D(Collider2D coll)
     {
-        
+        IDamage damage = coll.GetComponent<IDamage>();
+
+        if (damage != null)
+        {
+            GetDamage(damage.Damage);
+            damage.SetDisable();
+        }
     }
 
     public virtual void SetDisable()
