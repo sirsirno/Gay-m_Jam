@@ -43,6 +43,7 @@ public class PlayerProperty : MonoBehaviour
     private Vector2 pathDir = Vector2.zero;
     private bool isGoingPath = false;
 
+    [SerializeField] private float playerAlpha = 1f;
 
     private void Start()
     {
@@ -70,7 +71,11 @@ public class PlayerProperty : MonoBehaviour
 
             if (dir.sqrMagnitude <= (size.x * size.x))     // 범위 안에 있다면
             {
-                isMoving = true;
+                if (!isMoving)
+                {
+                    isMoving = true;
+                    playerEffect.SetAlphaValue(1);
+                }
             }
         }
 
@@ -87,17 +92,23 @@ public class PlayerProperty : MonoBehaviour
 
                 if (interact == null || interact.objType.Equals(ObjType.PATH) || interact.objType.Equals(ObjType.TRIGGER))          // 패스라면 리턴
                 {
+                    playerEffect.SetAlphaValue(playerAlpha);
                     return;
                 }
 
                 if (interact != currentObj && interact.ChangeProperty(myProperty))
                 {
                     playerEffect.PlayParticle(ParticleType.BOMB);
+                    playerEffect.SetAlphaValue(playerAlpha);
                     currentObj?.ChangeProperty(Property.NONE);
 
                     currentPos = obj.transform.position;
                     currentObj = interact;
                 }
+            }
+            else
+            {
+                playerEffect.SetAlphaValue(playerAlpha);
             }
 
         }
@@ -202,6 +213,7 @@ public class PlayerProperty : MonoBehaviour
 
         bool isPathEnd = false;
 
+        playerEffect.SetAlphaValue(1);
         isGoingPath = true;
 
         while ((lastPos - myPos).sqrMagnitude > 0.01f)
@@ -236,6 +248,7 @@ public class PlayerProperty : MonoBehaviour
             yield return null;
         }
 
+        playerEffect.SetAlphaValue(playerAlpha);
         lastObj.ChangeProperty(myProperty);
 
         if (isTrigger)              // 트리거라면 다시 되돌아간다

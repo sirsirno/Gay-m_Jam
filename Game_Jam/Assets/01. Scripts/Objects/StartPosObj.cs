@@ -15,6 +15,8 @@ public class StartPosObj : InteractableObj
     {
         PlayerProperty player = Instantiate(playerPrefab, transform.position, Quaternion.identity).GetComponent<PlayerProperty>();
 
+        GameManager.Instance.playerList.Add(player);
+
         player.Init(transform.position, this as IInteractable);
     }
 

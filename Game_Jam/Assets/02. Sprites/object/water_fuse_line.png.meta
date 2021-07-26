@@ -8,6 +8,9 @@ TextureImporter:
   - first:
       213: -871784950946914866
     second: water_fuse_line_1
+  - first:
+      213: 529768458936847087
+    second: water_fuse_line_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -146,6 +149,27 @@ TextureImporter:
       bones: []
       spriteID: ecd174eb43cc6e3f0800000000000000
       internalID: -871784950946914866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_fuse_line_2
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fea03284b9d1a5700800000000000000
+      internalID: 529768458936847087
       vertices: []
       indices: 
       edges: []
