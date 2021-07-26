@@ -55,7 +55,7 @@ public class PlayerProperty : MonoBehaviour
 
         else if(playerInput.mouseUp)    // 마우스를 땟을 때
         {
-            Collider2D obj = Physics2D.OverlapPoint(playerInput.mousePos, whatIsInteract);
+            Collider2D obj = Physics2D.OverlapPoint(transform.position, whatIsInteract);
 
             if (obj != null)
             {

@@ -220,7 +220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDistance: 5
-  moveSpeed: 8
+  moveSpeed: 10
   backSpeed: 10
   whatIsInteract:
     serializedVersion: 2
