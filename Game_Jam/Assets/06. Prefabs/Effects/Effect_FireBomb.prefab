@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8321958829034275157}
   - component: {fileID: 8321958829034275158}
   - component: {fileID: 8321958829034275159}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Effect_FireBomb
   m_TagString: Untagged
   m_Icon: {fileID: 0}

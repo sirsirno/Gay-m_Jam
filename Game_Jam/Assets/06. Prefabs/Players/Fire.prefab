@@ -363,10 +363,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Effect_FireBomb
       objectReference: {fileID: 0}
-    - target: {fileID: 8321958829034275152, guid: cfb015d3f2b55dc40addec1c2444872e, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 8321958829034275157, guid: cfb015d3f2b55dc40addec1c2444872e, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -430,17 +426,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 105205206874043874}
     m_Modifications:
-    - target: {fileID: 1977378239987336136, guid: 1fef18ca1ede6b849aba165929e93374, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 8321958829034275152, guid: 1fef18ca1ede6b849aba165929e93374, type: 3}
       propertyPath: m_Name
       value: Effect_FireIdle
-      objectReference: {fileID: 0}
-    - target: {fileID: 8321958829034275152, guid: 1fef18ca1ede6b849aba165929e93374, type: 3}
-      propertyPath: m_Layer
-      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8321958829034275157, guid: 1fef18ca1ede6b849aba165929e93374, type: 3}
       propertyPath: m_RootOrder

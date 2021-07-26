@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4830108920886779231}
   - component: {fileID: 4830108920886779230}
   - component: {fileID: 4830108920886779225}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Effect_WaterBomb
   m_TagString: Untagged
   m_Icon: {fileID: 0}

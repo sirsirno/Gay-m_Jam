@@ -15,10 +15,13 @@ public class PlayerDie : MonoBehaviour
     {
         PlayerProperty pp = coll.GetComponent<PlayerProperty>();
 
-        if (!pp.MyProperty.Equals(playerProperty))
+        if (pp != null)
         {
-            // 第脸あ促
-            print("第1咙");
+            if (!pp.MyProperty.Equals(playerProperty))
+            {
+                // 第脸あ促
+                print("第1咙");
+            }
         }
     }
 }

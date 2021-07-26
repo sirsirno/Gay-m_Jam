@@ -362,14 +362,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Effect_WaterBomb
       objectReference: {fileID: 0}
-    - target: {fileID: 4830108920886779224, guid: ccb963365ff4a504d9529634471b4eaa, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4830108920886779230, guid: ccb963365ff4a504d9529634471b4eaa, type: 3}
-      propertyPath: playOnAwake
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4830108920886779231, guid: ccb963365ff4a504d9529634471b4eaa, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -436,14 +428,6 @@ PrefabInstance:
     - target: {fileID: 4830108920886779224, guid: 0aa5e225b10d0fc4288ff4acc247ebbc, type: 3}
       propertyPath: m_Name
       value: Effect_WaterIdle
-      objectReference: {fileID: 0}
-    - target: {fileID: 4830108920886779224, guid: 0aa5e225b10d0fc4288ff4acc247ebbc, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4830108920886779230, guid: 0aa5e225b10d0fc4288ff4acc247ebbc, type: 3}
-      propertyPath: playOnAwake
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4830108920886779231, guid: 0aa5e225b10d0fc4288ff4acc247ebbc, type: 3}
       propertyPath: m_RootOrder

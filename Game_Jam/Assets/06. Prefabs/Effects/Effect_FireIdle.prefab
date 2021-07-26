@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7216387160329476720}
   - component: {fileID: 8555309407099132815}
   - component: {fileID: 2545507420982204611}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Effect_Smoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4815,7 +4815,7 @@ GameObject:
   - component: {fileID: 8321958829034275157}
   - component: {fileID: 8321958829034275158}
   - component: {fileID: 8321958829034275159}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Effect_FireIdle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
