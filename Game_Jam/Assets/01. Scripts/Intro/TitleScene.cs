@@ -51,9 +51,9 @@ public class TitleScene : MonoBehaviour
     {
         isTitle = false;
         startText.gameObject.SetActive(false);
-        //stages.SetActive(true);
+        stages.SetActive(true);
         stageBackground.SetActive(true);
-        //stages.transform.DOLocalMoveX(600f, 1f);
+        stages.transform.DOLocalMoveX(600f, 1f);
         Txts.SetActive(true);
         stageTxts[0].GetComponent<Button>().onClick.AddListener(() => { OnClickInGameBtn(); });
         stageTxts[0].transform.DOLocalMoveX(-50f, 0.5f);
