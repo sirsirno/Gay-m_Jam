@@ -52,7 +52,7 @@ public class Torch : MoveObj
         {
             if (currentProperty.HasFlag(Property.FIRE))
             {
-                firePower += Time.deltaTime;
+                firePower += Time.deltaTime * 1.5f;
             }
             else
             {

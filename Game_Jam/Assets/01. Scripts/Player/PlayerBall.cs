@@ -25,6 +25,11 @@ public class PlayerBall : MonoBehaviour, IDamage
         disableWait = new WaitForSeconds(disableTime);
     }
 
+    private void OnEnable()
+    {
+        coll.enabled = true;
+    }
+
     public void SetDisable()
     {
         StartCoroutine(Disable());

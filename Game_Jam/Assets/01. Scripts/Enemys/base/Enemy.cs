@@ -83,7 +83,7 @@ public abstract class Enemy : MonoBehaviour
 
         DamageIndicator.DamageDisplay(damage, this.gameObject);
         SoundManager.Instance.PlaySFXSound(SoundManager.Instance.Audio_SFX_StoneHit, 0.6f);
-        GameManager.Instance.cameraHandler.CameraImpulse(1);
+        //GameManager.Instance.cameraHandler.CameraImpulse(0.1f);
 
         StartCoroutine(Blinking());
         CheckHp();
@@ -125,6 +125,7 @@ public abstract class Enemy : MonoBehaviour
 
     public virtual void SetDisable()
     {
+        GameManager.Instance.cameraHandler.CameraImpulse(1f);
         gameObject.SetActive(false);
     }
 }
