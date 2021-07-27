@@ -29,11 +29,12 @@ public class GolemObj : HumanMoveObj
     private readonly int OnZukBangAtk = Animator.StringToHash("OnZukBangAtk");
 
 
-    private WaitForSeconds ridingWait = new WaitForSeconds(2f);
+    private WaitForSeconds ridingWait = new WaitForSeconds(0.5f);
     private WaitForSeconds zukbangAtkWait = new WaitForSeconds(2f);
-    private WaitForSeconds groundAtkWait = new WaitForSeconds(2f);
+    private WaitForSeconds groundAtkWait = new WaitForSeconds(1.5f);
 
     private WaitForSeconds pOneSecWait = new WaitForSeconds(0.1f);
+    private WaitForSeconds pFiveSecWait = new WaitForSeconds(0.5f);
 
     private bool isGround = false;
     private bool checkGround = false;
@@ -195,6 +196,7 @@ public class GolemObj : HumanMoveObj
 
             if (checkGround && currentState.Equals(GolemState.JUMP))
             {
+                GameManager.Instance.cameraHandler.CameraImpulse(0.5f);
                 anim.SetBool(IsJump, false);
                 currentState = GolemState.MOVE;
             }
@@ -231,6 +233,16 @@ public class GolemObj : HumanMoveObj
         anim.SetTrigger(OnGroundAtk);
         currentState = GolemState.MOVE;
         print("°¡º¸ÀÚ ¼¦°Ç");
+
+        StartCoroutine(GroundAttack());
+    }
+
+    private IEnumerator GroundAttack()
+    {
+        yield return pOneSecWait;
+        yield return pOneSecWait;
+        yield return pOneSecWait;
+        GameManager.Instance.cameraHandler.CameraImpulse(2f);
     }
 
     private void ZukbangAtk()
@@ -238,6 +250,23 @@ public class GolemObj : HumanMoveObj
         anim.SetTrigger(OnZukBangAtk);
         currentState = GolemState.MOVE;
         print("°¡º¸ÀÚ Á×¹æ");
+
+        StartCoroutine(ZukBangAttack());
+    }
+
+    private IEnumerator ZukBangAttack()
+    {
+        GameManager.Instance.cameraHandler.CameraImpulse(1.5f);
+
+        yield return pFiveSecWait;
+        GameManager.Instance.cameraHandler.CameraImpulse(1.5f);
+
+        yield return pOneSecWait;
+        yield return pOneSecWait;
+        yield return pOneSecWait;
+        yield return pOneSecWait;
+        GameManager.Instance.cameraHandler.CameraImpulse(2f);
+        yield return pFiveSecWait;
     }
 
     protected override void SetMove(bool isMove)

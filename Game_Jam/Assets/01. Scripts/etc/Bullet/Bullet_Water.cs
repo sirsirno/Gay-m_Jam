@@ -30,11 +30,16 @@ public class Bullet_Water : Effect, IDamage
                     }
                     else targetObj = GameManager.Instance.enemyList[i].gameObject;
                 }
+
+                if(targetObj == null)
+                {
+                    this.gameObject.SetActive(false);
+                }
             }
         }
         else
         {
-            targetTransform = transform;
+            this.gameObject.SetActive(false);
         }
 
 
@@ -54,7 +59,7 @@ public class Bullet_Water : Effect, IDamage
         }
     }
 
-    public void SetDisable()
+    public void SetDisable(Enemy info)
     {
         gameObject.SetActive(false);
     }
