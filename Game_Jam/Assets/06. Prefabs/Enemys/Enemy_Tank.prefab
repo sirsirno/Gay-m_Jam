@@ -147,6 +147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHp: 300
   is_Die: 0
+  hpDecreaseAmount: 7
 --- !u!95 &8347162194124916053
 Animator:
   serializedVersion: 3

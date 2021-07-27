@@ -42,4 +42,9 @@ public class Move_GoRight : MonoBehaviour, IState
     {
         moveSpeed = speed;
     }
+
+    public float GetValue()
+    {
+        return moveSpeed;
+    }
 }

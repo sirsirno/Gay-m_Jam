@@ -15,6 +15,7 @@ public abstract class Enemy : MonoBehaviour
     public float maxHp = 3f;
     protected float currHp = 0f;
     [System.NonSerialized] public float defaultSpeed = 3f;
+    [System.NonSerialized] public float slowPassiveScale = 1f;
 
     public bool is_Die = false;
     public int hpDecreaseAmount = 1;
@@ -85,7 +86,7 @@ public abstract class Enemy : MonoBehaviour
 
         DamageIndicator.DamageDisplay(damage, this.gameObject);
         StoneFragEffectHandler.CreateStoneFrag(transform.position);
-        SoundManager.Instance.PlaySFXSound(SoundManager.Instance.Audio_SFX_StoneHit, 0.6f);
+        SoundManager.Instance.PlaySFXSound(SoundManager.Instance.Audio_SFX_StoneHit, 0.2f);
         //GameManager.Instance.cameraHandler.CameraImpulse(0.1f);
 
         StartCoroutine(Blinking());
@@ -139,14 +140,15 @@ public abstract class Enemy : MonoBehaviour
         GameManager.Instance.uiManager.SetLeftNumber(GameManager.Instance.uiManager.currentLeft - 1);
         GameManager.Instance.chainCount++;
         GameManager.Instance.uiManager.RefreshChainUI();
-        GetComponent<Move_GoRight>().SetValue(defaultSpeed);
+        slowPassiveScale = 1f;
+        GetComponent<Move_GoRight>().SetValue(defaultSpeed * slowPassiveScale);
 
         gameObject.SetActive(false);
     }
 
     public void SetSpeedEffect(float speed, float duration)
     {
-        GetComponent<Move_GoRight>().SetValue(speed);
+        GetComponent<Move_GoRight>().SetValue(speed * slowPassiveScale);
 
         if (gameObject.activeSelf)
         {
@@ -157,6 +159,6 @@ public abstract class Enemy : MonoBehaviour
     IEnumerator SpeedEffect(float duration)
     {
         yield return new WaitForSeconds(duration);
-        GetComponent<Move_GoRight>().SetValue(defaultSpeed);
+        GetComponent<Move_GoRight>().SetValue(defaultSpeed * slowPassiveScale);
     }
 }

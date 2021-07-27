@@ -62,5 +62,7 @@ public class Bullet_Water : Effect, IDamage
     public void SetDisable(Enemy info)
     {
         gameObject.SetActive(false);
+
+        info.SetSpeedEffect(1.25f, 2);
     }
 }
