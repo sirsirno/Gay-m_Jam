@@ -59,10 +59,10 @@ public class OptionUIManager : MonoBehaviour
 
     void Start()
     {
-        restartBtn.onClick.AddListener(() =>
+/*        restartBtn.onClick.AddListener(() =>
         {
             OnBtn(OptionBtnIdx.RESTART); 
-        });
+        });*/
 
         resumeBtn.onClick.AddListener(() =>
         {

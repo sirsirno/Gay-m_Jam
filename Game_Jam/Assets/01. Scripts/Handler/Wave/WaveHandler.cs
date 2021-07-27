@@ -30,8 +30,14 @@ public class WaveHandler : MonoBehaviour
 
         while (waveIdx < waveInfos.Count)
         {
-            StartCoroutine(StartWave(waveIdx));
             waveIdx++;
+            GameManager.Instance.uiManager.SetWaveNumber(waveIdx);
+            GameManager.Instance.uiManager.SetLeftNumber(0);
+            // 웨이브 시작 애니메이션
+
+            yield return new WaitForSeconds(1f);
+
+            StartCoroutine(StartWave(waveIdx - 1));
 
             yield return waveWait;
         }
@@ -39,6 +45,7 @@ public class WaveHandler : MonoBehaviour
 
     private IEnumerator StartWave(int waveIdx)
     {
+        GameManager.Instance.uiManager.SetLeftNumber(waveInfos[waveIdx].enemyInfos.Count);
         foreach (var enemy in waveInfos[waveIdx].enemyInfos)
         {
             CreateEnemy(enemy.enemyType, enemy.floor);
@@ -77,6 +84,7 @@ public class WaveHandler : MonoBehaviour
                 break;
         }
 
+        GameManager.Instance.enemyList.Add(enemy);
         enemy.transform.position = GetFloor(floor - 1);
     }
 
