@@ -9,6 +9,9 @@ public class UIManager : MonoBehaviour
     [SerializeField] Sprite[] stageNumSprites; 
     [SerializeField] Sprite[] DefaultNumSprites;
 
+    [SerializeField] Image titleWaveUI;
+    [SerializeField] Text waveText;
+
     [SerializeField] Image stageNum;
     [SerializeField] Image wave10Num;
     [SerializeField] Image wave1Num;
@@ -27,7 +30,12 @@ public class UIManager : MonoBehaviour
     [SerializeField] ParticleSystem chainParticle;
     Coroutine chainEndCoroutine;
 
-    public int currentLeft;
+    [System.NonSerialized] public int currentLeft;
+    [System.NonSerialized] public int currentWave;
+
+    [Header("지속시간 바")]
+    public GameObject UI_durationBar;
+    public Image UI_durationFill;
 
     private void Start()
     {
@@ -52,6 +60,8 @@ public class UIManager : MonoBehaviour
 
     public void SetWaveNumber(int waveNum)
     {
+        currentWave = waveNum;
+
         wave10Num.gameObject.SetActive(false);
         wave1Num.gameObject.SetActive(false);
 
@@ -131,6 +141,17 @@ public class UIManager : MonoBehaviour
         chainNumUI.DOComplete();
         chainNumUI.color = Color.red;
         chainNumUI.DOColor(Color.white, 0.3f);
+    }
+
+    public void TitleWave()
+    {
+        waveText.text = $"WAVE {currentWave}";
+        titleWaveUI.transform.localScale = new Vector2(1, 0);
+
+        titleWaveUI.transform.DOScaleY(1, 0.5f).OnComplete(() =>
+        {
+            titleWaveUI.transform.DOScaleY(0, 0.5f).SetDelay(1);
+        });
     }
 
     public void ChainNumRefresh()

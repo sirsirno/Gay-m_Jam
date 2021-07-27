@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using DG.Tweening;
 
 public class FireSkill2 : Skill
 {
@@ -10,6 +12,9 @@ public class FireSkill2 : Skill
     public GameObject firePrefab;
 
     [SerializeField] float[] FloorYs;
+
+    [SerializeField] Image gameBG;
+    [SerializeField] Color fireColor;
 
     public override void Using()
     {
@@ -22,6 +27,8 @@ public class FireSkill2 : Skill
             Transform firePlayer = GameManager.Instance.cameraHandler.fireTransform;
             fire.transform.position = new Vector2(firePlayer.position.x, FloorYs[i]);
         }
+
+        gameBG.DOColor(fireColor, 0.5f).SetLoops(2, LoopType.Yoyo);
     }
 
     private void Start()

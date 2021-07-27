@@ -14,7 +14,7 @@ public class FireSkill1 : Skill
         GameManager.Instance.QDefault.defaultAttack.SetActive(false);
         GameManager.Instance.QDefault.QAttack.SetActive(true);
         GameManager.Instance.QDefault.speed = 600f;
-
+        GameManager.Instance.uiManager.UI_durationBar.SetActive(true);
     }
 
     private void Start()
@@ -28,12 +28,15 @@ public class FireSkill1 : Skill
         {
             duration -= Time.deltaTime;
 
+            GameManager.Instance.uiManager.UI_durationFill.transform.localScale = new Vector2(1 - (duration / defaultDuration), 1);
+
             if(duration <= 0)
             {
                 isActive = false;
                 GameManager.Instance.QDefault.defaultAttack.SetActive(true);
                 GameManager.Instance.QDefault.QAttack.SetActive(false);
                 GameManager.Instance.QDefault.speed = 400f;
+                GameManager.Instance.uiManager.UI_durationBar.SetActive(false);
             }
         }
     }

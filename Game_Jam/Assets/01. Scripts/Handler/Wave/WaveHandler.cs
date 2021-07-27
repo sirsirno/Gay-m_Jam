@@ -32,7 +32,8 @@ public class WaveHandler : MonoBehaviour
         {
             waveIdx++;
             GameManager.Instance.uiManager.SetWaveNumber(waveIdx);
-            GameManager.Instance.uiManager.SetLeftNumber(0);
+            GameManager.Instance.uiManager.SetLeftNumber(GameManager.Instance.uiManager.currentLeft);
+            GameManager.Instance.uiManager.TitleWave();
             // 웨이브 시작 애니메이션
 
             yield return new WaitForSeconds(1f);

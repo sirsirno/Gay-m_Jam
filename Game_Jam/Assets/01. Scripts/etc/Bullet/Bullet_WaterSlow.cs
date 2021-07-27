@@ -62,7 +62,7 @@ public class Bullet_WaterSlow : Effect, IDamage
     {
         gameObject.SetActive(false);
 
-        info.SetSpeedEffect(1, 2);
+        info.SetSpeedEffect(0.75f, 3);
 
         Effect_Bubble bubble = PoolManager.GetItem<Effect_Bubble>();
         bubble.transform.SetParent(info.transform);
