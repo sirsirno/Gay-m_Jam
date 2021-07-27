@@ -49,7 +49,7 @@ public class IntroScene : MonoBehaviour
         seq.Append(chocoFlowObj.DOAnchorPosY(-442, 3).SetEase(Ease.OutCirc));
         seq.Append(DOTween.To(() => logoCanvasGroup.alpha, value => logoCanvasGroup.alpha = value, 0, 0.5f).OnComplete(() =>
         {
-            EventManager.Invoke("gotoTitle");
+            EventManager.Invoke("gotoCutScene");
         }));
     }
 }
