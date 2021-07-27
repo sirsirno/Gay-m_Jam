@@ -129,6 +129,7 @@ public abstract class Enemy : MonoBehaviour
         GameManager.Instance.cameraHandler.CameraImpulse(1f);
         GameManager.Instance.enemyList.Remove(this);
         StoneFragDeadEffectHandler.CreateStoneFrag(transform.position);
+        SoundManager.Instance.PlaySFXSound(SoundManager.Instance.Audio_SFX_StoneBreak, 1f);
 
         GameManager.Instance.uiManager.SetLeftNumber(GameManager.Instance.uiManager.currentLeft - 1);
         GameManager.Instance.chainCount++;
