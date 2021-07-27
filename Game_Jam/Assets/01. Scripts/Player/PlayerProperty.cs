@@ -79,11 +79,12 @@ public class PlayerProperty : MonoBehaviour
                 {
                     isMoving = true;
                     playerEffect.SetAlphaValue(1);
+                    GameManager.Instance.cameraHandler.ChangeCurrentPlayer(MyProperty);
                 }
             }
         }
 
-        else if (playerInput.mouseUp)    // 마우스를 땟을 때
+        else if (playerInput.mouseUp || GameManager.Instance.currentProperty != myProperty)    // 마우스를 땟을 때
         {
             isMoving = false;
 

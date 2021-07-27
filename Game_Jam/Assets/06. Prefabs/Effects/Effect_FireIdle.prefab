@@ -4777,7 +4777,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1497795543
-  m_SortingLayer: 1
+  m_SortingLayer: 3
   m_SortingOrder: -1
   m_RenderMode: 0
   m_SortMode: 0
@@ -5089,8 +5089,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 0.5
-      minScalar: 0.3
+      scalar: 0.7
+      minScalar: 0.5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -6166,7 +6166,7 @@ ParticleSystem:
         m_NumAlphaKeys: 2
   UVModule:
     serializedVersion: 2
-    enabled: 0
+    enabled: 1
     mode: 0
     timeMode: 0
     fps: 30
@@ -6278,8 +6278,8 @@ ParticleSystem:
         m_RotationOrder: 4
     speedRange: {x: 0, y: 1}
     tilesX: 1
-    tilesY: 1
-    animationType: 0
+    tilesY: 3
+    animationType: 1
     rowIndex: 0
     cycles: 1
     uvChannelMask: -1
@@ -9563,7 +9563,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: f9541882512991748966a25d6181c1cf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9582,7 +9582,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1497795543
-  m_SortingLayer: 1
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_RenderMode: 0
   m_SortMode: 0
