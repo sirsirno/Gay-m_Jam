@@ -18,6 +18,7 @@ public class TitleScene : MonoBehaviour
     [SerializeField] private Image cutSceneImg;
     [SerializeField] private List<GameObject> stageTxts = new List<GameObject>();
     [SerializeField] private List<Sprite> cutScene = new List<Sprite>();
+    [SerializeField] private GameObject titlePlayer;
     private bool isTitle;
     private bool isCutScene;
     private int idx = 0;
@@ -87,18 +88,19 @@ public class TitleScene : MonoBehaviour
         isTitle = true;
         startButton.gameObject.SetActive(true);
         startButton.onClick.AddListener(() => { ClickToStart(); });
-        startText.DOColor(new Color(0f, 0f, 0f, 0f), 2f).SetLoops(-1, LoopType.Yoyo);
+        startText.DOColor(new Color(1f, 1f, 1f, 0f), 1f).SetLoops(-1, LoopType.Yoyo);
 
         audioSource.Play();
     }
 
-    void ClickToStart() 
+    public void ClickToStart() 
     {
         isTitle = false;
         startText.gameObject.SetActive(false);
         stages.SetActive(true);
         stageBackground.SetActive(true);
         stages.transform.DOLocalMoveX(600f, 1f);
+        titlePlayer.SetActive(false);
         Txts.SetActive(true);
         stageTxts[0].GetComponent<Button>().onClick.AddListener(() => { OnClickInGameBtn(); });
         stageTxts[0].transform.DOLocalMoveX(-50f, 0.5f);
