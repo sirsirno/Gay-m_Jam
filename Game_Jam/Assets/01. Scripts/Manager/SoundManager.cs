@@ -18,6 +18,8 @@ public class SoundManager : MonoBehaviour
     public AudioClip Audio_SFX_Water;
     public AudioClip Audio_SFX_Golem;
     public AudioClip Audio_SFX_UI;
+    public AudioClip Audio_SFX_StoneHit;
+    public AudioClip Audio_SFX_Pipe;
 
     private void Awake()
     {

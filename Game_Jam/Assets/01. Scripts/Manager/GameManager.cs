@@ -39,9 +39,24 @@ public class GameManager : MonoBehaviour
     #endregion
 
     public List<PlayerProperty> playerList = new List<PlayerProperty>();
+    public Property currentProperty = Property.FIRE;
+
+    public List<Enemy> enemyList = new List<Enemy>();
+
+    public CameraHandler cameraHandler;
+    public Transform projectilesTrans = null;
+
     public int chainCount = 0;
     public int stage = 1;
     public int remainEnemyCount = 0;
     public int maxHp;
     public int currentHp;
+
+    [Header("데미지 인디케이터")]
+    public Color lowDamageColor;
+    public Color midDamageColor;
+    public Color highDamageColor;
+
+    public int lowDamageLimit;
+    public int midDamageLimit;
 }

@@ -16,10 +16,12 @@ public class CameraHandler : MonoBehaviour
     private void Awake()
     {
         virtualCamera = GetComponent<CinemachineVirtualCamera>();
+        source = GetComponent<CinemachineImpulseSource>();
     }
 
     private void Start()
     {
+        GameManager.Instance.cameraHandler = this;
         StartCoroutine(Init());
     }
 
@@ -32,10 +34,12 @@ public class CameraHandler : MonoBehaviour
             if(isFireFollow)
             {
                 virtualCamera.Follow = fireTransform;
+                GameManager.Instance.currentProperty = Property.FIRE;
             }
             else
             {
                 virtualCamera.Follow = waterTransform;
+                GameManager.Instance.currentProperty = Property.WATER;
             }
         }
     }
@@ -66,5 +70,10 @@ public class CameraHandler : MonoBehaviour
         virtualCamera.GetCinemachineComponent<CinemachineTransposer>().m_YDamping = 0.5f;
         virtualCamera.GetCinemachineComponent<CinemachineTransposer>().m_ZDamping = 0.5f;
         virtualCamera.GetComponent<CinemachineConfiner>().m_Damping = 0.5f;
+    }
+
+    public void CameraImpulse(float force)
+    {
+        source.GenerateImpulse(force);
     }
 }

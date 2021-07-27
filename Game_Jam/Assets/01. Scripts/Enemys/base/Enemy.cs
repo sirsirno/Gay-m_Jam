@@ -75,14 +75,17 @@ public abstract class Enemy : MonoBehaviour
         yield return null;
     }
 
-    public virtual void GetDamage(float damage)
+    public virtual void GetDamage(int damage)
     {
         if (currentState.Equals(State.Die)) return;
 
         currHp -= damage;
 
-        StartCoroutine(Blinking());
+        DamageIndicator.DamageDisplay(damage, this.gameObject);
+        SoundManager.Instance.PlaySFXSound(SoundManager.Instance.Audio_SFX_StoneHit, 0.6f);
+        GameManager.Instance.cameraHandler.CameraImpulse(1);
 
+        StartCoroutine(Blinking());
         CheckHp();
     }
 

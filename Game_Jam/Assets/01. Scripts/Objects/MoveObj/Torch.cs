@@ -78,7 +78,7 @@ public class Torch : MoveObj
 
     private IEnumerator GiveDamage()
     {
-        float damage = 0f;
+        int damage = 0;
 
         while (true)
         {

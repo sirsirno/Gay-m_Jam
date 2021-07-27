@@ -19,7 +19,7 @@ public class PlayerAttack : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButton(0) /*&& !playerProperty.IsMoving*/)
+        if (Input.GetMouseButton(0) && playerProperty.MyProperty == GameManager.Instance.currentProperty/*&& !playerProperty.IsMoving*/)
         {
             attackCoolTimeCur += Time.deltaTime;
 

@@ -47,6 +47,12 @@ public class UIManager : MonoBehaviour
         hpBar.localScale = new Vector2(1, (float)GameManager.Instance.currentHp / GameManager.Instance.maxHp);
     }
 
+    public void SetStageNumber(int stage)
+    {
+        if (stage > 9) return;
+        stageNum.sprite = stageNumSprites[stage];
+    }
+
     public void SetWaveNumber(int waveNum)
     {
         wave10Num.gameObject.SetActive(false);
