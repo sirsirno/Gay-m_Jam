@@ -41,6 +41,7 @@ public class GolemObj : HumanMoveObj
     [SerializeField] private LayerMask whatIsGround;
     [SerializeField] private Transform groundCheck = null;
 
+    [SerializeField] private GolemAttack attack = null;
 
     protected override void Start()
     {
@@ -232,39 +233,66 @@ public class GolemObj : HumanMoveObj
     {
         anim.SetTrigger(OnGroundAtk);
         currentState = GolemState.MOVE;
-        print("°¡º¸ÀÚ ¼¦°Ç");
+        //print("°¡º¸ÀÚ ¼¦°Ç");
 
         StartCoroutine(GroundAttack());
     }
 
     private IEnumerator GroundAttack()
     {
+        attack.SetDamage(40);
+
         yield return pOneSecWait;
         yield return pOneSecWait;
         yield return pOneSecWait;
+
+        attack.SetCollider(true);
         GameManager.Instance.cameraHandler.CameraImpulse(2f);
+
+        yield return new WaitForFixedUpdate();
+        attack.SetCollider(false);
     }
 
     private void ZukbangAtk()
     {
         anim.SetTrigger(OnZukBangAtk);
         currentState = GolemState.MOVE;
-        print("°¡º¸ÀÚ Á×¹æ");
+        //print("°¡º¸ÀÚ Á×¹æ");
 
         StartCoroutine(ZukBangAttack());
     }
 
     private IEnumerator ZukBangAttack()
     {
+        attack.SetDamage(10);
+
+        attack.SetCollider(true);
+        yield return new WaitForFixedUpdate();
+        attack.SetCollider(false);
+
         GameManager.Instance.cameraHandler.CameraImpulse(1.5f);
 
         yield return pFiveSecWait;
+
+        attack.SetDamage(10);
+
+        attack.SetCollider(true);
+        yield return new WaitForFixedUpdate();
+        attack.SetCollider(false);
+
         GameManager.Instance.cameraHandler.CameraImpulse(1.5f);
 
         yield return pOneSecWait;
         yield return pOneSecWait;
         yield return pOneSecWait;
         yield return pOneSecWait;
+
+        attack.SetDamage(50);
+
+        attack.SetCollider(true);
+        yield return new WaitForFixedUpdate();
+        attack.SetCollider(false);
+
         GameManager.Instance.cameraHandler.CameraImpulse(2f);
         yield return pFiveSecWait;
     }

@@ -11,4 +11,6 @@ public class EnemyInfo
     public int floor;
     [Header("적이 생성되고 기다릴 시간")]
     public float waitTime = 1f;
+    [Header("적이 생성될 갯수")]
+    public int createCount = 1;
 }

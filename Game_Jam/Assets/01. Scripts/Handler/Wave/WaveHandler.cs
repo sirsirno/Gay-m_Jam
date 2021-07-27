@@ -37,7 +37,7 @@ public class WaveHandler : MonoBehaviour
 
             yield return new WaitForSeconds(1f);
 
-            StartCoroutine(StartWave(waveIdx - 1));
+            yield return StartCoroutine(StartWave(waveIdx - 1));
 
             yield return waveWait;
         }
@@ -48,11 +48,14 @@ public class WaveHandler : MonoBehaviour
         GameManager.Instance.uiManager.SetLeftNumber(waveInfos[waveIdx].enemyInfos.Count);
         foreach (var enemy in waveInfos[waveIdx].enemyInfos)
         {
-            CreateEnemy(enemy.enemyType, enemy.floor);
-            yield return new WaitForSeconds(enemy.waitTime);
+            for (int i = 0; i < enemy.createCount; i++)
+            {
+                CreateEnemy(enemy.enemyType, enemy.floor);
+                yield return new WaitForSeconds(enemy.waitTime);
+            }
         }
 
-        yield return null;
+        yield break;
     }
 
     private void CreateEnemy(EnemyType enemyType, int floor)
@@ -75,7 +78,7 @@ public class WaveHandler : MonoBehaviour
 
             case EnemyType.TANK:
 
-                enemy = PoolManager.GetItem<Enemy_Normal>();
+                enemy = PoolManager.GetItem<Enemy_Tank>();
                 break;
 
             case EnemyType.BOSS:

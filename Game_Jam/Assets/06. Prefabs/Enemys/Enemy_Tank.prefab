@@ -12,15 +12,15 @@ GameObject:
   - component: {fileID: 3160377766424453906}
   - component: {fileID: 3160377766424453919}
   - component: {fileID: 3160377766424453904}
-  - component: {fileID: 3160377766424453907}
-  - component: {fileID: 7017953236282657973}
+  - component: {fileID: -1963700352226987510}
+  - component: {fileID: 8347162194124916053}
   m_Layer: 9
-  m_Name: Enemy_Normal
+  m_Name: Enemy_Tank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3160377766424453905
 Transform:
   m_ObjectHideFlags: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 6706131478426472971, guid: b1fe3caf1eefb3144ba9c7ceb0b1cf65, type: 3}
+  m_Sprite: {fileID: -566603170274119119, guid: b1fe3caf1eefb3144ba9c7ceb0b1cf65, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -133,7 +133,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &3160377766424453907
+--- !u!114 &-1963700352226987510
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -142,13 +142,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 3160377766424453908}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f3fdd0d586737c40b3dcb78183ee6eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 4d6b0daad468791458b1f8b96cb165f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 150
+  maxHp: 450
   defaultSpeed: 2
   is_Die: 0
---- !u!95 &7017953236282657973
+--- !u!95 &8347162194124916053
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -158,7 +158,7 @@ Animator:
   m_GameObject: {fileID: 3160377766424453908}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d5c3ea88ae84cc949ba61945d47aa49e, type: 2}
+  m_Controller: {fileID: 9100000, guid: 25c6a13e1d0e867459fe25152167e83c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
