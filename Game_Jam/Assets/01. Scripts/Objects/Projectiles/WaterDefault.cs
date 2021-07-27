@@ -31,6 +31,13 @@ public class WaterDefault : Projectile
             else targetObj = GameManager.Instance.enemyList[i].gameObject;
         }
 
-        bullet.targetTransform = targetObj.transform;
+        if (targetObj != null)
+        {
+            bullet.targetTransform = targetObj.transform;
+        }
+        else
+        {
+            bullet.gameObject.SetActive(false);
+        }
     }
 }

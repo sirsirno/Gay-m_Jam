@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Enemy_Normal : Enemy
 {
-    [SerializeField] private float speed = 3f;
-
     private Move_GoRight move = null;
 
     protected void Awake()
@@ -17,7 +15,7 @@ public class Enemy_Normal : Enemy
         dicState.Add(State.Attack, attack);
 
         move = gameObject.AddComponent<Move_GoRight>();
-        move.SetValue(speed);
+        move.SetValue(defaultSpeed);
         dicState.Add(State.Move, move);
 
         IState die = gameObject.AddComponent<State_Empty>();

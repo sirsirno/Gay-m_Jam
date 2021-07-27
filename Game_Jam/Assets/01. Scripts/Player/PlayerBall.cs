@@ -30,7 +30,7 @@ public class PlayerBall : MonoBehaviour, IDamage
         coll.enabled = true;
     }
 
-    public void SetDisable()
+    public void SetDisable(Enemy info)
     {
         StartCoroutine(Disable());
     }

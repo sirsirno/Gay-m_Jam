@@ -14,6 +14,7 @@ public abstract class Enemy : MonoBehaviour
 
     public float maxHp = 3f;
     protected float currHp = 0f;
+    [SerializeField] protected float defaultSpeed = 3f;
 
     public bool is_Die = false;
 
@@ -120,7 +121,7 @@ public abstract class Enemy : MonoBehaviour
         if (damage != null)
         {
             GetDamage(damage.Damage);
-            damage.SetDisable();
+            damage.SetDisable(this);
         }
     }
 
@@ -136,5 +137,17 @@ public abstract class Enemy : MonoBehaviour
         GameManager.Instance.uiManager.RefreshChainUI();
 
         gameObject.SetActive(false);
+    }
+
+    public void SetSpeedEffect(float speed, float duration)
+    {
+        GetComponent<Move_GoRight>().SetValue(speed);
+        StartCoroutine(SpeedEffect(duration));
+    }
+
+    IEnumerator SpeedEffect(float duration)
+    {
+        yield return new WaitForSeconds(duration);
+        GetComponent<Move_GoRight>().SetValue(defaultSpeed);
     }
 }
