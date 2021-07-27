@@ -766,7 +766,7 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 0.36298084, b: 0, a: 1}
+      key0: {r: 1, g: 0.07614592, b: 0, a: 1}
       key1: {r: 1, g: 0.9591305, b: 0, a: 0}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
@@ -1087,7 +1087,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5397238304608467807
 Transform:
   m_ObjectHideFlags: 0
@@ -1291,7 +1291,7 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 0.36298084, b: 0, a: 1}
+      key0: {r: 1, g: 0.07614592, b: 0, a: 1}
       key1: {r: 1, g: 0.9591305, b: 0, a: 0}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
@@ -1513,7 +1513,7 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 0.36298084, b: 0, a: 1}
+      key0: {r: 1, g: 0.07614592, b: 0, a: 1}
       key1: {r: 1, g: 0.9591305, b: 0, a: 0}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}

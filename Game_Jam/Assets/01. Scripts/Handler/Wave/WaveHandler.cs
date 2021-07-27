@@ -12,7 +12,7 @@ public class WaveHandler : MonoBehaviour
     private WaitForSeconds waveWait = null;
 
     public Transform floorTrans = null;
-    private List<Transform> floors = new List<Transform>();
+    [SerializeField] private List<Transform> floors = new List<Transform>();
 
     private void Start()
     {
@@ -33,6 +33,7 @@ public class WaveHandler : MonoBehaviour
             waveIdx++;
             GameManager.Instance.uiManager.SetWaveNumber(waveIdx);
             GameManager.Instance.uiManager.SetLeftNumber(0);
+            GameManager.Instance.uiManager.TitleWave();
             // 웨이브 시작 애니메이션
 
             yield return new WaitForSeconds(1f);
@@ -106,7 +107,7 @@ public class WaveHandler : MonoBehaviour
 
     private Vector2 GetFloor(int idx)
     {
-        if (idx >= (floors.Count - 1)) return Vector2.zero;
+        if (idx > (floors.Count - 1)) return Vector2.zero;
 
         return floors[idx].position;
     }

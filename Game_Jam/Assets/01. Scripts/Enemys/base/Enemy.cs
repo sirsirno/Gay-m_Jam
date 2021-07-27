@@ -17,6 +17,7 @@ public abstract class Enemy : MonoBehaviour
     [System.NonSerialized] public float defaultSpeed = 3f;
 
     public bool is_Die = false;
+    public int hpDecreaseAmount = 1;
 
     private SpriteRenderer myRend;
     protected SpriteRenderer MyRend 
@@ -140,7 +141,6 @@ public abstract class Enemy : MonoBehaviour
         GameManager.Instance.uiManager.RefreshChainUI();
         GetComponent<Move_GoRight>().SetValue(defaultSpeed);
 
-        print("사라진다");
         gameObject.SetActive(false);
     }
 

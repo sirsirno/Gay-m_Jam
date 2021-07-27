@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using DG.Tweening;
 
 public class WaterSkill2 : Skill
@@ -13,7 +14,10 @@ public class WaterSkill2 : Skill
     [SerializeField] float FloorX;
     [SerializeField] float[] FloorYs;
     [SerializeField] Transform[] waters;
- 
+
+    [SerializeField] Image gameBG;
+    [SerializeField] Color waterColor;
+
     public override void Using()
     {
         isActive = true;
@@ -29,6 +33,8 @@ public class WaterSkill2 : Skill
         {
             water.transform.DOScaleY(1, 1);
         }
+
+        gameBG.DOColor(waterColor, 0.5f).SetLoops(2, LoopType.Yoyo);
     }
 
     private void Start()
