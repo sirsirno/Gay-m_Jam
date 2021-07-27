@@ -61,4 +61,8 @@ public class GameManager : MonoBehaviour
 
     public int lowDamageLimit;
     public int midDamageLimit;
+
+    [Header("스킬 오브젝트")]
+    [System.NonSerialized] public Skill[] skills = new Skill[4];
+    [HideInInspector] public FireDefault QDefault;
 }
