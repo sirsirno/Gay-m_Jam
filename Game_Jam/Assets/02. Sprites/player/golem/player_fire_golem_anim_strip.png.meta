@@ -1,0 +1,840 @@
+fileFormatVersion: 2
+guid: 1331e04bc719fcc498cfe1a5e2ba90e2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7941598420558213209
+    second: player_fire_golem_anim_strip_0
+  - first:
+      213: -4196159929941663953
+    second: player_fire_golem_anim_strip_1
+  - first:
+      213: -5171495181931064123
+    second: player_fire_golem_anim_strip_2
+  - first:
+      213: 4363905132673752084
+    second: player_fire_golem_anim_strip_3
+  - first:
+      213: -9196122300957330310
+    second: player_fire_golem_anim_strip_4
+  - first:
+      213: 1086867596340796556
+    second: player_fire_golem_anim_strip_5
+  - first:
+      213: -3330313771754541930
+    second: player_fire_golem_anim_strip_6
+  - first:
+      213: -3700379418166030179
+    second: player_fire_golem_anim_strip_7
+  - first:
+      213: -52385610500083983
+    second: player_fire_golem_anim_strip_8
+  - first:
+      213: 7648207183973947566
+    second: player_fire_golem_anim_strip_9
+  - first:
+      213: -8198844333870542708
+    second: player_fire_golem_anim_strip_10
+  - first:
+      213: -2222440516989913276
+    second: player_fire_golem_anim_strip_11
+  - first:
+      213: 580926035869516815
+    second: player_fire_golem_anim_strip_12
+  - first:
+      213: -7181843245682301648
+    second: player_fire_golem_anim_strip_13
+  - first:
+      213: -4514934473803672885
+    second: player_fire_golem_anim_strip_14
+  - first:
+      213: 7804128549076089387
+    second: jump_01
+  - first:
+      213: -7761121884525740194
+    second: jump_02
+  - first:
+      213: 5916299829663286958
+    second: jump_03
+  - first:
+      213: -5120143385929720280
+    second: jump_04
+  - first:
+      213: 1984220717971752599
+    second: fall_01
+  - first:
+      213: 1228765162151843650
+    second: fall_02
+  - first:
+      213: -3879455472449837540
+    second: player_fire_golem_anim_strip_21
+  - first:
+      213: -4886441387234965824
+    second: player_fire_golem_anim_strip_22
+  - first:
+      213: 187759482192491772
+    second: player_fire_golem_anim_strip_23
+  - first:
+      213: 5856888976906383419
+    second: player_fire_golem_anim_strip_24
+  - first:
+      213: -8299568613894660427
+    second: player_fire_golem_anim_strip_25
+  - first:
+      213: -9219405319936094453
+    second: player_fire_golem_anim_strip_26
+  - first:
+      213: -533263186206855850
+    second: player_fire_golem_anim_strip_27
+  - first:
+      213: 1599120245746610443
+    second: player_fire_golem_anim_strip_28
+  - first:
+      213: -9220142787197980675
+    second: player_fire_golem_anim_strip_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: player_fire_golem_anim_strip_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4560695, y: 0.29673243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7af03d91056c9c190800000000000000
+      internalID: -7941598420558213209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_fire_golem_anim_strip_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 128
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4551506, y: 0.35807896}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2f5913a6ce34c5c0800000000000000
+      internalID: -4196159929941663953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_fire_golem_anim_strip_2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 128
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.45739007, y: 0.389719}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c4da5328882b38b0800000000000000
+      internalID: -5171495181931064123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_fire_golem_anim_strip_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 128
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.45650864, y: 0.42144394}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41cd582e894bf8c30800000000000000
+      internalID: 4363905132673752084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_fire_golem_anim_strip_4
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 128
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.45670632, y: 0.39117193}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a74f36c8d7fc06080800000000000000
+      internalID: -9196122300957330310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_fire_golem_anim_strip_5
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 128
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.45581594, y: 0.39188337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8c96c50254551f00800000000000000
+      internalID: 1086867596340796556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_fire_golem_anim_strip_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.45599344, y: 0.38960123}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69caaf3f44958c1d0800000000000000
+      internalID: -3330313771754541930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_fire_golem_anim_strip_7
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 96
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.45690447, y: 0.35638928}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d901c0e468c95acc0800000000000000
+      internalID: -3700379418166030179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_fire_golem_anim_strip_8
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 96
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.45798606, y: 0.3890772}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1feecc69093e54ff0800000000000000
+      internalID: -52385610500083983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_fire_golem_anim_strip_9
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 96
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.45798606, y: 0.42289495}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea89b5179e3e32a60800000000000000
+      internalID: 7648207183973947566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_fire_golem_anim_strip_10
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 96
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.45048255, y: 0.32705855}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c801ce6848ad73e80800000000000000
+      internalID: -8198844333870542708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_fire_golem_anim_strip_11
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 96
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.45721525, y: 0.32918525}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4477162ff1e4821e0800000000000000
+      internalID: -2222440516989913276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_fire_golem_anim_strip_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.45750624, y: 0.51574993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0447c8d62ddf0800800000000000000
+      internalID: 580926035869516815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_fire_golem_anim_strip_13
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 64
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.45381355, y: 0.51226854}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 035619c7e97f45c90800000000000000
+      internalID: -7181843245682301648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_fire_golem_anim_strip_14
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 64
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4570483, y: 0.48657727}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc254c8640bb751c0800000000000000
+      internalID: -4514934473803672885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump_01
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 64
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.45622703, y: 0.39007044}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2a3a2d3195dd4c60800000000000000
+      internalID: 7804128549076089387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump_02
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 64
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.45581412, y: 0.38880873}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5f355624c4fa4490800000000000000
+      internalID: -7761121884525740194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump_03
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 64
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.45568714, y: 0.39014196}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea6c8c3695bea1250800000000000000
+      internalID: 5916299829663286958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump_04
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4569648, y: 0.3907683}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82ed79ad7b891f8b0800000000000000
+      internalID: -5120143385929720280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fall_01
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 32
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.45558223, y: 0.38875735}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7964daaea3e598b10800000000000000
+      internalID: 1984220717971752599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fall_02
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 32
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4587548, y: 0.39044285}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2479f6a97637d0110800000000000000
+      internalID: 1228765162151843650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_fire_golem_anim_strip_21
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 32
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.40005988, y: 0.39212835}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c16aea25dc7692ac0800000000000000
+      internalID: -3879455472449837540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_fire_golem_anim_strip_22
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 32
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.50842017, y: 0.36356282}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c6c712a27fdf2cb0800000000000000
+      internalID: -4886441387234965824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_fire_golem_anim_strip_23
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 32
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5134206, y: 0.39186752}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf47b47114e0b9200800000000000000
+      internalID: 187759482192491772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_fire_golem_anim_strip_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39554182, y: 0.35626307}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b30f76d4e79d74150800000000000000
+      internalID: 5856888976906383419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_fire_golem_anim_strip_25
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 0
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39546877, y: 0.38893557}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bed3d3915202dc80800000000000000
+      internalID: -8299568613894660427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_fire_golem_anim_strip_26
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 0
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4508445, y: 0.4100523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0fccd045b71e0080800000000000000
+      internalID: -9219405319936094453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_fire_golem_anim_strip_27
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 0
+        width: 33
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4324734, y: 0.3839384}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65de85e15f77998f0800000000000000
+      internalID: -533263186206855850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_fire_golem_anim_strip_28
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 0
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39746273, y: 0.2967538}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b01bcd81467313610800000000000000
+      internalID: 1599120245746610443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_fire_golem_anim_strip_29
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 0
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dff2fa64cf87b0080800000000000000
+      internalID: -9220142787197980675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
