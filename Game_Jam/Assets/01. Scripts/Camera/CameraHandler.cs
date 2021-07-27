@@ -13,6 +13,9 @@ public class CameraHandler : MonoBehaviour
     public Transform fireTransform;
     public Transform waterTransform;
 
+    public GameObject fireSelect;
+    public GameObject waterSelect;
+
     private void Awake()
     {
         virtualCamera = GetComponent<CinemachineVirtualCamera>();
@@ -47,12 +50,16 @@ public class CameraHandler : MonoBehaviour
         if (property == Property.FIRE)
         {
             virtualCamera.Follow = fireTransform;
+            fireSelect.SetActive(true);
+            waterSelect.SetActive(false);
             isFireFollow = true;
             GameManager.Instance.currentProperty = Property.FIRE;
         }
         else if (property == Property.WATER)
         {
             virtualCamera.Follow = waterTransform;
+            fireSelect.SetActive(false);
+            waterSelect.SetActive(true);
             isFireFollow = false;
             GameManager.Instance.currentProperty = Property.WATER;
         }
