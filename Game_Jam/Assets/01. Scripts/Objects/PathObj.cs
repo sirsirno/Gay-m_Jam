@@ -73,7 +73,7 @@ public class PathObj : InteractableObj
         {
             coll = Physics2D.OverlapCircle(paths[idx].position + pos[i], 0.05f, whatIsInteract);
 
-            if (coll != null)
+            if (coll != null && coll.GetComponent<InteractableObj>().PropertyLimit.HasFlag(propertyLimit))
             {
                 return new PathData(coll.GetComponent<InteractableObj>(), currentIdx.Equals(0) ? false : true);
             }

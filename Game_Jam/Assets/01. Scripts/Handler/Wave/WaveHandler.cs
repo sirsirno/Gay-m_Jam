@@ -12,7 +12,7 @@ public class WaveHandler : MonoBehaviour
     private WaitForSeconds waveWait = null;
 
     public Transform floorTrans = null;
-    private List<Transform> floors = new List<Transform>();
+    [SerializeField] private List<Transform> floors = new List<Transform>();
 
     private void Start()
     {
@@ -106,7 +106,7 @@ public class WaveHandler : MonoBehaviour
 
     private Vector2 GetFloor(int idx)
     {
-        if (idx >= (floors.Count - 1)) return Vector2.zero;
+        if (idx > (floors.Count - 1)) return Vector2.zero;
 
         return floors[idx].position;
     }

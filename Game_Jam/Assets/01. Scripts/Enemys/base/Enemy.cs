@@ -140,7 +140,6 @@ public abstract class Enemy : MonoBehaviour
         GameManager.Instance.uiManager.RefreshChainUI();
         GetComponent<Move_GoRight>().SetValue(defaultSpeed);
 
-        print("사라진다");
         gameObject.SetActive(false);
     }
 

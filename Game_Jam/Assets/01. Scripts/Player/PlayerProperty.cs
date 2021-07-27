@@ -84,7 +84,7 @@ public class PlayerProperty : MonoBehaviour
             }
         }
 
-        else if (playerInput.mouseUp || GameManager.Instance.currentProperty != myProperty)    // 마우스를 땟을 때
+        else if (playerInput.mouseUp)    // 마우스를 땟을 때
         {
             isMoving = false;
 
@@ -95,7 +95,7 @@ public class PlayerProperty : MonoBehaviour
                 // 속성 변경
                 IInteractable interact = obj.GetComponent<InteractableObj>();
 
-                if (interact == null || interact.objType.Equals(ObjType.PATH) || interact.objType.Equals(ObjType.TRIGGER))          // 패스라면 리턴
+                if (interact == null || interact.objType.Equals(ObjType.PATH) || interact.objType.Equals(ObjType.TRIGGER) || isGoingPath)          // 패스라면 리턴
                 {
                     playerEffect.SetAlphaValue(playerAlpha);
                     return;
@@ -195,7 +195,7 @@ public class PlayerProperty : MonoBehaviour
 
                 if (interact != null && interact.objType.Equals(ObjType.PATH) && interact.CheckPropertyLimit(myProperty))
                 {
-                    //print("가능합니다");
+                    //print($"{interact.PropertyLimit} 이름 : {interact.gameObject.name}");
 
                     PathObj pathObj = interact.GetComponent<PathObj>();
 

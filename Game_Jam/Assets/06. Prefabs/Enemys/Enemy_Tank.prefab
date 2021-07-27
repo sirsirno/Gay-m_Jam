@@ -145,8 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d6b0daad468791458b1f8b96cb165f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 450
-  defaultSpeed: 2
+  maxHp: 300
   is_Die: 0
 --- !u!95 &8347162194124916053
 Animator:

@@ -5,9 +5,24 @@ using UnityEngine;
 public abstract class InteractableObj : MonoBehaviour, IInteractable
 {
     protected Property currentProperty = Property.NONE;
+    public Property CurrentProperty
+    {
+        get
+        {
+            return currentProperty;
+        }
+    }
+
     protected ObjType currentType = ObjType.MOVE;
 
     [SerializeField] protected Property propertyLimit = Property.NONE;
+    public Property PropertyLimit
+    {
+        get
+        {
+            return propertyLimit;
+        }
+    }
 
     public ObjType objType 
     {

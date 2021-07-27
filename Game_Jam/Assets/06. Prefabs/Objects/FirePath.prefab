@@ -569,7 +569,7 @@ GameObject:
   - component: {fileID: 8596566819593421054}
   - component: {fileID: 8596566819593421043}
   m_Layer: 11
-  m_Name: PathObj
+  m_Name: FirePath
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
