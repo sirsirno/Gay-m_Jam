@@ -12,6 +12,8 @@ public class SceneController : MonoBehaviour
     private List<Sprite> sourceImgs = new List<Sprite>();
     [SerializeField]
     private GameObject loadingEnemy;
+    [SerializeField]
+    private Button clickToStartBtn;
 
     private static string nextScene;
     private float a = 0;
@@ -69,6 +71,9 @@ public class SceneController : MonoBehaviour
                 if (progressBar.fillAmount >= 1f)
                 {
                     isLoaded = true;
+                    clickToStartBtn.gameObject.SetActive(true);
+                    clickToStartBtn.onClick.AddListener(() => {OnClickContinueBtn(); });
+                    Time.timeScale = 0;
                     StartCoroutine(FadeIn());
                     yield return new WaitForSeconds(1f);
                     async.allowSceneActivation = true;
@@ -103,5 +108,10 @@ public class SceneController : MonoBehaviour
                 break;
         }
        
+    }
+    void OnClickContinueBtn() 
+    {
+        Time.timeScale = 1f;
+        clickToStartBtn.gameObject.SetActive(false);
     }
 }
