@@ -41,7 +41,7 @@ public class WaveHandler : MonoBehaviour
             GameManager.Instance.uiManager.TitleWave();
             // 웨이브 시작 애니메이션
 
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(3f);
 
             yield return StartCoroutine(StartWave(waveIdx - 1));
 

@@ -10,7 +10,7 @@ public class SoundManager : MonoBehaviour
     [SerializeField] private AudioSource SFXSource;
 
     [Header("BGM")]
-    public AudioClip Audio_BGM;
+    public AudioClip Audio_BGM_Title;
 
     [Header("SFX")]
     public AudioClip Audio_SFX_Fire;
@@ -19,13 +19,15 @@ public class SoundManager : MonoBehaviour
     public AudioClip Audio_SFX_WaterBomb;
     public AudioClip Audio_SFX_WaterHit;
     public AudioClip Audio_SFX_Golem;
+    public AudioClip Audio_SFX_Golem_HitGround;
+    public AudioClip Audio_SFX_Golem_Punch1;
+    public AudioClip Audio_SFX_Golem_Punch2;
     public AudioClip Audio_SFX_UI;
     public AudioClip Audio_SFX_StoneHit;
     public AudioClip Audio_SFX_Pipe;
     public AudioClip Audio_SFX_StoneBreak;
     public AudioClip Audio_SFX_Deny;
     public AudioClip Audio_SFX_PauseOff;
-    public AudioClip Audio_SFX_Golem_Punch;
     public AudioClip Audio_SFX_Skill1Active;
     public AudioClip Audio_SFX_Skill2Active;
     public AudioClip Audio_SFX_Skill3Active;
