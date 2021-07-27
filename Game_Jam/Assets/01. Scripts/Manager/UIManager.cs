@@ -22,6 +22,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] RectTransform hpBar;
 
     [SerializeField] Image chainUI;
+    [SerializeField] Image chainNumUI;
 
     [SerializeField] ParticleSystem chainParticle;
     Coroutine chainEndCoroutine;
@@ -100,8 +101,6 @@ public class UIManager : MonoBehaviour
 
     public void RefreshChainUI()
     {
-        int chain = GameManager.Instance.chainCount;
-
         ChainNumRefresh();
 
         chainUI.transform.DOKill();
@@ -123,6 +122,15 @@ public class UIManager : MonoBehaviour
             StopCoroutine(chainEndCoroutine);
         }
         chainEndCoroutine = StartCoroutine(ChainEnd());
+    }
+
+    public void FadeRedChainNum()
+    {
+        ChainNumRefresh();
+
+        chainNumUI.DOComplete();
+        chainNumUI.color = Color.red;
+        chainNumUI.DOColor(Color.white, 0.3f);
     }
 
     private void ChainNumRefresh()

@@ -5,8 +5,18 @@ using DG.Tweening;
 
 public class FireDefault : Projectile
 {
-    private void OnEnable()
+    public float speed = 1;
+
+    public GameObject defaultAttack;
+    public GameObject QAttack;
+
+    private void Start()
     {
-        transform.DORotate(new Vector3(0, 0, 360), 1).SetRelative(true).SetLoops(-1).SetEase(Ease.Linear);
+        GameManager.Instance.QDefault = this;
+    }
+
+    private void Update()
+    {
+        transform.Rotate(new Vector3(0, 0, speed) * Time.deltaTime);
     }
 }

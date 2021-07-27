@@ -33,14 +33,28 @@ public class CameraHandler : MonoBehaviour
 
             if(isFireFollow)
             {
-                virtualCamera.Follow = fireTransform;
-                GameManager.Instance.currentProperty = Property.FIRE;
+                ChangeCurrentPlayer(Property.FIRE);
             }
             else
             {
-                virtualCamera.Follow = waterTransform;
-                GameManager.Instance.currentProperty = Property.WATER;
+                ChangeCurrentPlayer(Property.WATER);
             }
+        }
+    }
+
+    public void ChangeCurrentPlayer(Property property)
+    {
+        if (property == Property.FIRE)
+        {
+            virtualCamera.Follow = fireTransform;
+            isFireFollow = true;
+            GameManager.Instance.currentProperty = Property.FIRE;
+        }
+        else if (property == Property.WATER)
+        {
+            virtualCamera.Follow = waterTransform;
+            isFireFollow = false;
+            GameManager.Instance.currentProperty = Property.WATER;
         }
     }
 
