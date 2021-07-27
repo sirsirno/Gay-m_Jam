@@ -15,10 +15,14 @@ public class UIManager : MonoBehaviour
     [SerializeField] Image left100Num;
     [SerializeField] Image left10Num;
     [SerializeField] Image left1Num;
+    [SerializeField] Image chain100Num;
+    [SerializeField] Image chain10Num;
+    [SerializeField] Image chain1Num;
 
     [SerializeField] RectTransform hpBar;
 
     [SerializeField] Image chainUI;
+
     [SerializeField] ParticleSystem chainParticle;
     Coroutine chainEndCoroutine;
 
@@ -41,6 +45,12 @@ public class UIManager : MonoBehaviour
     public void SetHpFill()
     {
         hpBar.localScale = new Vector2(1, (float)GameManager.Instance.currentHp / GameManager.Instance.maxHp);
+    }
+
+    public void SetStageNumber(int stage)
+    {
+        if (stage > 9) return;
+        stageNum.sprite = stageNumSprites[stage];
     }
 
     public void SetWaveNumber(int waveNum)
@@ -83,20 +93,58 @@ public class UIManager : MonoBehaviour
             left1Num.gameObject.SetActive(true);
             left1Num.sprite = DefaultNumSprites[leftNum % 10];
         }
+        else
+        {
+            left1Num.gameObject.SetActive(true);
+            left1Num.sprite = DefaultNumSprites[leftNum % 10];
+        }
     }
 
     public void RefreshChainUI()
     {
+        chain100Num.gameObject.SetActive(false);
+        chain10Num.gameObject.SetActive(false);
+        chain1Num.gameObject.SetActive(false);
+        int chain = GameManager.Instance.chainCount;
+
+        if (chain >= 100)
+        {
+            chain100Num.gameObject.SetActive(true);
+            chain100Num.sprite = DefaultNumSprites[chain / 100];
+
+            chain10Num.gameObject.SetActive(true);
+            chain10Num.sprite = DefaultNumSprites[(chain - ((chain / 100) * 100)) / 10];
+
+            chain1Num.gameObject.SetActive(true);
+            chain1Num.sprite = DefaultNumSprites[chain % 10];
+        }
+        else if (chain >= 10)
+        {
+            chain10Num.gameObject.SetActive(true);
+            chain10Num.sprite = DefaultNumSprites[chain / 10];
+
+            chain1Num.gameObject.SetActive(true);
+            chain1Num.sprite = DefaultNumSprites[chain % 10];
+        }
+        else
+        {
+            chain1Num.gameObject.SetActive(true);
+            chain1Num.sprite = DefaultNumSprites[chain % 10];
+        }
+
         chainUI.transform.DOKill();
         chainParticle.transform.DOKill();
         chainUI.DOKill();
 
+
         chainUI.transform.localScale = new Vector2(0, 1);
         chainUI.color = new Color(1, 1, 1, 0);
+
 
         chainUI.transform.DOScaleX(1, 0.25f);
         chainParticle.transform.DOScale(1, 0.25f);
         chainUI.DOFade(1, 0.25f);
+
 
         if (chainEndCoroutine != null)
         {
@@ -111,5 +159,6 @@ public class UIManager : MonoBehaviour
         chainUI.transform.DOScaleY(0, 0.5f);
         chainParticle.transform.DOScale(0, 0.5f);
         chainUI.DOFade(0, 0.5f);
+
     }
 }

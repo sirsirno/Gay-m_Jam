@@ -16,8 +16,8 @@ GameObject:
   - component: {fileID: 1201988791}
   - component: {fileID: 3467311724180571649}
   - component: {fileID: 8055089872040921087}
-  - component: {fileID: -7732443508567617466}
   - component: {fileID: 4026047725874777702}
+  - component: {fileID: -7732443508567617466}
   m_Layer: 7
   m_Name: Water
   m_TagString: Untagged
@@ -39,6 +39,7 @@ Transform:
   - {fileID: 2504843462655575686}
   - {fileID: 472690364276907396}
   - {fileID: 6482683849518673222}
+  - {fileID: 106422184825170127}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -80,7 +81,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -646598655
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 10
   m_Sprite: {fileID: -9077780528278609294, guid: 5e809b76bdcdd9848afe0af88d039e71, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -198,18 +199,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &-7732443508567617466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4807037949047954140}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04356a7b42c1af4188a54d8502f3e7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &4026047725874777702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,9 +211,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca7d22a32b678874080756137d9f51d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackDamage: 10
-  attackCoolTime: 0.5
-  attackObj: {fileID: 0}
+  attackCoolTime: 0.75
+  attackObj: {fileID: 2404816100199076427}
+--- !u!114 &-7732443508567617466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807037949047954140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b04356a7b42c1af4188a54d8502f3e7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5121261526345615256
 GameObject:
   m_ObjectHideFlags: 0
@@ -235,7 +235,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2504843462655575686}
   - component: {fileID: 9064664294311852096}
-  - component: {fileID: 1407081785972293165}
   m_Layer: 7
   m_Name: InteractiveLine
   m_TagString: Untagged
@@ -295,7 +294,7 @@ LineRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -646598655
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Positions:
   - {x: 0, y: 0, z: 0}
@@ -355,18 +354,50 @@ LineRenderer:
     generateLightingData: 1
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!114 &1407081785972293165
+--- !u!1 &8280589395747906962
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 106422184825170127}
+  - component: {fileID: 2404816100199076427}
+  m_Layer: 7
+  m_Name: Attack
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &106422184825170127
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8280589395747906962}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4807037949047954143}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2404816100199076427
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5121261526345615256}
+  m_GameObject: {fileID: 8280589395747906962}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd4d6bf870c3abf498b4d9acddabdb23, type: 3}
+  m_Script: {fileID: 11500000, guid: 4a43f7716f9e634459ca202a962d2aa8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletObj: {fileID: 1848490427917063753, guid: cabc1946b19931244a5dcc1904218ea9, type: 3}
 --- !u!1001 &1941298716742660121
 PrefabInstance:
   m_ObjectHideFlags: 0
