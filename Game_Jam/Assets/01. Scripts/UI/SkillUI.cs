@@ -42,10 +42,12 @@ public class SkillUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler,
                 if (GameManager.Instance.chainCount < chainCost)
                 {
                     GameManager.Instance.uiManager.FadeRedChainNum();
+                    SoundManager.Instance.PlaySFXSound(SoundManager.Instance.Audio_SFX_Deny, 0.3f);
                 }
                 else
                 {
                     GameManager.Instance.chainCount -= chainCost;
+                    GameManager.Instance.uiManager.ChainNumRefresh();
                     currentCoolTime = coolTime;
                     skill.Using();
                 }
@@ -55,6 +57,7 @@ public class SkillUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler,
                 coolTimeImg.DOComplete();
                 coolTimeImg.color = Color.red;
                 coolTimeImg.DOColor(new Color(0, 0, 0, 192f / 255), 0.3f);
+                SoundManager.Instance.PlaySFXSound(SoundManager.Instance.Audio_SFX_Deny, 0.3f);
             }
         }
 
@@ -96,10 +99,12 @@ public class SkillUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler,
             if (GameManager.Instance.chainCount < chainCost)
             {
                 GameManager.Instance.uiManager.FadeRedChainNum();
+                SoundManager.Instance.PlaySFXSound(SoundManager.Instance.Audio_SFX_Deny, 0.3f);
             }
             else
             {
                 GameManager.Instance.chainCount -= chainCost;
+                 GameManager.Instance.uiManager.ChainNumRefresh();
                 currentCoolTime = coolTime;
                 skill.Using();
             }
@@ -109,6 +114,7 @@ public class SkillUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler,
             coolTimeImg.DOComplete();
             coolTimeImg.color = Color.red;
             coolTimeImg.DOColor(new Color(0, 0, 0, 192f / 255),0.3f);
+            SoundManager.Instance.PlaySFXSound(SoundManager.Instance.Audio_SFX_Deny, 0.3f);
         }
     }
 }

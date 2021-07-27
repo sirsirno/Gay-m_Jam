@@ -21,6 +21,8 @@ public class SoundManager : MonoBehaviour
     public AudioClip Audio_SFX_StoneHit;
     public AudioClip Audio_SFX_Pipe;
     public AudioClip Audio_SFX_StoneBreak;
+    public AudioClip Audio_SFX_Deny;
+    public AudioClip Audio_SFX_PauseOff;
 
     private void Awake()
     {

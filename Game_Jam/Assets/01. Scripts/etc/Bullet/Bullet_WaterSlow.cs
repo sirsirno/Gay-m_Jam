@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using DG.Tweening;
 
-public class Bullet_Water : Effect, IDamage
+public class Bullet_WaterSlow : Effect, IDamage
 {
     [SerializeField] private int damage = 3;
     public Transform targetTransform;

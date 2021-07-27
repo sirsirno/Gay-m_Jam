@@ -32,6 +32,5 @@ public class WaterDefault : Projectile
         }
 
         bullet.targetTransform = targetObj.transform;
-        Debug.Log("asd");
     }
 }

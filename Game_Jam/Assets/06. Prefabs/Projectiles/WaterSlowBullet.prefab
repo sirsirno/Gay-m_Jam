@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 5995605555293045626}
   - component: {fileID: 5109872638057450203}
   - component: {fileID: 6254323570881542480}
-  - component: {fileID: 6443306311290658092}
+  - component: {fileID: 5080144779496570588}
   - component: {fileID: 6121946874711961327}
   - component: {fileID: 6068455475605193682}
   m_Layer: 8
-  m_Name: WaterBullet
+  m_Name: WaterSlowBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 1497795543
   m_SortingLayer: 3
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 6557710c3610c98408bfe0eb75ef16cd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 73dd0e9381bb90145a60cd1136f50784, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -102,7 +102,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &6443306311290658092
+--- !u!114 &5080144779496570588
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -111,13 +111,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1848490427917063753}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8bd985074db9f043a3da2800c40b7b6, type: 3}
+  m_Script: {fileID: 11500000, guid: e6c1937358477554383c77f3ac601514, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   lifeTime: 3
-  damage: 3
+  damage: 20
   targetTransform: {fileID: 0}
-  speed: 7
+  speed: 10
 --- !u!198 &6121946874711961327
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -201,7 +201,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.3
+      scalar: 0.5
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -308,7 +308,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.40943396, g: 0.61323714, b: 1, a: 1}
+      maxColor: {r: 0.4377358, g: 0.63177204, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -370,7 +370,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.5
+      scalar: 1
       minScalar: 1
       maxCurve:
         serializedVersion: 2

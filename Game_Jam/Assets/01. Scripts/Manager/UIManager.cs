@@ -133,7 +133,7 @@ public class UIManager : MonoBehaviour
         chainNumUI.DOColor(Color.white, 0.3f);
     }
 
-    private void ChainNumRefresh()
+    public void ChainNumRefresh()
     {
         int chain = GameManager.Instance.chainCount;
 

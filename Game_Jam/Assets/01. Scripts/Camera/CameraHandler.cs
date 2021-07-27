@@ -10,8 +10,8 @@ public class CameraHandler : MonoBehaviour
     CinemachineImpulseSource source;
     bool isFireFollow = true; // true면 불 false면 물
 
-    Transform fireTransform;
-    Transform waterTransform;
+    public Transform fireTransform;
+    public Transform waterTransform;
 
     private void Awake()
     {
