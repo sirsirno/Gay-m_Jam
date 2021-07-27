@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Enemy_Speed : Enemy
 {
-    [SerializeField] private float speed = 3f;
     [SerializeField] private float attackRange = 2f;
     [SerializeField] private float attackCooldown = 1f;
 
@@ -29,7 +28,7 @@ public class Enemy_Speed : Enemy
         dicState.Add(State.Attack, attack);
 
         move = gameObject.AddComponent<Move_GoRight>();
-        move.SetValue(speed);
+        move.SetValue(defaultSpeed);
         dicState.Add(State.Move, move);
 
         IState die = gameObject.AddComponent<State_Empty>();

@@ -2,5 +2,5 @@ public interface IDamage
 {
     public int Damage { get; }
 
-    public void SetDisable();
+    public void SetDisable(Enemy hitInfo);
 }
