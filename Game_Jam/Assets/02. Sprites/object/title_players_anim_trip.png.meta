@@ -1,22 +1,28 @@
 fileFormatVersion: 2
-guid: f4511026cc451b74580ee57122d32a53
+guid: a6b166ac2eb19d548a6fdb859484ebd4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3830932901552770192
-    second: story_title_strip_0
+      213: 7338061748406933957
+    second: title_players_anim_trip_0
   - first:
-      213: 825185284754751552
-    second: story_title_strip_1
+      213: 1263074544397739384
+    second: title_players_anim_trip_1
   - first:
-      213: 6549705478740579651
-    second: story_title_strip_2
+      213: -2069801321750407486
+    second: title_players_anim_trip_2
   - first:
-      213: 7237830608086140089
-    second: story_title_strip_3
+      213: -1185458790673810792
+    second: title_players_anim_trip_3
   - first:
-      213: 1577246464328154238
-    second: story_title_strip_4
+      213: 7330316544556045262
+    second: title_players_anim_trip_4
+  - first:
+      213: 8939599761615553714
+    second: title_players_anim_trip_5
+  - first:
+      213: 5819998136402464127
+    second: title_players_anim_trip_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -61,7 +67,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -118,7 +124,49 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: story_title_strip_0
+      name: title_players_anim_trip_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1200
+        width: 380
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c95dad084806d560800000000000000
+      internalID: 7338061748406933957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: title_players_anim_trip_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1000
+        width: 380
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8756aa72b97578110800000000000000
+      internalID: 1263074544397739384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: title_players_anim_trip_2
       rect:
         serializedVersion: 2
         x: 0
@@ -132,14 +180,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 073379cb2dac5dac0800000000000000
-      internalID: -3830932901552770192
+      spriteID: 2c6de650aa69643e0800000000000000
+      internalID: -2069801321750407486
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: story_title_strip_1
+      name: title_players_anim_trip_3
       rect:
         serializedVersion: 2
         x: 0
@@ -153,14 +201,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 040cfabf4a5a37b00800000000000000
-      internalID: 825185284754751552
+      spriteID: 89af50eb2876c8fe0800000000000000
+      internalID: -1185458790673810792
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: story_title_strip_2
+      name: title_players_anim_trip_4
       rect:
         serializedVersion: 2
         x: 0
@@ -174,14 +222,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34513cb5e6a35ea50800000000000000
-      internalID: 6549705478740579651
+      spriteID: ec39e614f048ab560800000000000000
+      internalID: 7330316544556045262
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: story_title_strip_3
+      name: title_players_anim_trip_5
       rect:
         serializedVersion: 2
         x: 0
@@ -195,14 +243,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b48c632790f17460800000000000000
-      internalID: 7237830608086140089
+      spriteID: 2b403418e96df0c70800000000000000
+      internalID: 8939599761615553714
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: story_title_strip_4
+      name: title_players_anim_trip_6
       rect:
         serializedVersion: 2
         x: 0
@@ -216,8 +264,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7c358d7d4183e510800000000000000
-      internalID: 1577246464328154238
+      spriteID: f7d44b92879c4c050800000000000000
+      internalID: 5819998136402464127
       vertices: []
       indices: 
       edges: []

@@ -34,6 +34,7 @@ public class WaterSkill2 : Skill
             water.transform.DOScaleY(1, 1);
         }
 
+        SoundManager.Instance.PlaySFXSound(SoundManager.Instance.Audio_SFX_Skill4Active, 1);
         gameBG.DOColor(waterColor, 0.5f).SetLoops(2, LoopType.Yoyo);
     }
 

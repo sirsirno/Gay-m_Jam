@@ -67,5 +67,6 @@ public class Bullet_WaterSlow : Effect, IDamage
         Effect_Bubble bubble = PoolManager.GetItem<Effect_Bubble>();
         bubble.transform.SetParent(info.transform);
         bubble.transform.localPosition = Vector2.zero;
+        SoundManager.Instance.PlaySFXSound(SoundManager.Instance.Audio_SFX_Skill3Bubble, 1);
     }
 }

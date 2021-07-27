@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5073657523856331833}
   - component: {fileID: 5073657523856331834}
   - component: {fileID: 5073657523856331830}
-  - component: {fileID: 6168722021388849864}
+  - component: {fileID: 5976572889300280065}
   m_Layer: 6
   m_Name: WaterObj
   m_TagString: Untagged
@@ -100,7 +100,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1
---- !u!114 &6168722021388849864
+--- !u!114 &5976572889300280065
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -109,7 +109,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5073657523856331835}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5ef22fef8cccc94096185bd2035a307, type: 3}
+  m_Script: {fileID: 11500000, guid: eabbcefedbc292345a57a785da7ff8f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   propertyLimit: 2
