@@ -8,8 +8,30 @@ public class Bullet_Water : Effect, IDamage
     public Transform targetTransform;
     public float speed;
 
+    private GameObject targetObj;
+
     private void Update()
     {
+        if(!targetTransform.gameObject.activeSelf)
+        {
+            for (int i = 0; i < GameManager.Instance.enemyList.Count; i++)
+            {
+                if (targetObj != null)
+                {
+                    float originDis = Vector2.Distance(transform.position, targetObj.transform.position);
+                    float newDis = Vector2.Distance(transform.position, GameManager.Instance.enemyList[i].transform.position);
+                    if (originDis > newDis)
+                    {
+                        targetObj = GameManager.Instance.enemyList[i].gameObject;
+                    }
+                }
+                else targetObj = GameManager.Instance.enemyList[i].gameObject;
+            }
+
+            targetTransform = targetObj.transform;
+        }
+
+
         transform.position = Vector3.MoveTowards(transform.position, targetTransform.position, speed * Time.deltaTime);
 
         Vector2 dir = targetTransform.position - transform.position;

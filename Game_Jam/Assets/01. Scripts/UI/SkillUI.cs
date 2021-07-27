@@ -39,8 +39,16 @@ public class SkillUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler,
         {
             if(currentCoolTime <= 0)
             {
-                currentCoolTime = coolTime;
-                skill.Using();
+                if (GameManager.Instance.chainCount < chainCost)
+                {
+                    GameManager.Instance.uiManager.FadeRedChainNum();
+                }
+                else
+                {
+                    GameManager.Instance.chainCount -= chainCost;
+                    currentCoolTime = coolTime;
+                    skill.Using();
+                }
             }
             else
             {
@@ -85,8 +93,16 @@ public class SkillUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler,
     {
         if (currentCoolTime <= 0)
         {
-            currentCoolTime = coolTime;
-            skill.Using();
+            if (GameManager.Instance.chainCount < chainCost)
+            {
+                GameManager.Instance.uiManager.FadeRedChainNum();
+            }
+            else
+            {
+                GameManager.Instance.chainCount -= chainCost;
+                currentCoolTime = coolTime;
+                skill.Using();
+            }
         }
         else
         {
