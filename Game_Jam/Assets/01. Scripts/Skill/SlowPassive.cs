@@ -16,6 +16,7 @@ public class SlowPassive : MonoBehaviour
                 {
                     isWaterOn = true;
                     transform.GetChild(0).gameObject.SetActive(true);
+                    SoundManager.Instance.PlaySFXSound(SoundManager.Instance.Audio_SFX_Water, 1);
                 }
             }
         }

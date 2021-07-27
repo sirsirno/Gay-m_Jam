@@ -28,6 +28,7 @@ public class FireSkill2 : Skill
             fire.transform.position = new Vector2(firePlayer.position.x, FloorYs[i]);
         }
 
+        SoundManager.Instance.PlaySFXSound(SoundManager.Instance.Audio_SFX_Skill2Active, 1);
         gameBG.DOColor(fireColor, 0.5f).SetLoops(2, LoopType.Yoyo);
     }
 

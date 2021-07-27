@@ -15,6 +15,7 @@ public class FireSkill1 : Skill
         GameManager.Instance.QDefault.QAttack.SetActive(true);
         GameManager.Instance.QDefault.speed = 600f;
         GameManager.Instance.uiManager.UI_durationBar.SetActive(true);
+        SoundManager.Instance.PlaySFXSound(SoundManager.Instance.Audio_SFX_Skill1Active, 1);
     }
 
     private void Start()
