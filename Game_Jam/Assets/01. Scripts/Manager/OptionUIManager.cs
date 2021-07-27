@@ -11,6 +11,8 @@ public enum OptionBtnIdx
     PAUSE,
     SETTING,
     SETTINGEXIT,
+    GAMEOVER,
+    RESTART,
     SOUND,
     CREDIT,
     EXITPANEL
@@ -32,6 +34,7 @@ public class OptionUIManager : MonoBehaviour
     [SerializeField] private CanvasGroup defaultPanel;
     [SerializeField] private CanvasGroup soundPanel;
     [SerializeField] private CanvasGroup creditPanel;
+    [SerializeField] private CanvasGroup gameOverPanel;
 
     [Header("사운드 관련")]
     [SerializeField] private Image[] soundBtnImage;
@@ -45,8 +48,9 @@ public class OptionUIManager : MonoBehaviour
     [SerializeField] private Button bgmBtn;
     [SerializeField] private Button sfxBtn;
     [SerializeField] private Button creditBtn;
+    [SerializeField] private Button restartBtn;
+    
 
-    public AudioClip uiPop;
 
     [NonSerialized] public bool BGMSound = true;
     [NonSerialized] public bool SFXSound = true;
@@ -55,7 +59,10 @@ public class OptionUIManager : MonoBehaviour
 
     void Start()
     {
-        
+        restartBtn.onClick.AddListener(() =>
+        {
+            OnBtn(OptionBtnIdx.RESTART); 
+        });
 
         resumeBtn.onClick.AddListener(() =>
         {
@@ -126,9 +133,12 @@ public class OptionUIManager : MonoBehaviour
                 OpenUI(pausePopup, false, 0.3f);
                 OpenUI(settingPanel, true, 0.3f);
                 break;
-            //case OptionBtnIdx.SETTINGEXIT:
-            //    OpenUI(settingPanel, false, 0.3f);
-            //    break;
+            case OptionBtnIdx.GAMEOVER:
+                OpenUI(gameOverPanel, true, 0.3f);
+                break;
+            case OptionBtnIdx.RESTART:
+                OpenUI(gameOverPanel, false, 0.3f);
+                break;
             case OptionBtnIdx.SOUND:
                 OpenUI(defaultPanel, false, 0.3f);
                 OpenUI(soundPanel, true, 0.3f);
