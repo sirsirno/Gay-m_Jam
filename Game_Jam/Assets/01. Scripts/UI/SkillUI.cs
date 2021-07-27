@@ -8,6 +8,7 @@ using DG.Tweening;
 public class SkillUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
     public SkillTabUI tab;
+    public Skill skill;
 
     public string skillName;
     public Sprite skillIcon;
@@ -39,7 +40,7 @@ public class SkillUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler,
             if(currentCoolTime <= 0)
             {
                 currentCoolTime = coolTime;
-                // 스킬 실행
+                skill.Using();
             }
             else
             {
@@ -85,7 +86,7 @@ public class SkillUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler,
         if (currentCoolTime <= 0)
         {
             currentCoolTime = coolTime;
-            // 스킬 실행
+            skill.Using();
         }
         else
         {

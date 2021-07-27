@@ -160,6 +160,7 @@ MonoBehaviour:
   - {fileID: 762355021}
   - {fileID: 504281651}
   - {fileID: 1486435815}
+  cameraHandler: {fileID: 0}
   projectilesTrans: {fileID: 532025796}
   chainCount: 0
   stage: 0
@@ -1323,7 +1324,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 98
-    m_Alignment: 1
+    m_Alignment: 0
     m_AlignByGeometry: 1
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -2622,12 +2623,13 @@ MonoBehaviour:
   skillIcon: {fileID: 21300000, guid: e1c0c8f8ae9f9f04a9e6d875d1389f6b, type: 3}
   chainCost: 20
   property: 1
-  skillDetail: "\uD654\uC5FC \uD3ED\uBC1C"
+  skillDetail: "\uC704\uB85C \uD070 \uD654\uC5FC\uC744 \uC77C\uC73C\uCF1C \uC801\uC744
+    \uBD88\uD0DC\uC6B0\uBA70 \uD53C\uD574\uB97C \uC785\uD78C\uB2E4"
   skillCostValue: {fileID: 1414370682}
   coolTimeImg: {fileID: 1978321730}
   coolTime: 60
   currentCoolTime: 0
-  keyCode: 119
+  keyCode: 50
 --- !u!1 &803604558
 GameObject:
   m_ObjectHideFlags: 0
@@ -9516,12 +9518,14 @@ MonoBehaviour:
   skillIcon: {fileID: 21300000, guid: ec6f4ae97c84aaf47aea70aa1dad98a7, type: 3}
   chainCost: 22
   property: 2
-  skillDetail: "\uB300\uD30C\uB3C4"
+  skillDetail: "\uC67C\uCABD\uC73C\uB85C \uAC70\uB300\uD55C \uD30C\uB3C4\uB97C \uBC1C\uC0AC\uD558\uC5EC
+    \uC801\uC5D0\uAC8C \uD53C\uD574\uB97C \uC785\uD788\uACE0 \uD53C\uACA9\uB2F9\uD55C
+    \uC801\uC744 \uB454\uD654\uC2DC\uD0A8\uB2E4"
   skillCostValue: {fileID: 1358529438}
   coolTimeImg: {fileID: 266204003}
   coolTime: 60
   currentCoolTime: 0
-  keyCode: 114
+  keyCode: 52
 --- !u!1 &1414370679
 GameObject:
   m_ObjectHideFlags: 0
@@ -10165,6 +10169,115 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1582561059}
   m_CullTransparentMesh: 1
+--- !u!1 &1621933788
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1621933790}
+  - component: {fileID: 1621933789}
+  - component: {fileID: 1621933791}
+  m_Layer: 3
+  m_Name: Square
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1621933789
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621933788}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1621933790
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621933788}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.6, y: -5.83, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1621933791
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621933788}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.1458149, y: -1.3761578}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 27.732662, y: 3.7523155}
+  m_EdgeRadius: 0
 --- !u!1 &1628430298
 GameObject:
   m_ObjectHideFlags: 0
@@ -10376,12 +10489,14 @@ MonoBehaviour:
   skillIcon: {fileID: 21300000, guid: c1293806b1e18f946a98055b6883bacd, type: 3}
   chainCost: 10
   property: 1
-  skillDetail: "\uBD88\uAF43 \uC704\uC131\uC774\uB098 \uBA39\uC5B4\uB77C"
+  skillDetail: "\uD654\uC5FC\uAD6C\uAC00 \uD50C\uB808\uC774\uC5B4 \uC8FC\uBCC0\uC744
+    \uB354\uC6B1 \uBE68\uB9AC \uD68C\uC804\uD558\uBA70 \uB354 \uD070 \uD53C\uD574\uB97C
+    \uC785\uD78C\uB2E4"
   skillCostValue: {fileID: 401656316}
   coolTimeImg: {fileID: 1784501785}
   coolTime: 30
   currentCoolTime: 0
-  keyCode: 113
+  keyCode: 49
 --- !u!1 &1767812375
 GameObject:
   m_ObjectHideFlags: 0
@@ -11198,12 +11313,57 @@ MonoBehaviour:
   skillIcon: {fileID: 21300000, guid: a41a608a02bc29d439e690bfd227e53a, type: 3}
   chainCost: 10
   property: 2
-  skillDetail: "\uBB3C\uC758 \uC18D\uBC15"
+  skillDetail: "\uBB3C\uBC29\uC6B8\uC744 4\uAC1C \uBC1C\uC0AC\uD558\uC5EC \uD53C\uD574\uB97C
+    \uC785\uD788\uACE0 \uD53C\uACA9\uB2F9\uD55C \uC801\uC744 \uB454\uD654\uC2DC\uD0A8\uB2E4"
   skillCostValue: {fileID: 74563416}
   coolTimeImg: {fileID: 740125421}
   coolTime: 30
   currentCoolTime: 0
-  keyCode: 101
+  keyCode: 51
+--- !u!1 &2055705865
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2055705867}
+  - component: {fileID: 2055705866}
+  m_Layer: 0
+  m_Name: StoneEffect
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2055705866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055705865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7dfbab2b3411154696ef94732173989, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particle: {fileID: 8321958829034275152, guid: d07e943e8df1fc14798ee9d25d91f4d0, type: 3}
+--- !u!4 &2055705867
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055705865}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2069078013
 GameObject:
   m_ObjectHideFlags: 0

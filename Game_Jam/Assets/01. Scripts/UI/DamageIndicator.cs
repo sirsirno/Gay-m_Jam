@@ -14,15 +14,6 @@ public class DamageIndicator : MonoBehaviour
         PoolManager.CreatePool<DamageDisplay>(damageText, transform, 10);
     }
 
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Return))
-        {
-            int random = Random.Range(10, 100);
-            DamageDisplay(random, this.gameObject);
-        }
-    }
-
     public static void DamageDisplay(int damage, GameObject hitObj)
     {
         DamageDisplay damageObj = PoolManager.GetItem<DamageDisplay>();

@@ -61,8 +61,6 @@ public class Torch : MoveObj
 
             firePower = Mathf.Clamp(firePower, 0f, 3f);
 
-            print(firePower);
-
             if (firePower > 0f)
             {
                 animator.Play("Torch_On");

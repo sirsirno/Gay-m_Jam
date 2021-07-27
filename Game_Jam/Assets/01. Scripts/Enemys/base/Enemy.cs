@@ -82,6 +82,7 @@ public abstract class Enemy : MonoBehaviour
         currHp -= damage;
 
         DamageIndicator.DamageDisplay(damage, this.gameObject);
+        StoneFragEffectHandler.CreateStoneFrag(transform.position);
         SoundManager.Instance.PlaySFXSound(SoundManager.Instance.Audio_SFX_StoneHit, 0.6f);
         //GameManager.Instance.cameraHandler.CameraImpulse(0.1f);
 
@@ -126,6 +127,13 @@ public abstract class Enemy : MonoBehaviour
     public virtual void SetDisable()
     {
         GameManager.Instance.cameraHandler.CameraImpulse(1f);
+        GameManager.Instance.enemyList.Remove(this);
+        StoneFragDeadEffectHandler.CreateStoneFrag(transform.position);
+
+        GameManager.Instance.uiManager.SetLeftNumber(GameManager.Instance.uiManager.currentLeft - 1);
+        GameManager.Instance.chainCount++;
+        GameManager.Instance.uiManager.RefreshChainUI();
+
         gameObject.SetActive(false);
     }
 }
