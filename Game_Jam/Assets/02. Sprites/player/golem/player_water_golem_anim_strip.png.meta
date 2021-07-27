@@ -1,7 +1,151 @@
 fileFormatVersion: 2
 guid: 2db53c5a29574b34fbfa4800cdf94b0e
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 5956836953194663717
+    second: player_water_golem_anim_strip_0
+  - first:
+      213: -8975472518892399064
+    second: player_water_golem_anim_strip_1
+  - first:
+      213: -8346773419275620611
+    second: player_water_golem_anim_strip_2
+  - first:
+      213: 1926404157835174942
+    second: player_water_golem_anim_strip_3
+  - first:
+      213: 5820195342946694081
+    second: player_water_golem_anim_strip_4
+  - first:
+      213: -5077242798346919092
+    second: player_water_golem_anim_strip_5
+  - first:
+      213: -8481612147794726660
+    second: player_water_golem_anim_strip_6
+  - first:
+      213: 7800674898016374407
+    second: player_water_golem_anim_strip_7
+  - first:
+      213: -2489367705489145979
+    second: player_water_golem_anim_strip_8
+  - first:
+      213: -555791983398715424
+    second: player_water_golem_anim_strip_9
+  - first:
+      213: -6935955805250326971
+    second: player_water_golem_anim_strip_10
+  - first:
+      213: 5648077474478776329
+    second: player_water_golem_anim_strip_11
+  - first:
+      213: -6940459129168815416
+    second: player_water_golem_anim_strip_12
+  - first:
+      213: -7868004299418071071
+    second: player_water_golem_anim_strip_13
+  - first:
+      213: 7573679410041605520
+    second: player_water_golem_anim_strip_14
+  - first:
+      213: -6934296748782646845
+    second: player_water_golem_anim_strip_15
+  - first:
+      213: -4791414117336544423
+    second: player_water_golem_anim_strip_16
+  - first:
+      213: 1974844632040352359
+    second: player_water_golem_anim_strip_17
+  - first:
+      213: 4811015556111555311
+    second: player_water_golem_anim_strip_18
+  - first:
+      213: -1134630899867139625
+    second: player_water_golem_anim_strip_19
+  - first:
+      213: -9170644084266898299
+    second: player_water_golem_anim_strip_20
+  - first:
+      213: 7276611961153879768
+    second: player_water_golem_anim_strip_21
+  - first:
+      213: -6796606987741692377
+    second: player_water_golem_anim_strip_22
+  - first:
+      213: -6373595362063948931
+    second: player_water_golem_anim_strip_23
+  - first:
+      213: -6429271142010932496
+    second: player_water_golem_anim_strip_24
+  - first:
+      213: 2994205784263736514
+    second: player_water_golem_anim_strip_25
+  - first:
+      213: 3506444974300515794
+    second: player_water_golem_anim_strip_26
+  - first:
+      213: 3738015675433300622
+    second: player_water_golem_anim_strip_27
+  - first:
+      213: 9117924542552316715
+    second: player_water_golem_anim_strip_28
+  - first:
+      213: -7739331851546219100
+    second: player_water_golem_anim_strip_29
+  - first:
+      213: -13695619519833519
+    second: player_water_golem_anim_strip_30
+  - first:
+      213: 3387007946488125625
+    second: player_water_golem_anim_strip_31
+  - first:
+      213: 7137864457822057355
+    second: player_water_golem_anim_strip_32
+  - first:
+      213: -5240246777110011061
+    second: player_water_golem_anim_strip_33
+  - first:
+      213: 6882234512782728546
+    second: player_water_golem_anim_strip_34
+  - first:
+      213: -6285835857336732902
+    second: player_water_golem_anim_strip_35
+  - first:
+      213: -5090595833498266744
+    second: player_water_golem_anim_strip_36
+  - first:
+      213: 5116311848839433210
+    second: player_water_golem_anim_strip_37
+  - first:
+      213: -5963069673005409052
+    second: player_water_golem_anim_strip_38
+  - first:
+      213: 8252659521754235004
+    second: player_water_golem_anim_strip_39
+  - first:
+      213: -258883201686694904
+    second: player_water_golem_anim_strip_40
+  - first:
+      213: 9072241249873233299
+    second: player_water_golem_anim_strip_41
+  - first:
+      213: -5629767653521156302
+    second: player_water_golem_anim_strip_42
+  - first:
+      213: -3180078875724233617
+    second: player_water_golem_anim_strip_43
+  - first:
+      213: -6815917196825799058
+    second: player_water_golem_anim_strip_44
+  - first:
+      213: -6622454580227402831
+    second: player_water_golem_anim_strip_45
+  - first:
+      213: -5956962711148403784
+    second: player_water_golem_anim_strip_46
+  - first:
+      213: -1954416328642905551
+    second: player_water_golem_anim_strip_47
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -32,7 +176,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -41,12 +185,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 24
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -68,7 +212,31 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -77,7 +245,637 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: player_water_golem_anim_strip_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4539095, y: 0.29676914}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52f8614f5afeaa250800000000000000
+      internalID: 5956836953194663717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_water_golem_anim_strip_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 128
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4539095, y: 0.36043215}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82653245c47b07380800000000000000
+      internalID: -8975472518892399064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_water_golem_anim_strip_2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 128
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.456214, y: 0.38981485}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfe676b5ccd4a2c80800000000000000
+      internalID: -8346773419275620611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_water_golem_anim_strip_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 128
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4539095, y: 0.41919756}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e14e9910066fbba10800000000000000
+      internalID: 1926404157835174942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_water_golem_anim_strip_4
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 128
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.456214, y: 0.3922634}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c378b3e3dc75c050800000000000000
+      internalID: 5820195342946694081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_water_golem_anim_strip_5
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 128
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.456214, y: 0.39471197}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c432f1643920a89b0800000000000000
+      internalID: -5077242798346919092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_water_golem_anim_strip_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.45631674, y: 0.39092827}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf0be0860b24b4a80800000000000000
+      internalID: -8481612147794726660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_water_golem_anim_strip_7
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 96
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.45631668, y: 0.3607595}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78e82907d70914c60800000000000000
+      internalID: 7800674898016374407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_water_golem_anim_strip_8
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 96
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.45631656, y: 0.39092827}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58f7df6d24df37dd0800000000000000
+      internalID: -2489367705489145979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_water_golem_anim_strip_9
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 96
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.45413253, y: 0.42109704}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ef7284c22e6948f0800000000000000
+      internalID: -555791983398715424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_water_golem_anim_strip_10
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 96
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.42792243, y: 0.32362866}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54eee3281f88ebf90800000000000000
+      internalID: -6935955805250326971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_water_golem_anim_strip_11
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 96
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.45413208, y: 0.32594943}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 900613ac980026e40800000000000000
+      internalID: 5648077474478776329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_water_golem_anim_strip_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4875295, y: 0.51284575}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ca96c3b1398eaf90800000000000000
+      internalID: -6940459129168815416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_water_golem_anim_strip_13
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 64
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.45214722, y: 0.5149541}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ef80f1b6cb3fc290800000000000000
+      internalID: -7868004299418071071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_water_golem_anim_strip_14
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 64
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.45704988, y: 0.48478866}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09d483edb4d1b1960800000000000000
+      internalID: 7573679410041605520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_water_golem_anim_strip_15
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 64
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.45686835, y: 0.39306998}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c90aa1b8dd64cf90800000000000000
+      internalID: -6934296748782646845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_water_golem_anim_strip_16
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 64
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4585275, y: 0.3942442}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95b0d5c0f3a718db0800000000000000
+      internalID: -4791414117336544423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_water_golem_anim_strip_17
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 64
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.45230642, y: 0.38983774}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76a2a5bcabe086b10800000000000000
+      internalID: 1974844632040352359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_water_golem_anim_strip_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.45680857, y: 0.38627064}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fea58ee882924c240800000000000000
+      internalID: 4811015556111555311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_water_golem_anim_strip_19
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 32
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.45305276, y: 0.38826585}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d1cc36453bf040f0800000000000000
+      internalID: -1134630899867139625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_water_golem_anim_strip_20
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 32
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4549307, y: 0.39026117}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58cebb32bc35bb080800000000000000
+      internalID: -9170644084266898299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_water_golem_anim_strip_21
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 32
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.40047187, y: 0.39026117}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8de7fe88608bbf460800000000000000
+      internalID: 7276611961153879768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_water_golem_anim_strip_22
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 32
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4830991, y: 0.35833704}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72ef7b164f99da1a0800000000000000
+      internalID: -6796606987741692377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_water_golem_anim_strip_23
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 32
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.51637495, y: 0.3956083}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d73e91679c07c87a0800000000000000
+      internalID: -6373595362063948931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_water_golem_anim_strip_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4282207, y: 0.3557138}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f2b4c7c5f3a6c6a0800000000000000
+      internalID: -6429271142010932496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_water_golem_anim_strip_25
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 0
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.42822063, y: 0.39075473}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ccb57bfb4e8d8920800000000000000
+      internalID: 2994205784263736514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_water_golem_anim_strip_26
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 0
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.45926037, y: 0.42167318}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ddc2ad402569a030800000000000000
+      internalID: 3506444974300515794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_water_golem_anim_strip_27
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 0
+        width: 33
+        height: 32
+      alignment: 9
+      pivot: {x: 0.440641, y: 0.4285835}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e823b03b37910e330800000000000000
+      internalID: 3738015675433300622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_water_golem_anim_strip_28
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 0
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2b95a70010698e70800000000000000
+      internalID: 9117924542552316715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_water_golem_anim_strip_29
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 0
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ada8bd8fae589490800000000000000
+      internalID: -7739331851546219100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
