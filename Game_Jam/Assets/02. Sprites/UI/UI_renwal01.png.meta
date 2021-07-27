@@ -35,6 +35,9 @@ TextureImporter:
   - first:
       213: 3487434848608073129
     second: UI_renwal01_10
+  - first:
+      213: 1722254186073954716
+    second: UI_renwal01_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -333,7 +336,7 @@ TextureImporter:
         width: 27
         height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -354,7 +357,7 @@ TextureImporter:
         width: 27
         height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -362,6 +365,27 @@ TextureImporter:
       bones: []
       spriteID: 9a53a90848bd56030800000000000000
       internalID: 3487434848608073129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_renwal01_11
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 153
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c991eddae0da6e710800000000000000
+      internalID: 1722254186073954716
       vertices: []
       indices: 
       edges: []

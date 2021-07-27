@@ -151,11 +151,16 @@ public class TitleScene : MonoBehaviour
         skipText.GetComponent<Text>().DOFade(0, 1);
         audioSource.clip = Audio_BGM_Legend;
         audioSource.Play();
+        yield return new WaitForSeconds(4);
+        cutSceneImg.GetComponent<Image>().color = Color.white;
+        cutSceneImg.GetComponent<Image>().sprite = cutScene[0];
+        blackImage.DOFade(0, 3);
+        yield return new WaitForSeconds(10);
+        blackImage.DOFade(1, 1);
 
-        for (int i = 0; i < 5; i++)
+        for (int i = 1; i < 5; i++)
         {
             yield return new WaitForSeconds(4);
-            cutSceneImg.GetComponent<Image>().color = Color.white;
             cutSceneImg.GetComponent<Image>().sprite = cutScene[i];
             blackImage.DOFade(0, 1);
             yield return new WaitForSeconds(10);
