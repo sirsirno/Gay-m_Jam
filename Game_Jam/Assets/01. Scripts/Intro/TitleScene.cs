@@ -55,9 +55,14 @@ public class TitleScene : MonoBehaviour
         stageBackground.SetActive(true);
         stages.transform.DOLocalMoveX(600f, 1f);
         Txts.SetActive(true);
-        stageTxts[0].transform.DOLocalMoveX(-50f, 1f);
-        stageTxts[1].transform.DOLocalMoveX(-50f, 2f);
-        stageTxts[2].transform.DOLocalMoveX(-50f, 3f);
-        stageTxts[3].transform.DOLocalMoveX(-50f, 4f);
+        stageTxts[0].GetComponent<Button>().onClick.AddListener(() => { OnClickInGameBtn(); });
+        stageTxts[0].transform.DOLocalMoveX(-50f, 0.5f);
+        stageTxts[1].transform.DOLocalMoveX(-50f, 1.5f);
+        stageTxts[2].transform.DOLocalMoveX(-50f, 2.5f);
+        stageTxts[3].transform.DOLocalMoveX(-50f, 3.5f);
+    }
+    void OnClickInGameBtn() 
+    {
+        SceneController.LoadScene("InGame");
     }
 }
