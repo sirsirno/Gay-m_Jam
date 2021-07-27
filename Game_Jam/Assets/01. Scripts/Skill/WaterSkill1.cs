@@ -28,6 +28,8 @@ public class WaterSkill1 : Skill
                 bullet.targetTransform = GameManager.Instance.enemyList[randomEnemy].transform;
             }
         }
+
+        SoundManager.Instance.PlaySFXSound(SoundManager.Instance.Audio_SFX_Skill3Active, 1);
     }
 
     private void Start()

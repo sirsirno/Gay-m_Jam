@@ -16,6 +16,8 @@ public class SoundManager : MonoBehaviour
     public AudioClip Audio_SFX_Fire;
     public AudioClip Audio_SFX_FireOff;
     public AudioClip Audio_SFX_Water;
+    public AudioClip Audio_SFX_WaterBomb;
+    public AudioClip Audio_SFX_WaterHit;
     public AudioClip Audio_SFX_Golem;
     public AudioClip Audio_SFX_UI;
     public AudioClip Audio_SFX_StoneHit;
@@ -23,6 +25,12 @@ public class SoundManager : MonoBehaviour
     public AudioClip Audio_SFX_StoneBreak;
     public AudioClip Audio_SFX_Deny;
     public AudioClip Audio_SFX_PauseOff;
+    public AudioClip Audio_SFX_Golem_Punch;
+    public AudioClip Audio_SFX_Skill1Active;
+    public AudioClip Audio_SFX_Skill2Active;
+    public AudioClip Audio_SFX_Skill3Active;
+    public AudioClip Audio_SFX_Skill3Bubble;
+    public AudioClip Audio_SFX_Skill4Active;
 
     private void Awake()
     {
