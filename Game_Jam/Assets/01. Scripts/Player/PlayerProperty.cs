@@ -21,8 +21,10 @@ public class PlayerProperty : MonoBehaviour
     [Header("수정값들")]
     [SerializeField] private float maxDistance = 3f;
     [SerializeField] private float moveSpeed = 3f;
+    [SerializeField] private float pathSpeed = 3f;
     [SerializeField] private float backSpeed = 5f;
     [SerializeField] private LayerMask whatIsInteract;
+    [SerializeField] private LayerMask whatIsPath;
 
     [Space(10f)]
     [SerializeField] private Property myProperty = Property.FIRE;
@@ -184,7 +186,7 @@ public class PlayerProperty : MonoBehaviour
 
         if (isInput)
         {
-            Collider2D obj = Physics2D.OverlapPoint(currentPos + pathDir, whatIsInteract);
+            Collider2D obj = Physics2D.OverlapCircle(currentPos + pathDir, 0.05f, whatIsPath);
 
             if (obj != null)
             {
@@ -246,7 +248,7 @@ public class PlayerProperty : MonoBehaviour
                 target = lastPos;
             }
 
-            transform.position = Vector2.MoveTowards(transform.position, target, moveSpeed * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, target, pathSpeed * Time.deltaTime);
 
             if (!isPathEnd && transform.position.Equals(paths[idx].position))
             {
@@ -292,7 +294,7 @@ public class PlayerProperty : MonoBehaviour
                     target = lastPos;
                 }
 
-                transform.position = Vector2.MoveTowards(transform.position, target, moveSpeed * Time.deltaTime);
+                transform.position = Vector2.MoveTowards(transform.position, target, pathSpeed * Time.deltaTime);
 
                 if (!isPathEnd && transform.position.Equals(paths[idx].position))
                 {

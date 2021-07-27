@@ -26,20 +26,16 @@ public class UIManager : MonoBehaviour
     [SerializeField] ParticleSystem chainParticle;
     Coroutine chainEndCoroutine;
 
+    public int currentLeft;
+
     private void Start()
     {
-        SetWaveNumber(15);
-        SetLeftNumber(123);
+        ChainNumRefresh();
     }
 
     private void Update()
     {
         SetHpFill();
-
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            RefreshChainUI();
-        }
     }
 
     public void SetHpFill()
@@ -70,6 +66,8 @@ public class UIManager : MonoBehaviour
 
     public void SetLeftNumber(int leftNum)
     {
+        currentLeft = leftNum;
+
         left100Num.gameObject.SetActive(false);
         left10Num.gameObject.SetActive(false);
         left1Num.gameObject.SetActive(false);
@@ -102,10 +100,38 @@ public class UIManager : MonoBehaviour
 
     public void RefreshChainUI()
     {
+        int chain = GameManager.Instance.chainCount;
+
+        ChainNumRefresh();
+
+        chainUI.transform.DOKill();
+        chainParticle.transform.DOKill();
+        chainUI.DOKill();
+
+
+        chainUI.transform.localScale = new Vector2(0, 1);
+        chainUI.color = new Color(1, 1, 1, 0);
+
+
+        chainUI.transform.DOScaleX(1, 0.25f);
+        chainParticle.transform.DOScale(1, 0.25f);
+        chainUI.DOFade(1, 0.25f);
+
+
+        if (chainEndCoroutine != null)
+        {
+            StopCoroutine(chainEndCoroutine);
+        }
+        chainEndCoroutine = StartCoroutine(ChainEnd());
+    }
+
+    private void ChainNumRefresh()
+    {
+        int chain = GameManager.Instance.chainCount;
+
         chain100Num.gameObject.SetActive(false);
         chain10Num.gameObject.SetActive(false);
         chain1Num.gameObject.SetActive(false);
-        int chain = GameManager.Instance.chainCount;
 
         if (chain >= 100)
         {
@@ -131,26 +157,6 @@ public class UIManager : MonoBehaviour
             chain1Num.gameObject.SetActive(true);
             chain1Num.sprite = DefaultNumSprites[chain % 10];
         }
-
-        chainUI.transform.DOKill();
-        chainParticle.transform.DOKill();
-        chainUI.DOKill();
-
-
-        chainUI.transform.localScale = new Vector2(0, 1);
-        chainUI.color = new Color(1, 1, 1, 0);
-
-
-        chainUI.transform.DOScaleX(1, 0.25f);
-        chainParticle.transform.DOScale(1, 0.25f);
-        chainUI.DOFade(1, 0.25f);
-
-
-        if (chainEndCoroutine != null)
-        {
-            StopCoroutine(chainEndCoroutine);
-        }
-        chainEndCoroutine = StartCoroutine(ChainEnd());
     }
 
     IEnumerator ChainEnd()

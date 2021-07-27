@@ -19,10 +19,15 @@ public class PlayerBall : MonoBehaviour, IDamage
         }
     }
 
-    private void Start()
+    private void Awake()
     {
         coll = GetComponent<Collider2D>();
         disableWait = new WaitForSeconds(disableTime);
+    }
+
+    private void OnEnable()
+    {
+        coll.enabled = true;
     }
 
     public void SetDisable()

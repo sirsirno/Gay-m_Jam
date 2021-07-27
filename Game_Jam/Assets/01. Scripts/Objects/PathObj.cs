@@ -71,7 +71,7 @@ public class PathObj : InteractableObj
 
         for (int i = 0; i < pos.Count; i++)
         {
-            coll = Physics2D.OverlapPoint(paths[idx].position + pos[i], whatIsInteract);
+            coll = Physics2D.OverlapCircle(paths[idx].position + pos[i], 0.05f, whatIsInteract);
 
             if (coll != null)
             {

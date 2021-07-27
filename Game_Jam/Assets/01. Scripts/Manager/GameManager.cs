@@ -43,8 +43,10 @@ public class GameManager : MonoBehaviour
 
     public List<Enemy> enemyList = new List<Enemy>();
 
-    public CameraHandler cameraHandler;
+    [HideInInspector] public CameraHandler cameraHandler;
     public Transform projectilesTrans = null;
+
+    public UIManager uiManager;
 
     public int chainCount = 0;
     public int stage = 1;
