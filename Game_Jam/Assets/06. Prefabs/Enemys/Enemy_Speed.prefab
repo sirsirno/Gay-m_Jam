@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHp: 100
+  defaultSpeed: 2
   is_Die: 0
-  speed: 2
   attackRange: 4
   attackCooldown: 2.5

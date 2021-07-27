@@ -10,6 +10,7 @@ public class WaterSkill1 : Skill
     public int bulletCount = 5;
 
     public GameObject waterBullet;
+    public GameObject bubbleEffect;
 
     public override void Using()
     {
@@ -33,6 +34,7 @@ public class WaterSkill1 : Skill
     {
         GameManager.Instance.skills[2] = this;
         PoolManager.CreatePool<Bullet_WaterSlow>(waterBullet, transform, 5);
+        PoolManager.CreatePool<Effect_Bubble>(bubbleEffect, transform, 5);
     }
 
     private void Update()

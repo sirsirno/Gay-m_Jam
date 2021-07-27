@@ -29,11 +29,16 @@ public class Bullet_WaterSlow : Effect, IDamage
                     }
                     else targetObj = GameManager.Instance.enemyList[i].gameObject;
                 }
+
+                if (targetObj == null)
+                {
+                    this.gameObject.SetActive(false);
+                }
             }
         }
         else
         {
-            targetTransform = transform;
+            this.gameObject.SetActive(false);
         }
 
 
@@ -53,8 +58,14 @@ public class Bullet_WaterSlow : Effect, IDamage
         }
     }
 
-    public void SetDisable()
+    public void SetDisable(Enemy info)
     {
         gameObject.SetActive(false);
+
+        info.SetSpeedEffect(1, 2);
+
+        Effect_Bubble bubble = PoolManager.GetItem<Effect_Bubble>();
+        bubble.transform.SetParent(info.transform);
+        bubble.transform.localPosition = Vector2.zero;
     }
 }
