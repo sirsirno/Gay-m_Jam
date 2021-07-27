@@ -43,6 +43,8 @@ public class GolemObj : HumanMoveObj
 
     [SerializeField] private GolemAttack attack = null;
 
+    [SerializeField] private GameObject inImg = null;
+
     protected override void Start()
     {
         base.Start();
@@ -319,10 +321,16 @@ public class GolemObj : HumanMoveObj
         if (prop.Equals(Property.FIRE))
         {
             anim.SetBool(IsFire, true);
+            inImg.SetActive(false);
         }
         else if (prop.Equals(Property.WATER))
         {
             anim.SetBool(IsFire, false);
+            inImg.SetActive(false);
+        }
+        else if (prop.Equals(Property.NONE))
+        {
+            inImg.SetActive(true);
         }
     }
 }

@@ -21,6 +21,11 @@ public class WaveHandler : MonoBehaviour
 
         waveWait = new WaitForSeconds(waveTime);
 
+        EventManager.AddEvent("OnGameStart", StartWave);
+    }
+
+    private void StartWave()
+    {
         StartCoroutine(WaveLifeTime());
     }
 

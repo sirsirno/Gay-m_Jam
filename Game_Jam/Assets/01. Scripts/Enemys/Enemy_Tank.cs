@@ -8,6 +8,8 @@ public class Enemy_Tank : Enemy
 
     protected void Awake()
     {
+        defaultSpeed = 2f;
+
         IState create = gameObject.AddComponent<State_Empty>();
         dicState.Add(State.Create, create);
 
