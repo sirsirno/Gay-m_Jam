@@ -12114,7 +12114,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.3209362, y: 10.547506}
+  m_Offset: {x: 0.09534788, y: 10.547506}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -12125,7 +12125,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 24.755482, y: 4.185565}
+  m_Size: {x: 21.855064, y: 4.185566}
   m_EdgeRadius: 0
 --- !u!50 &750144116
 Rigidbody2D:
@@ -12574,7 +12574,7 @@ MonoBehaviour:
   - enemyInfos:
     - enemyType: 0
       floor: 3
-      waitTime: 1
+      waitTime: 4
       createCount: 10
   - enemyInfos:
     - enemyType: 0
@@ -16821,7 +16821,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.3209362, y: -7.001454}
+  m_Offset: {x: 0.15980196, y: -7.001454}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -16832,7 +16832,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 24.755482, y: 4.5244417}
+  m_Size: {x: 22.370697, y: 4.5244417}
   m_EdgeRadius: 0
 --- !u!50 &1290589915
 Rigidbody2D:
@@ -16976,7 +16976,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.3209362, y: -0.9016776}
+  m_Offset: {x: -0.0013313293, y: -0.9016776}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -16987,7 +16987,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 24.755482, y: 2.1038952}
+  m_Size: {x: 22.048428, y: 2.1038952}
   m_EdgeRadius: 0
 --- !u!50 &1302424068
 Rigidbody2D:
@@ -17505,7 +17505,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.3209362, y: 4.302497}
+  m_Offset: {x: 0.15980196, y: 4.302497}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -17516,7 +17516,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 24.755482, y: 2.1523056}
+  m_Size: {x: 22.24179, y: 2.1523056}
   m_EdgeRadius: 0
 --- !u!50 &1400562771
 Rigidbody2D:
@@ -17766,6 +17766,7 @@ RectTransform:
   m_Children:
   - {fileID: 1261622526}
   - {fileID: 790589039}
+  - {fileID: 1781050038}
   m_Father: {fileID: 2129204563}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17838,6 +17839,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialText: {fileID: 1261622527}
   skipImg: {fileID: 790589040}
+  tipText: {fileID: 1781050039}
 --- !u!1 &1442890354
 GameObject:
   m_ObjectHideFlags: 0
@@ -19903,6 +19905,85 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1781050037
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1781050038}
+  - component: {fileID: 1781050040}
+  - component: {fileID: 1781050039}
+  m_Layer: 5
+  m_Name: TipText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1781050038
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781050037}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1437971314}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -61, y: 0}
+  m_SizeDelta: {x: 700, y: 100}
+  m_Pivot: {x: 1, y: 0}
+--- !u!114 &1781050039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781050037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: a17f99ce64036474081b5772919ba479, type: 3}
+    m_FontSize: 29
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 60
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Enter\uD0A4\uB97C \uB20C\uB7EC\uC11C \uB2E4\uC74C\uC73C\uB85C \uB118\uC5B4\uAC11\uB2C8\uB2E4."
+--- !u!222 &1781050040
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781050037}
+  m_CullTransparentMesh: 1
 --- !u!1 &1799343474
 GameObject:
   m_ObjectHideFlags: 0
@@ -22185,17 +22266,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BGMSource: {fileID: 30827213}
   SFXSource: {fileID: 207319302}
-  Audio_BGM: {fileID: 0}
+  Audio_BGM_Title: {fileID: 0}
   Audio_SFX_Fire: {fileID: 8300000, guid: 00dfa0c2de3afa3489c3590c3b4e6d60, type: 3}
   Audio_SFX_FireOff: {fileID: 8300000, guid: 019fdd5e9abc48344a445447d893ebef, type: 3}
   Audio_SFX_Water: {fileID: 8300000, guid: 6a9a53bf2bbbef542a3fa1793190cd07, type: 3}
+  Audio_SFX_WaterBomb: {fileID: 8300000, guid: 0d90d9e51b687594fac2281c4b71aec6, type: 3}
+  Audio_SFX_WaterHit: {fileID: 8300000, guid: 358de02fd078daa4a8c7cfee88b2acaf, type: 3}
   Audio_SFX_Golem: {fileID: 8300000, guid: 73969bdafef76fc4e9081b8d13962e75, type: 3}
+  Audio_SFX_Golem_HitGround: {fileID: 8300000, guid: b2b3f80a24b03cb45a2f6d8e3036b0ac, type: 3}
+  Audio_SFX_Golem_Punch1: {fileID: 8300000, guid: af5c309540650c249995243dbba74e0b, type: 3}
+  Audio_SFX_Golem_Punch2: {fileID: 8300000, guid: 6a867ead7318e4f44a35cb61929ca42f, type: 3}
   Audio_SFX_UI: {fileID: 8300000, guid: aa7674cf2f109224d8ad87fe60acd48c, type: 3}
   Audio_SFX_StoneHit: {fileID: 8300000, guid: c08e3a20f4b48f944bba48edf03d37ac, type: 3}
   Audio_SFX_Pipe: {fileID: 8300000, guid: 5abacb93d373c48438921b238c28d59d, type: 3}
   Audio_SFX_StoneBreak: {fileID: 8300000, guid: a30f7eb5f83ecf244904247704fc5299, type: 3}
   Audio_SFX_Deny: {fileID: 8300000, guid: 4f54c2387dd275144b4364571589bf47, type: 3}
   Audio_SFX_PauseOff: {fileID: 8300000, guid: f16e317ed388abd42af53b5a61fed0e9, type: 3}
+  Audio_SFX_Skill1Active: {fileID: 0}
+  Audio_SFX_Skill2Active: {fileID: 8300000, guid: 91c3819b1b7812c4abcc14784c392f45, type: 3}
+  Audio_SFX_Skill3Active: {fileID: 0}
+  Audio_SFX_Skill3Bubble: {fileID: 8300000, guid: 2269d5d3dceb4bd4d84d86525ac28c0f, type: 3}
+  Audio_SFX_Skill4Active: {fileID: 8300000, guid: 8c6cee3942da9194fb9a0ec2d6753311, type: 3}
 --- !u!4 &2040059788
 Transform:
   m_ObjectHideFlags: 0

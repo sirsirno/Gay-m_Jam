@@ -11,6 +11,7 @@ public class TutorialHandler : MonoBehaviour
     [Header("설명창")]
     [SerializeField] private Text tutorialText = null;
     [SerializeField] private Image skipImg = null;
+    [SerializeField] private Text tipText = null;
 
     private string currentText;
 
@@ -48,7 +49,7 @@ public class TutorialHandler : MonoBehaviour
         yield return oneSecWait;
         yield return oneSecWait;
 
-        ShowText("마가보자에 오신것을 환영합니다.", 1f);
+        ShowText("Magaboza에 오신 것을 환영합니다.", 1f);
         yield return new WaitUntil(() => isFinished);
         isFinished = false;
 
@@ -72,7 +73,7 @@ public class TutorialHandler : MonoBehaviour
         yield return new WaitUntil(() => isFinished);
         isFinished = false;
 
-        ShowText("예를 들어 횃불 위에 불이 있을 시 횃불에 불이 붙어 주변의 적을 공격합니다.", 2f);
+        ShowText("예를 들어, 횃불 위에 불이 있을 시 횃불에 불이 붙어 주변의 적을 공격합니다.", 2f);
         yield return new WaitUntil(() => isFinished);
         isFinished = false;
 
@@ -115,6 +116,8 @@ public class TutorialHandler : MonoBehaviour
     private void ShowText(string text, float dur = 1f)
     {
         skipImg.enabled = false;
+        tipText.DOKill();
+        tipText.color = new Color(1, 1, 1, 0);
 
         isText = true;
         isTextEnd = false;
@@ -128,6 +131,7 @@ public class TutorialHandler : MonoBehaviour
                     { 
                         isTextEnd = true;
                         skipImg.enabled = true;
+                        tipText.DOFade(1, 0.75f).SetLoops(-1, LoopType.Yoyo);
                     });
     }
 
@@ -147,15 +151,16 @@ public class TutorialHandler : MonoBehaviour
     {
         if (!isText) return;
 
-        if (!isTextEnd && Input.GetMouseButtonUp(0))
+        if (!isTextEnd && Input.GetKeyDown(KeyCode.Return))
         {
             isTextEnd = true;
             skipImg.enabled = true;
 
             textTween.Kill();
             tutorialText.text = currentText;
+            tipText.DOFade(1, 0.75f).SetLoops(-1, LoopType.Yoyo);
         }
-        else if (isTextEnd && Input.GetMouseButtonUp(0))
+        else if (isTextEnd && Input.GetKeyDown(KeyCode.Return))
         {
             isText = false;
             isFinished = true;

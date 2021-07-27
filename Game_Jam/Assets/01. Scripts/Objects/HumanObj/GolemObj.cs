@@ -250,6 +250,7 @@ public class GolemObj : HumanMoveObj
 
         attack.SetCollider(true);
         GameManager.Instance.cameraHandler.CameraImpulse(2f);
+        SoundManager.Instance.PlaySFXSound(SoundManager.Instance.Audio_SFX_Golem_HitGround, 1);
 
         yield return new WaitForFixedUpdate();
         attack.SetCollider(false);
@@ -273,6 +274,7 @@ public class GolemObj : HumanMoveObj
         attack.SetCollider(false);
 
         GameManager.Instance.cameraHandler.CameraImpulse(1.5f);
+        SoundManager.Instance.PlaySFXSound(SoundManager.Instance.Audio_SFX_Golem_Punch1, 0.3f);
 
         yield return pFiveSecWait;
 
@@ -283,6 +285,7 @@ public class GolemObj : HumanMoveObj
         attack.SetCollider(false);
 
         GameManager.Instance.cameraHandler.CameraImpulse(1.5f);
+        SoundManager.Instance.PlaySFXSound(SoundManager.Instance.Audio_SFX_Golem_Punch2, 0.3f);
 
         yield return pOneSecWait;
         yield return pOneSecWait;
@@ -296,6 +299,7 @@ public class GolemObj : HumanMoveObj
         attack.SetCollider(false);
 
         GameManager.Instance.cameraHandler.CameraImpulse(2f);
+        SoundManager.Instance.PlaySFXSound(SoundManager.Instance.Audio_SFX_Golem_Punch2, 0.3f);
         yield return pFiveSecWait;
     }
 
