@@ -9101,6 +9101,12 @@ MonoBehaviour:
     - enemyType: 0
       floor: 3
       waitTime: 1
+    - enemyType: 0
+      floor: 3
+      waitTime: 1
+    - enemyType: 0
+      floor: 3
+      waitTime: 5
     - enemyType: 1
       floor: 2
       waitTime: 0.5
@@ -13177,6 +13183,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch
       objectReference: {fileID: 0}
+    - target: {fileID: 3092413613299187839, guid: 24cbb75c57eed5d4d9c788fbf7cff711, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24cbb75c57eed5d4d9c788fbf7cff711, type: 3}
 --- !u!4 &1872562744 stripped
@@ -13862,6 +13872,10 @@ PrefabInstance:
     - target: {fileID: 3092413613299187839, guid: 24cbb75c57eed5d4d9c788fbf7cff711, type: 3}
       propertyPath: m_Name
       value: Torch
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092413613299187839, guid: 24cbb75c57eed5d4d9c788fbf7cff711, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24cbb75c57eed5d4d9c788fbf7cff711, type: 3}

@@ -6,7 +6,7 @@ public class PlayerBall : MonoBehaviour, IDamage
 {
     [SerializeField] private int damage = 1;
 
-    [SerializeField] private float disableTime = 0.2f;
+    [SerializeField] private float disableTime = 0.1f;
     private WaitForSeconds disableWait = null;
 
     private Collider2D coll = null;
