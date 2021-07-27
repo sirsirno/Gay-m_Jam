@@ -588,8 +588,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 065d9cb87493ac84083603e6750b220b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
-  disableTime: 0.2
+  damage: 10
+  disableTime: 0.08
 --- !u!1 &860772760107759168
 GameObject:
   m_ObjectHideFlags: 0
@@ -810,8 +810,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 065d9cb87493ac84083603e6750b220b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
-  disableTime: 0.2
+  damage: 10
+  disableTime: 0.08
 --- !u!1 &4758467753169724911
 GameObject:
   m_ObjectHideFlags: 0

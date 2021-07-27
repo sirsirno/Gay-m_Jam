@@ -27,7 +27,7 @@ public class Attack_SpearAttack : MonoBehaviour, IState
         }
         else
         {
-            rb.AddForce(attackDir * 10f, ForceMode2D.Impulse);
+            rb.AddForce(attackDir * 9f, ForceMode2D.Impulse);
         }
     }
 
