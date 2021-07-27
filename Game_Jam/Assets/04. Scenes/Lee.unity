@@ -9727,6 +9727,7 @@ MonoBehaviour:
       createCount: 20
   waveTime: 30
   floorTrans: {fileID: 1212014234}
+  floors: []
 --- !u!114 &394903605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11210,7 +11211,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &555847800
 PrefabInstance:
@@ -15145,7 +15146,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &987613989
 GameObject:
@@ -18037,7 +18038,7 @@ Transform:
   - {fileID: 959623914}
   - {fileID: 1092837739}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1329528946
 GameObject:

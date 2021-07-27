@@ -6,7 +6,7 @@ public class TriggerObj : InteractableObj
 {
     public string eventName;
 
-    private void Start()
+    protected virtual void Start()
     {
         currentType = ObjType.TRIGGER;
     }
