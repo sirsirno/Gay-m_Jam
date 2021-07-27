@@ -14,7 +14,7 @@ public abstract class Enemy : MonoBehaviour
 
     public float maxHp = 3f;
     protected float currHp = 0f;
-    [SerializeField] protected float defaultSpeed = 3f;
+    [System.NonSerialized] public float defaultSpeed = 3f;
 
     public bool is_Die = false;
 
@@ -138,7 +138,7 @@ public abstract class Enemy : MonoBehaviour
         GameManager.Instance.uiManager.SetLeftNumber(GameManager.Instance.uiManager.currentLeft - 1);
         GameManager.Instance.chainCount++;
         GameManager.Instance.uiManager.RefreshChainUI();
-
+        GetComponent<Move_GoRight>().SetValue(defaultSpeed);
 
         print("사라진다");
         gameObject.SetActive(false);

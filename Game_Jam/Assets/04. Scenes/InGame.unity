@@ -15796,7 +15796,7 @@ MonoBehaviour:
   cameraHandler: {fileID: 0}
   projectilesTrans: {fileID: 1500562310}
   uiManager: {fileID: 1159845288}
-  chainCount: 900
+  chainCount: 0
   stage: 0
   remainEnemyCount: 0
   maxHp: 100

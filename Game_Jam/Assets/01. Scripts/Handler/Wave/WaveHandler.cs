@@ -95,6 +95,12 @@ public class WaveHandler : MonoBehaviour
         }
 
         GameManager.Instance.enemyList.Add(enemy);
+        enemy.GetComponent<Move_GoRight>().SetValue(enemy.defaultSpeed);
+
+        for (int i = 0; i < enemy.transform.childCount; i++)
+        {
+            enemy.transform.GetChild(i).gameObject.SetActive(false);
+        }
         enemy.transform.position = GetFloor(floor - 1);
     }
 

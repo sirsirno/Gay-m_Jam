@@ -31,7 +31,7 @@ public class WaterDefault : Projectile
             else targetObj = GameManager.Instance.enemyList[i].gameObject;
         }
 
-        if(GameManager.Instance.enemyList.Count == 0)
+        if(GameManager.Instance.enemyList.Count == 0 || !targetObj.activeSelf)
         {
             targetObj = null;
         }
