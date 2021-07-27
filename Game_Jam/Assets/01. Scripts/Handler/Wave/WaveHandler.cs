@@ -45,7 +45,14 @@ public class WaveHandler : MonoBehaviour
 
     private IEnumerator StartWave(int waveIdx)
     {
-        GameManager.Instance.uiManager.SetLeftNumber(waveInfos[waveIdx].enemyInfos.Count);
+        int count = GameManager.Instance.uiManager.currentLeft;
+
+        for(int i = 0; i < waveInfos[waveIdx].enemyInfos.Count;i++)
+        {
+            count += waveInfos[waveIdx].enemyInfos[i].createCount;
+        }
+        GameManager.Instance.uiManager.SetLeftNumber(count);
+
         foreach (var enemy in waveInfos[waveIdx].enemyInfos)
         {
             for (int i = 0; i < enemy.createCount; i++)
