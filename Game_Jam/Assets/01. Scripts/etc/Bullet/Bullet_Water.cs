@@ -64,5 +64,6 @@ public class Bullet_Water : Effect, IDamage
         gameObject.SetActive(false);
 
         info.SetSpeedEffect(1.25f, 2);
+        SoundManager.Instance.PlaySFXSound(SoundManager.Instance.Audio_SFX_WaterHit, 0.2f);
     }
 }
