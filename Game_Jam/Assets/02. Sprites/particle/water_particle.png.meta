@@ -1,28 +1,16 @@
 fileFormatVersion: 2
-guid: 72ddf4646c3fe0348a8bc8febd6c7a6e
+guid: 920b9f28b2de0194699ab15d2ece2e65
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6899782965959554961
-    second: water_pado_anim_strip_0
+      213: -4983724887571966880
+    second: water_particle_0
   - first:
-      213: 3236973219966651931
-    second: water_pado_anim_strip_1
+      213: 8251948814995956224
+    second: water_particle_1
   - first:
-      213: -6425663046603314535
-    second: water_pado_anim_strip_2
-  - first:
-      213: 4558069097961908946
-    second: water_pado_anim_strip_3
-  - first:
-      213: -7487271705644183705
-    second: water_pado_anim_strip_4
-  - first:
-      213: 1968436385135542914
-    second: water_pado_anim_strip_5
-  - first:
-      213: 75227467832783904
-    second: water_pado_anim_strip_6
+      213: 141848699991232568
+    second: water_particle_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -67,7 +55,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 8
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -124,148 +112,64 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: water_pado_anim_strip_0
+      name: water_particle_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 384
-        width: 192
-        height: 192
+        y: 16
+        width: 8
+        height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6880b6f2fb0f30a0800000000000000
-      internalID: -6899782965959554961
+      spriteID: 064dff1ae9046dab0800000000000000
+      internalID: -4983724887571966880
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: water_pado_anim_strip_1
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 384
-        width: 192
-        height: 192
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b1e809b4ef90cec20800000000000000
-      internalID: 3236973219966651931
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: water_pado_anim_strip_2
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 384
-        width: 192
-        height: 192
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 99aead4f08573d6a0800000000000000
-      internalID: -6425663046603314535
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: water_pado_anim_strip_3
+      name: water_particle_1
       rect:
         serializedVersion: 2
         x: 0
-        y: 192
-        width: 192
-        height: 192
+        y: 8
+        width: 8
+        height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2da64b5e1b3814f30800000000000000
-      internalID: 4558069097961908946
+      spriteID: 0022a8ef9bfc48270800000000000000
+      internalID: 8251948814995956224
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: water_pado_anim_strip_4
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 192
-        width: 192
-        height: 192
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 76fce309d0ed71890800000000000000
-      internalID: -7487271705644183705
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: water_pado_anim_strip_5
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 192
-        width: 192
-        height: 192
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 28245fa867a415b10800000000000000
-      internalID: 1968436385135542914
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: water_pado_anim_strip_6
+      name: water_particle_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 192
-        height: 192
+        width: 8
+        height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0247681cbf24b0100800000000000000
-      internalID: 75227467832783904
+      spriteID: 83014de14a2f7f100800000000000000
+      internalID: 141848699991232568
       vertices: []
       indices: 
       edges: []

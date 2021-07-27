@@ -93,6 +93,8 @@ public abstract class Enemy : MonoBehaviour
 
     protected virtual void CheckHp()
     {
+        if (currentState.Equals(State.Die)) return;
+
         if (currHp <= 0f)
         {
             SetState(State.Die);
@@ -127,8 +129,9 @@ public abstract class Enemy : MonoBehaviour
 
     public virtual void SetDisable()
     {
-        GameManager.Instance.cameraHandler.CameraImpulse(1f);
         GameManager.Instance.enemyList.Remove(this);
+
+        GameManager.Instance.cameraHandler.CameraImpulse(1f);
         StoneFragDeadEffectHandler.CreateStoneFrag(transform.position);
         SoundManager.Instance.PlaySFXSound(SoundManager.Instance.Audio_SFX_StoneBreak, 1f);
 
@@ -136,13 +139,19 @@ public abstract class Enemy : MonoBehaviour
         GameManager.Instance.chainCount++;
         GameManager.Instance.uiManager.RefreshChainUI();
 
+
+        print("사라진다");
         gameObject.SetActive(false);
     }
 
     public void SetSpeedEffect(float speed, float duration)
     {
         GetComponent<Move_GoRight>().SetValue(speed);
-        StartCoroutine(SpeedEffect(duration));
+
+        if (gameObject.activeSelf)
+        {
+            StartCoroutine(SpeedEffect(duration));
+        }
     }
 
     IEnumerator SpeedEffect(float duration)
