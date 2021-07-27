@@ -8,6 +8,10 @@ public class SceneController : MonoBehaviour
 {
     [SerializeField]
     private Image progressBar;
+    [SerializeField]
+    private List<Sprite> sourceImgs = new List<Sprite>();
+    [SerializeField]
+    private GameObject loadingEnemy;
 
     private static string nextScene;
 
@@ -15,6 +19,19 @@ public class SceneController : MonoBehaviour
     void Start()
     {
         StartCoroutine(LoadSceneProgress());
+        int idx = Random.Range(0, 2);
+        progressBar.GetComponent<Image>().sprite = sourceImgs[idx];
+    }
+    private void Update()
+    {
+        if (loadingEnemy.transform.position.x > 5) 
+        {
+            loadingEnemy.transform.position = new Vector3(-5f, 0, 0);
+        }
+        else
+        {
+            loadingEnemy.transform.position += new Vector3(1f, 0f, 0f) * Time.deltaTime* 5f;
+        }
     }
 
 
