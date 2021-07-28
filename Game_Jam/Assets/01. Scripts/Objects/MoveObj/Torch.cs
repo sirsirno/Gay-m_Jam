@@ -63,17 +63,17 @@ public class Torch : MoveObj
 
             if (firePower > 0f)
             {
-                if (firePower > 1)
+                if (firePower < 1)
+                {
+                    animator.Play("Torch_On");
+                }
+                else if (firePower < 2)
                 {
                     animator.Play("Torch_On2");
                 }
-                else if (firePower > 2)
-                {
-                    animator.Play("Torch_On3");
-                }
                 else
                 {
-                    animator.Play("Torch_On");
+                    animator.Play("Torch_On3");
                 }
             }
             else
