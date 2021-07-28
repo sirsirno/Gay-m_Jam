@@ -30,7 +30,7 @@ public class SceneController : MonoBehaviour
     {
         if (loadingEnemy.transform.position.x > 5&& !isLoaded) 
         {
-            loadingEnemy.transform.position = new Vector3(-5f, 0, 0);
+            loadingEnemy.transform.position = new Vector3(-5f, -2f, 0);
         }
         else if(!isLoaded)
         {
@@ -72,6 +72,7 @@ public class SceneController : MonoBehaviour
                 {
                     isLoaded = true;
                     clickToStartBtn.gameObject.SetActive(true);
+                    loadingEnemy.SetActive(false);
                     clickToStartBtn.onClick.AddListener(() => {OnClickContinueBtn(); });
                     Time.timeScale = 0;
                     StartCoroutine(FadeIn());
