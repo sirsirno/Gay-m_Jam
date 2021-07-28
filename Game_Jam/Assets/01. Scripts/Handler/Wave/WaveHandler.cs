@@ -39,6 +39,7 @@ public class WaveHandler : MonoBehaviour
             GameManager.Instance.uiManager.SetWaveNumber(waveIdx);
             GameManager.Instance.uiManager.SetLeftNumber(GameManager.Instance.uiManager.currentLeft);
             GameManager.Instance.uiManager.TitleWave();
+            SoundManager.Instance.PlaySFXSound(SoundManager.Instance.Audio_SFX_WaveStart, 0.5f);
             // 웨이브 시작 애니메이션
 
             yield return new WaitForSeconds(3f);
@@ -100,7 +101,7 @@ public class WaveHandler : MonoBehaviour
 
             case EnemyType.BOSS:
 
-                enemy = PoolManager.GetItem<Enemy_Normal>();
+                enemy = PoolManager.GetItem<Enemy_Boss>();
                 break;
         }
 

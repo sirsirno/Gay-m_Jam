@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 3160377766424453906}
   - component: {fileID: 3160377766424453919}
   - component: {fileID: 3160377766424453904}
-  - component: {fileID: 3160377766424453907}
-  - component: {fileID: 7017953236282657973}
+  - component: {fileID: 128514631215276312}
+  - component: {fileID: -4662877994450818179}
   m_Layer: 9
-  m_Name: Enemy_Normal
+  m_Name: Enemy_Boss_RH
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 6706131478426472971, guid: b1fe3caf1eefb3144ba9c7ceb0b1cf65, type: 3}
+  m_Sprite: {fileID: 4487631629909287295, guid: c5e899bba17e224428d05e0e1e48120f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -102,8 +102,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    pivot: {x: 0.6, y: 0.5}
+    oldSize: {x: 1.939394, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -133,22 +133,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &3160377766424453907
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3160377766424453908}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f3fdd0d586737c40b3dcb78183ee6eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHp: 120
-  is_Die: 0
-  hpDecreaseAmount: 15
---- !u!95 &7017953236282657973
+--- !u!95 &128514631215276312
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -158,7 +143,7 @@ Animator:
   m_GameObject: {fileID: 3160377766424453908}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d5c3ea88ae84cc949ba61945d47aa49e, type: 2}
+  m_Controller: {fileID: 9100000, guid: a2fbe7ee057082c4d8aa804a7c1f088b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -167,3 +152,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-4662877994450818179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3160377766424453908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7398604db756f9c4196d3cc538a72370, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHp: 3000
+  is_Die: 0
+  hpDecreaseAmount: 100

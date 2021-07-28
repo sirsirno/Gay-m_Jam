@@ -39,6 +39,7 @@ public class UIManager : MonoBehaviour
 
     private void Start()
     {
+        GameManager.Instance.uiManager = this;
         ChainNumRefresh();
     }
 

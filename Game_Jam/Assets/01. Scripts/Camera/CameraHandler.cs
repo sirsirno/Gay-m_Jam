@@ -75,6 +75,8 @@ public class CameraHandler : MonoBehaviour
             {
                 fireTransform = GameManager.Instance.playerList[i].transform;
                 virtualCamera.Follow = GameManager.Instance.playerList[i].transform;
+                fireSelect.SetActive(true);
+                waterSelect.SetActive(false);
             }
             else if (GameManager.Instance.playerList[i].MyProperty == Property.WATER)
             {
