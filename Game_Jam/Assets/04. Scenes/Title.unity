@@ -9775,6 +9775,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c7d494c4e610db4da2ad1d196972979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SFXAudioSource: {fileID: 1504514684}
   Audio_BGM_Legend: {fileID: 8300000, guid: 8d58efa10374ce94db935e8edfd6def8, type: 3}
   Audio_BGM_Title: {fileID: 8300000, guid: 006fda5e01c021b49b1bd30fd32b9d07, type: 3}
   cutSceneImg: {fileID: 905022873}
