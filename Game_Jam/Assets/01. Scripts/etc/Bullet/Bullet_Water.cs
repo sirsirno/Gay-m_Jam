@@ -35,6 +35,10 @@ public class Bullet_Water : Effect, IDamage
                 {
                     this.gameObject.SetActive(false);
                 }
+                else if (!targetObj.activeSelf)
+                {
+                    this.gameObject.SetActive(false);
+                }
                 else
                 {
                     targetTransform = targetObj.transform;

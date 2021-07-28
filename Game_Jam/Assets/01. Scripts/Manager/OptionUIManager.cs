@@ -95,6 +95,34 @@ public class OptionUIManager : MonoBehaviour
         });
 
         optionSequence = DOTween.Sequence().SetAutoKill(false);
+
+        int bgmState = PlayerPrefs.GetInt("BGMState");
+        int sfxState = PlayerPrefs.GetInt("SFXState");
+
+        if (bgmState == 1)
+        {
+            BGMSound = true;
+            soundBtnImage[0].sprite = BGM[0];
+            SoundManager.Instance.BGMSource.volume = 0.15f;
+        }
+        else
+        {
+            BGMSound = false;
+            soundBtnImage[0].sprite = BGM[1];
+            SoundManager.Instance.BGMSource.volume = 0;
+        }
+        if (sfxState == 1)
+        {
+            SFXSound = true;
+            soundBtnImage[1].sprite = SFX[0];
+            SoundManager.Instance.SFXSource.volume = 1;
+        }
+        else
+        {
+            SFXSound = false;
+            soundBtnImage[1].sprite = SFX[1];
+            SoundManager.Instance.SFXSource.volume = 0;
+        }
     }
 
     void OpenUI(CanvasGroup cvsGroup, bool isOpen,  float time)
@@ -161,14 +189,14 @@ public class OptionUIManager : MonoBehaviour
                 if (BGMSound)
                 {
                     soundBtnImage[0].sprite = BGM[1];
-                    PlayerPrefs.GetInt("InGameBGMState", 0);
+                    PlayerPrefs.SetInt("BGMState", 0);
                     SoundManager.Instance.BGMSource.volume = 0;
                 }
                 else
                 {
                     soundBtnImage[0].sprite = BGM[0];
-                    PlayerPrefs.GetInt("InGameBGMState", 1);
-                    SoundManager.Instance.BGMSource.volume = 1;
+                    PlayerPrefs.SetInt("BGMState", 1);
+                    SoundManager.Instance.BGMSource.volume = 0.15f;
                 }
                 BGMSound = !BGMSound;
                 break;
@@ -176,13 +204,13 @@ public class OptionUIManager : MonoBehaviour
                 if (SFXSound)
                 {
                     soundBtnImage[1].sprite = SFX[1];
-                    PlayerPrefs.GetInt("InGameSFXState", 0);
+                    PlayerPrefs.SetInt("SFXState", 0);
                     SoundManager.Instance.SFXSource.volume = 0;
                 }
                 else
                 {
                     soundBtnImage[1].sprite = SFX[0];
-                    PlayerPrefs.GetInt("InGameSFXState", 1);
+                    PlayerPrefs.SetInt("SFXState", 1);
                     SoundManager.Instance.SFXSource.volume = 1;
                 }
                 SFXSound = !SFXSound;
