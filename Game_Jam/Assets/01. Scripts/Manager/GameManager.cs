@@ -65,4 +65,9 @@ public class GameManager : MonoBehaviour
     [Header("스킬 오브젝트")]
     [System.NonSerialized] public Skill[] skills = new Skill[4];
     [HideInInspector] public FireDefault QDefault;
+
+    public void ResetValue()
+    {
+        playerList.Clear();
+    }
 }
