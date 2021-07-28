@@ -10,7 +10,7 @@ public class SoundManager : MonoBehaviour
     public AudioSource SFXSource;
 
     [Header("BGM")]
-    public AudioClip Audio_BGM_Title;
+    public AudioClip Audio_BGM_InGame;
 
     [Header("SFX")]
     public AudioClip Audio_SFX_Fire;
@@ -43,9 +43,16 @@ public class SoundManager : MonoBehaviour
         Instance = this;
     }
 
+    private void Start()
+    {
+        PlayBGMSound(Audio_BGM_InGame, 0.15f);
+    }
+
     public void PlayBGMSound(AudioClip clip, float volume)
     {
-        BGMSource.PlayOneShot(clip, volume);
+        BGMSource.clip = clip;
+        BGMSource.volume = volume;
+        BGMSource.Play();
     }
 
     public void PlaySFXSound(AudioClip clip, float volume)

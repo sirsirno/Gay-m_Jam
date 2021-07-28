@@ -71,18 +71,26 @@ public class TitleScene : MonoBehaviour
         if (bgmState == 1) 
         {
             bgmOn = true;
+            settingBGM.GetComponent<Image>().sprite = BGMSpr[0];
+            BGMAudioSource.volume = 1;
         }
         else
         {
             bgmOn = false;
+            settingBGM.GetComponent<Image>().sprite = BGMSpr[1];
+            BGMAudioSource.volume = 0;
         }
         if (sfxState == 1) 
         {
             sfxOn = true;
+            settingSFX.GetComponent<Image>().sprite = SFXSpr[0];
+            SFXAudioSource.volume = 1;
         }
         else
         {
             sfxOn = false;
+            settingSFX.GetComponent<Image>().sprite = SFXSpr[1];
+            SFXAudioSource.volume = 0;
         }
 
         // 버튼 온클릭
@@ -111,14 +119,12 @@ public class TitleScene : MonoBehaviour
                     settingBGM.GetComponent<Image>().sprite = BGMSpr[0];
                     BGMAudioSource.volume = 1;
                     PlayerPrefs.SetInt("BGMState", 1);
-                    PlayerPrefs.Save();
                 }
                 else
                 {
                     settingBGM.GetComponent<Image>().sprite = BGMSpr[1];
                     BGMAudioSource.volume = 0;
                     PlayerPrefs.SetInt("BGMState", 0);
-                    PlayerPrefs.Save();
                 }
             });
 
@@ -131,14 +137,12 @@ public class TitleScene : MonoBehaviour
                     settingSFX.GetComponent<Image>().sprite = SFXSpr[0];
                     SFXAudioSource.volume = 1;
                     PlayerPrefs.SetInt("SFXState", 1);
-                    PlayerPrefs.Save();
                 }
                 else
                 {
                     settingSFX.GetComponent<Image>().sprite = SFXSpr[1];
                     SFXAudioSource.volume = 0;
                     PlayerPrefs.SetInt("SFXState", 0);
-                    PlayerPrefs.Save();
                 }
             });
 
