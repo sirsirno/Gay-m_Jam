@@ -38,6 +38,7 @@ public class GameClearHandler : MonoBehaviour
     {
         bgPanel.gameObject.SetActive(true);
         gameClearPanel.gameObject.SetActive(true);
+        SoundManager.Instance.PlaySFXSound(SoundManager.Instance.Audio_SFX_GameClear, 1);
 
         Sequence seq = DOTween.Sequence()
             .Append(bgPanel.DOFade(1f, 1f))

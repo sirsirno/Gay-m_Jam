@@ -22,7 +22,6 @@ public class SoundManager : MonoBehaviour
     public AudioClip Audio_SFX_Golem_HitGround;
     public AudioClip Audio_SFX_Golem_Punch1;
     public AudioClip Audio_SFX_Golem_Punch2;
-    public AudioClip Audio_SFX_UI;
     public AudioClip Audio_SFX_StoneHit;
     public AudioClip Audio_SFX_Pipe;
     public AudioClip Audio_SFX_StoneBreak;
@@ -33,6 +32,11 @@ public class SoundManager : MonoBehaviour
     public AudioClip Audio_SFX_Skill3Active;
     public AudioClip Audio_SFX_Skill3Bubble;
     public AudioClip Audio_SFX_Skill4Active;
+
+    public AudioClip Audio_SFX_UI;
+    public AudioClip Audio_SFX_WaveStart;
+    public AudioClip Audio_SFX_GameClear;
+    public AudioClip Audio_SFX_GameOver;
 
     private void Awake()
     {
