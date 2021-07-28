@@ -53,7 +53,11 @@ public class TutorialHandler : MonoBehaviour
         yield return new WaitUntil(() => isFinished);
         isFinished = false;
 
-        ShowText("지금부터 당신은 화면에 보이시는 두 원소를 활용하여\n몰려오는 적들을 물리쳐야 합니다.", 2f);
+        ShowText("지금부터 당신은 화면에 보이시는 두 원소를 활용하여\n제단을 지키기 위해 몰려오는 적들을 물리쳐야 합니다.", 2f);
+        yield return new WaitUntil(() => isFinished);
+        isFinished = false;
+
+        ShowText("제단은 1층 오른쪽에 위치하여 있으며 적들이 제단에 \n가까이가면 HP가 깎이게 됩니다. HP가 0이되면 패배합니다.", 2f);
         yield return new WaitUntil(() => isFinished);
         isFinished = false;
 
