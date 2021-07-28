@@ -8,7 +8,7 @@ public class Enemy_Boss : Enemy
 
     protected void Awake()
     {
-        defaultSpeed = 2f;
+        defaultSpeed = 1.7f;
 
         IState create = gameObject.AddComponent<State_Empty>();
         dicState.Add(State.Create, create);
