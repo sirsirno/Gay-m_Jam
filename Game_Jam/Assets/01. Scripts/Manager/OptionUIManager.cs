@@ -161,10 +161,14 @@ public class OptionUIManager : MonoBehaviour
                 if (BGMSound)
                 {
                     soundBtnImage[0].sprite = BGM[1];
+                    PlayerPrefs.GetInt("InGameBGMState", 0);
+                    SoundManager.Instance.BGMSource.volume = 0;
                 }
                 else
                 {
                     soundBtnImage[0].sprite = BGM[0];
+                    PlayerPrefs.GetInt("InGameBGMState", 1);
+                    SoundManager.Instance.BGMSource.volume = 1;
                 }
                 BGMSound = !BGMSound;
                 break;
@@ -172,10 +176,14 @@ public class OptionUIManager : MonoBehaviour
                 if (SFXSound)
                 {
                     soundBtnImage[1].sprite = SFX[1];
+                    PlayerPrefs.GetInt("InGameSFXState", 0);
+                    SoundManager.Instance.SFXSource.volume = 0;
                 }
                 else
                 {
                     soundBtnImage[1].sprite = SFX[0];
+                    PlayerPrefs.GetInt("InGameSFXState", 1);
+                    SoundManager.Instance.SFXSource.volume = 1;
                 }
                 SFXSound = !SFXSound;
                 break;
