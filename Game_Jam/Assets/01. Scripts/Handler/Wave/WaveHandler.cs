@@ -101,7 +101,7 @@ public class WaveHandler : MonoBehaviour
 
             case EnemyType.BOSS:
 
-                enemy = PoolManager.GetItem<Enemy_Normal>();
+                enemy = PoolManager.GetItem<Enemy_Boss>();
                 break;
         }
 
