@@ -47,6 +47,10 @@ public class WaveHandler : MonoBehaviour
 
             yield return waveWait;
         }
+
+        yield return new WaitUntil(() => GameManager.Instance.enemyList.Count <= 0);
+
+        EventManager.Invoke("OnGameClear");
     }
 
     private IEnumerator StartWave(int waveIdx)
