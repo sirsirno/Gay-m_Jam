@@ -30,7 +30,7 @@ public class SceneController : MonoBehaviour
     {
         if (loadingEnemy.transform.position.x > 5&& !isLoaded) 
         {
-            loadingEnemy.transform.position = new Vector3(-5f, -2f, 0);
+            loadingEnemy.transform.position = new Vector3(-5f, -2.5f, 0);
         }
         else if(!isLoaded)
         {
