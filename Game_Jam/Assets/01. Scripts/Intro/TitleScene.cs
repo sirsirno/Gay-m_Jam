@@ -6,7 +6,9 @@ using DG.Tweening;
 
 public class TitleScene : MonoBehaviour
 {
-    AudioSource audioSource;
+    AudioSource BGMAudioSource;
+
+    [SerializeField] private AudioSource SFXAudioSource;
 
     [Header("BGM")]
     [SerializeField] AudioClip Audio_BGM_Legend;
@@ -47,7 +49,7 @@ public class TitleScene : MonoBehaviour
 
     private void Awake()
     {
-        audioSource = GetComponent<AudioSource>();
+        BGMAudioSource = GetComponent<AudioSource>();
     }
 
     void Start()
@@ -62,6 +64,25 @@ public class TitleScene : MonoBehaviour
             EventManager.AddEvent("gotoCutScene", () => TitleStart());
             EventManager.AddEvent("gotoTitle", () => TitleStart());
             cutSceneImg.gameObject.SetActive(false);
+        }
+        int bgmState = PlayerPrefs.GetInt("BGMState");
+        int sfxState = PlayerPrefs.GetInt("SFXState");
+
+        if (bgmState == 1) 
+        {
+            bgmOn = true;
+        }
+        else
+        {
+            bgmOn = false;
+        }
+        if (sfxState == 1) 
+        {
+            sfxOn = true;
+        }
+        else
+        {
+            sfxOn = false;
         }
 
         // 버튼 온클릭
@@ -88,12 +109,16 @@ public class TitleScene : MonoBehaviour
                 if (bgmOn)
                 {
                     settingBGM.GetComponent<Image>().sprite = BGMSpr[0];
-                    audioSource.volume = 1;
+                    BGMAudioSource.volume = 1;
+                    PlayerPrefs.SetInt("BGMState", 1);
+                    PlayerPrefs.Save();
                 }
                 else
                 {
                     settingBGM.GetComponent<Image>().sprite = BGMSpr[1];
-                    audioSource.volume = 0;
+                    BGMAudioSource.volume = 0;
+                    PlayerPrefs.SetInt("BGMState", 0);
+                    PlayerPrefs.Save();
                 }
             });
 
@@ -104,10 +129,16 @@ public class TitleScene : MonoBehaviour
                 if (sfxOn)
                 {
                     settingSFX.GetComponent<Image>().sprite = SFXSpr[0];
+                    SFXAudioSource.volume = 1;
+                    PlayerPrefs.SetInt("SFXState", 1);
+                    PlayerPrefs.Save();
                 }
                 else
                 {
                     settingSFX.GetComponent<Image>().sprite = SFXSpr[1];
+                    SFXAudioSource.volume = 0;
+                    PlayerPrefs.SetInt("SFXState", 0);
+                    PlayerPrefs.Save();
                 }
             });
 
@@ -124,7 +155,7 @@ public class TitleScene : MonoBehaviour
         {
             StopCoroutine(cutSceneCoroutine);
 
-            DOTween.To(() => audioSource.volume, value => audioSource.volume = value, 0, 1);
+            DOTween.To(() => BGMAudioSource.volume, value => BGMAudioSource.volume = value, 0, 1);
             blackImage.DOFade(1, 1).OnComplete(() =>
             {
                 isCutScene = false;
@@ -149,8 +180,8 @@ public class TitleScene : MonoBehaviour
         skipText.SetActive(true);
         yield return new WaitForSeconds(3);
         skipText.GetComponent<Text>().DOFade(0, 1);
-        audioSource.clip = Audio_BGM_Legend;
-        audioSource.Play();
+        BGMAudioSource.clip = Audio_BGM_Legend;
+        BGMAudioSource.Play();
         yield return new WaitForSeconds(4);
         cutSceneImg.GetComponent<Image>().color = Color.white;
         cutSceneImg.GetComponent<Image>().sprite = cutScene[0];
@@ -168,7 +199,7 @@ public class TitleScene : MonoBehaviour
         }
 
         yield return new WaitForSeconds(3);
-        DOTween.To(() => audioSource.volume, value => audioSource.volume = value, 0, 2).OnComplete(() =>
+        DOTween.To(() => BGMAudioSource.volume, value => BGMAudioSource.volume = value, 0, 2).OnComplete(() =>
         {
             isCutScene = false;
             cutSceneImg.gameObject.SetActive(false);
@@ -180,9 +211,9 @@ public class TitleScene : MonoBehaviour
     void TitleStart()
     {
         isTitle = true;
-        audioSource.clip = Audio_BGM_Title;
-        audioSource.volume = 1;
-        audioSource.Play();
+        BGMAudioSource.clip = Audio_BGM_Title;
+        BGMAudioSource.volume = 1;
+        BGMAudioSource.Play();
         titlePanel.SetActive(true);
         StartCoroutine(TitleMove());
 
