@@ -69,5 +69,9 @@ public class GameManager : MonoBehaviour
     public void ResetValue()
     {
         playerList.Clear();
+        enemyList.Clear();
+        currentHp = maxHp;
+        chainCount = 0;
+        remainEnemyCount = 0;
     }
 }

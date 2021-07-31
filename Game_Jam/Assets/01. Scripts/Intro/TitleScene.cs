@@ -65,8 +65,8 @@ public class TitleScene : MonoBehaviour
             EventManager.AddEvent("gotoTitle", () => TitleStart());
             cutSceneImg.gameObject.SetActive(false);
         }
-        int bgmState = PlayerPrefs.GetInt("BGMState");
-        int sfxState = PlayerPrefs.GetInt("SFXState");
+        int bgmState = PlayerPrefs.GetInt("BGMState", 1);
+        int sfxState = PlayerPrefs.GetInt("SFXState", 1);
 
         if (bgmState == 1) 
         {
