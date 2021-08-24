@@ -14037,7 +14037,7 @@ MonoBehaviour:
       waitTime: 1.5
       createCount: 10
     - enemyType: 1
-      floor: 2
+      floor: 3
       waitTime: 1
       createCount: 5
   - enemyInfos:
@@ -14046,7 +14046,7 @@ MonoBehaviour:
       waitTime: 1.5
       createCount: 15
     - enemyType: 1
-      floor: 2
+      floor: 3
       waitTime: 1
       createCount: 10
   - enemyInfos:
@@ -14055,7 +14055,7 @@ MonoBehaviour:
       waitTime: 1
       createCount: 20
     - enemyType: 1
-      floor: 2
+      floor: 3
       waitTime: 0.8
       createCount: 10
   - enemyInfos:
@@ -14068,7 +14068,7 @@ MonoBehaviour:
       waitTime: 1
       createCount: 20
     - enemyType: 1
-      floor: 2
+      floor: 3
       waitTime: 0.8
       createCount: 10
   - enemyInfos:
@@ -14081,7 +14081,7 @@ MonoBehaviour:
       waitTime: 1
       createCount: 20
     - enemyType: 1
-      floor: 2
+      floor: 3
       waitTime: 0.8
       createCount: 15
   - enemyInfos:
@@ -14094,7 +14094,7 @@ MonoBehaviour:
       waitTime: 1
       createCount: 10
     - enemyType: 1
-      floor: 2
+      floor: 3
       waitTime: 0.8
       createCount: 20
   - enemyInfos:
@@ -14107,7 +14107,7 @@ MonoBehaviour:
       waitTime: 2
       createCount: 20
     - enemyType: 1
-      floor: 2
+      floor: 3
       waitTime: 0.8
       createCount: 25
   - enemyInfos:
@@ -14116,7 +14116,7 @@ MonoBehaviour:
       waitTime: 2
       createCount: 10
     - enemyType: 1
-      floor: 2
+      floor: 3
       waitTime: 0.8
       createCount: 10
     - enemyType: 2
@@ -14124,7 +14124,7 @@ MonoBehaviour:
       waitTime: 2
       createCount: 10
     - enemyType: 1
-      floor: 2
+      floor: 3
       waitTime: 0.8
       createCount: 10
     - enemyType: 2
@@ -14132,7 +14132,7 @@ MonoBehaviour:
       waitTime: 2
       createCount: 10
     - enemyType: 1
-      floor: 2
+      floor: 3
       waitTime: 0.8
       createCount: 10
   - enemyInfos:
