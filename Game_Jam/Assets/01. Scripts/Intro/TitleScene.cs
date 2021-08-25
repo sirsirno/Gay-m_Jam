@@ -248,15 +248,23 @@ public class TitleScene : MonoBehaviour
         startText.gameObject.SetActive(false);
 
         stages.transform.DOLocalMoveX(779, 1.5f);
-        stageTxts[0].GetComponent<Button>().onClick.AddListener(() => { OnClickInGameBtn(); });
+
+        for (int i = 0; i < 2; i++)
+        {
+            int a = i;
+            stageTxts[i].GetComponent<Button>().onClick.AddListener(() => { OnClickInGameBtn(a); });
+            //print(i);
+        }
+
         stageTxts[0].transform.DOLocalMoveX(725f, 1.5f).SetEase(Ease.OutBounce).SetDelay(0.25f);
         stageTxts[1].transform.DOLocalMoveX(725f, 1.5f).SetEase(Ease.OutBounce).SetDelay(0.5f);
         stageTxts[2].transform.DOLocalMoveX(725f, 1.5f).SetEase(Ease.OutBounce).SetDelay(0.75f);
         stageTxts[3].transform.DOLocalMoveX(725f, 1.5f).SetEase(Ease.OutBounce).SetDelay(1f);
     }
 
-    void OnClickInGameBtn() 
+    void OnClickInGameBtn(int index) 
     {
+        GameManager.Instance.stage = index;
         SceneController.LoadScene("InGame");
     }
 }

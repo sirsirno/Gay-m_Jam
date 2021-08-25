@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a5ef9fbb79030944b2c833a4bc03c54, type: 3}
+  m_Name: Stage01
+  m_EditorClassIdentifier: 
+  waveInfos:
+  - enemyInfos:
+    - enemyType: 0
+      floor: 3
+      waitTime: 4
+      createCount: 10
+  - enemyInfos:
+    - enemyType: 0
+      floor: 3
+      waitTime: 1.5
+      createCount: 10
+    - enemyType: 1
+      floor: 3
+      waitTime: 1
+      createCount: 5
+  - enemyInfos:
+    - enemyType: 0
+      floor: 3
+      waitTime: 1.5
+      createCount: 15
+    - enemyType: 1
+      floor: 3
+      waitTime: 1
+      createCount: 10
+  - enemyInfos:
+    - enemyType: 0
+      floor: 3
+      waitTime: 1
+      createCount: 20
+    - enemyType: 1
+      floor: 3
+      waitTime: 0.8
+      createCount: 10
+  - enemyInfos:
+    - enemyType: 2
+      floor: 4
+      waitTime: 3
+      createCount: 2
+    - enemyType: 0
+      floor: 3
+      waitTime: 1
+      createCount: 20
+    - enemyType: 1
+      floor: 3
+      waitTime: 0.8
+      createCount: 10
+  - enemyInfos:
+    - enemyType: 2
+      floor: 4
+      waitTime: 3
+      createCount: 4
+    - enemyType: 0
+      floor: 3
+      waitTime: 1
+      createCount: 20
+    - enemyType: 1
+      floor: 3
+      waitTime: 0.8
+      createCount: 15
+  - enemyInfos:
+    - enemyType: 2
+      floor: 4
+      waitTime: 3
+      createCount: 10
+    - enemyType: 0
+      floor: 3
+      waitTime: 1
+      createCount: 10
+    - enemyType: 1
+      floor: 3
+      waitTime: 0.8
+      createCount: 20
+  - enemyInfos:
+    - enemyType: 0
+      floor: 3
+      waitTime: 1
+      createCount: 5
+    - enemyType: 2
+      floor: 4
+      waitTime: 2
+      createCount: 20
+    - enemyType: 1
+      floor: 3
+      waitTime: 0.8
+      createCount: 25
+  - enemyInfos:
+    - enemyType: 2
+      floor: 4
+      waitTime: 2
+      createCount: 10
+    - enemyType: 1
+      floor: 3
+      waitTime: 0.8
+      createCount: 10
+    - enemyType: 2
+      floor: 4
+      waitTime: 2
+      createCount: 10
+    - enemyType: 1
+      floor: 3
+      waitTime: 0.8
+      createCount: 10
+    - enemyType: 2
+      floor: 4
+      waitTime: 2
+      createCount: 10
+    - enemyType: 1
+      floor: 3
+      waitTime: 0.8
+      createCount: 10
+  - enemyInfos:
+    - enemyType: 3
+      floor: 4
+      waitTime: 6
+      createCount: 1
+    - enemyType: 2
+      floor: 3
+      waitTime: 2
+      createCount: 15

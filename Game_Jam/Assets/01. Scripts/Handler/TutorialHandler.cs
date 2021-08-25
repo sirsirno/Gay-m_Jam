@@ -35,7 +35,15 @@ public class TutorialHandler : MonoBehaviour
         skipImg.enabled = false;
         skipImg.transform.DOLocalMoveY(skipImg.transform.localPosition.y + 10f, 0.5f).SetLoops(-1, LoopType.Yoyo);
 
-        StartCoroutine(Tutorial());
+        if (GameManager.Instance.stage.Equals(0))
+        {
+            StartCoroutine(Tutorial());
+        }
+        else
+        {
+            EventManager.Invoke("OnGameStart");
+            gameObject.SetActive(false);
+        }
     }
 
     private void Update()

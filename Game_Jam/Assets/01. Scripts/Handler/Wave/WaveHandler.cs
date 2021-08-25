@@ -5,9 +5,13 @@ using System.Linq;
 
 public class WaveHandler : MonoBehaviour
 {
-    public List<WaveInfo> waveInfos = new List<WaveInfo>();
+    public StageInfo stageInfo;
     private int waveIdx = 0;
 
+    [Header("스테이지 정보들")]
+    public List<StageInfo> stageInfos = new List<StageInfo>();
+
+    [Header("웨이브 설정")]
     [SerializeField] private float waveTime = 20f;
     private WaitForSeconds waveWait = null;
 
@@ -16,12 +20,21 @@ public class WaveHandler : MonoBehaviour
 
     private void Start()
     {
+        InitStage();
+
         floors = floorTrans.GetComponentsInChildren<Transform>().ToList();
         floors.RemoveAt(0);
 
         waveWait = new WaitForSeconds(waveTime);
 
         EventManager.AddEvent("OnGameStart", StartWave);
+    }
+
+    private void InitStage()
+    {
+        if (stageInfos.Count < GameManager.Instance.stage) return;
+
+        stageInfo = stageInfos[GameManager.Instance.stage];
     }
 
     private void StartWave()
@@ -33,7 +46,7 @@ public class WaveHandler : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
 
-        while (waveIdx < waveInfos.Count)
+        while (waveIdx < stageInfo.waveInfos.Count)
         {
             waveIdx++;
             GameManager.Instance.uiManager.SetWaveNumber(waveIdx);
@@ -58,13 +71,13 @@ public class WaveHandler : MonoBehaviour
     {
         int count = GameManager.Instance.uiManager.currentLeft;
 
-        for(int i = 0; i < waveInfos[waveIdx].enemyInfos.Count;i++)
+        for(int i = 0; i < stageInfo.waveInfos[waveIdx].enemyInfos.Count;i++)
         {
-            count += waveInfos[waveIdx].enemyInfos[i].createCount;
+            count += stageInfo.waveInfos[waveIdx].enemyInfos[i].createCount;
         }
         GameManager.Instance.uiManager.SetLeftNumber(count);
 
-        foreach (var enemy in waveInfos[waveIdx].enemyInfos)
+        foreach (var enemy in stageInfo.waveInfos[waveIdx].enemyInfos)
         {
             for (int i = 0; i < enemy.createCount; i++)
             {
