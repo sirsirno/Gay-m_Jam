@@ -99,17 +99,45 @@ public class WaveHandler : MonoBehaviour
         {
             case EnemyType.NORMAL:
 
-                enemy = PoolManager.GetItem<Enemy_Normal>();
+                switch (GameManager.Instance.stage)
+                {
+                    case 0:
+                        enemy = PoolManager.GetItem<Enemy_Normal>();
+                        break;
+
+                    case 1:
+                        enemy = PoolManager.GetItem<Enemy_Normal_St2>().GetComponent<Enemy>();
+                        break;
+                }
+
                 break;
 
             case EnemyType.SPEED:
 
-                enemy = PoolManager.GetItem<Enemy_Speed>();
+                switch (GameManager.Instance.stage)
+                {
+                    case 0:
+                        enemy = PoolManager.GetItem<Enemy_Speed>();
+                        break;
+
+                    case 1:
+                        enemy = PoolManager.GetItem<Enemy_Speed_St2>().GetComponent<Enemy>();
+                        break;
+                }
                 break;
 
             case EnemyType.TANK:
 
-                enemy = PoolManager.GetItem<Enemy_Tank>();
+                switch (GameManager.Instance.stage)
+                {
+                    case 0:
+                        enemy = PoolManager.GetItem<Enemy_Tank>();
+                        break;
+
+                    case 1:
+                        enemy = PoolManager.GetItem<Enemy_Tank_St2>().GetComponent<Enemy>();
+                        break;
+                }
                 break;
 
             case EnemyType.BOSS:

@@ -14085,6 +14085,10 @@ MonoBehaviour:
   enemy_Speed: {fileID: 3160377766424453908, guid: 23438a6d75adadf409a9f582523e0c99, type: 3}
   enemy_Tank: {fileID: 3160377766424453908, guid: 4983ce5b6a50c184e891c820d3ba399a, type: 3}
   enemy_Boss: {fileID: 3160377766424453908, guid: aba07fde60debb14181efc593dd4f4e6, type: 3}
+  enemy_Normal_St2: {fileID: 3160377766424453908, guid: 9a1ec95b6fd09d941bf48e2dc8fc2526, type: 3}
+  enemy_Speed_St2: {fileID: 3160377766424453908, guid: feff455769cef9043ac9b76c31df6ea4, type: 3}
+  enemy_Tank_St2: {fileID: 3160377766424453908, guid: 6002e895408db4f49b07c02bc10dbedb, type: 3}
+  enemy_Boss_St2: {fileID: 0}
 --- !u!1001 &805176922
 PrefabInstance:
   m_ObjectHideFlags: 0
