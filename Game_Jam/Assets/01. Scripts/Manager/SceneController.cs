@@ -9,7 +9,11 @@ public class SceneController : MonoBehaviour
     [SerializeField]
     private Image progressBar;
     [SerializeField]
+    private Image BGA; 
+    [SerializeField]
     private List<Sprite> sourceImgs = new List<Sprite>();
+    [SerializeField]
+    private List<Sprite> sourceBGA = new List<Sprite>();
     [SerializeField]
     private GameObject loadingEnemy;
     [SerializeField]
@@ -25,19 +29,11 @@ public class SceneController : MonoBehaviour
         StartCoroutine(LoadSceneProgress());
         int idx = Random.Range(0, 2);
         progressBar.GetComponent<Image>().sprite = sourceImgs[idx];
+        idx = Random.Range(0, 2);
+        BGA.GetComponent<Image>().sprite = sourceBGA[idx];
+        progressBar.type = Image.Type.Filled;
+        progressBar.fillAmount = 0;
     }
-    private void Update()
-    {
-        if (loadingEnemy.transform.position.x > 5&& !isLoaded) 
-        {
-            loadingEnemy.transform.position = new Vector3(-5f, -2.5f, 0);
-        }
-        else if(!isLoaded)
-        {
-            loadingEnemy.transform.position += new Vector3(1f, 0f, 0f) * Time.deltaTime* 5f;
-        }
-    }
-
 
     public static void LoadScene(string sceneName)
     {
@@ -66,13 +62,13 @@ public class SceneController : MonoBehaviour
             }
             else
             {
+                
                 timer += Time.unscaledDeltaTime;
                 progressBar.fillAmount = Mathf.Lerp(0f, 1f, timer);
                 if (progressBar.fillAmount >= 1f)
                 {
                     isLoaded = true;
                     clickToStartBtn.gameObject.SetActive(true);
-                    loadingEnemy.SetActive(false);
                     clickToStartBtn.onClick.AddListener(() => {OnClickContinueBtn(); });
                     Time.timeScale = 0;
                     StartCoroutine(FadeIn());
