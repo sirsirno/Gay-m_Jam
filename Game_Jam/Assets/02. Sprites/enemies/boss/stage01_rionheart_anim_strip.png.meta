@@ -14,6 +14,21 @@ TextureImporter:
   - first:
       213: 7574230489309486583
     second: stage01_rionheart_anim_strip_3
+  - first:
+      213: -1808831443963194941
+    second: stage01_rionheart_anim_strip_4
+  - first:
+      213: 3677140263356965344
+    second: stage01_rionheart_anim_strip_5
+  - first:
+      213: 3268555982934862053
+    second: stage01_rionheart_anim_strip_6
+  - first:
+      213: 6174623836712271966
+    second: stage01_rionheart_anim_strip_7
+  - first:
+      213: -4990319170546983565
+    second: stage01_rionheart_anim_strip_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -118,12 +133,12 @@ TextureImporter:
       name: stage01_rionheart_anim_strip_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 66
-        width: 128
+        x: 68
+        y: 132
+        width: 123
         height: 66
-      alignment: 9
-      pivot: {x: 0.6, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -139,12 +154,12 @@ TextureImporter:
       name: stage01_rionheart_anim_strip_1
       rect:
         serializedVersion: 2
-        x: 128
-        y: 66
-        width: 128
+        x: 323
+        y: 132
+        width: 124
         height: 66
-      alignment: 9
-      pivot: {x: 0.6, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -160,12 +175,12 @@ TextureImporter:
       name: stage01_rionheart_anim_strip_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 128
+        x: 581
+        y: 132
+        width: 122
         height: 66
-      alignment: 9
-      pivot: {x: 0.6, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -181,12 +196,12 @@ TextureImporter:
       name: stage01_rionheart_anim_strip_3
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
-        width: 128
-        height: 66
-      alignment: 9
-      pivot: {x: 0.6, y: 0.5}
+        x: 326
+        y: 66
+        width: 121
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -194,6 +209,111 @@ TextureImporter:
       bones: []
       spriteID: 7fd993200821d1960800000000000000
       internalID: 7574230489309486583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage01_rionheart_anim_strip_4
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 66
+        width: 121
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c15404a26db5e6e0800000000000000
+      internalID: -1808831443963194941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage01_rionheart_anim_strip_5
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 0
+        width: 121
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e1ada25693d70330800000000000000
+      internalID: 3677140263356965344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage01_rionheart_anim_strip_6
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 0
+        width: 185
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e86f43595e3c5d20800000000000000
+      internalID: 3268555982934862053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage01_rionheart_anim_strip_7
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 0
+        width: 130
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5005e83aaba0b550800000000000000
+      internalID: 6174623836712271966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stage01_rionheart_anim_strip_8
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 3
+        width: 42
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37d99bb7723debab0800000000000000
+      internalID: -4990319170546983565
       vertices: []
       indices: 
       edges: []

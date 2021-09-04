@@ -25,5 +25,6 @@ public class CreateEnemyPool : MonoBehaviour
         PoolManager.CreatePool<Enemy_Normal_St2>(enemy_Normal_St2, transform, 10);
         PoolManager.CreatePool<Enemy_Speed_St2>(enemy_Speed_St2, transform, 10);
         PoolManager.CreatePool<Enemy_Tank_St2>(enemy_Tank_St2, transform, 10);
+        PoolManager.CreatePool<Enemy_Boss_St2>(enemy_Boss_St2, transform, 2);
     }
 }

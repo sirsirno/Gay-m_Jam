@@ -14,8 +14,9 @@ GameObject:
   - component: {fileID: 3160377766424453904}
   - component: {fileID: 128514631215276312}
   - component: {fileID: -4662877994450818179}
+  - component: {fileID: -5168152247919784183}
   m_Layer: 9
-  m_Name: Enemy_Boss_RH
+  m_Name: Enemy_Boss_SK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4487631629909287295, guid: c5e899bba17e224428d05e0e1e48120f, type: 3}
+  m_Sprite: {fileID: 2745290755715046336, guid: 6fe5595afe2fe394583e7a4857e57c5e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -103,7 +104,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.8636364, y: 1}
+    oldSize: {x: 1.6271186, y: 1.0508474}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -143,7 +144,7 @@ Animator:
   m_GameObject: {fileID: 3160377766424453908}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a2fbe7ee057082c4d8aa804a7c1f088b, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9ddef6d027089a6439ab611ce6d2afdc, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -164,6 +165,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7398604db756f9c4196d3cc538a72370, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 3000
+  maxHp: 3100
   is_Die: 0
   hpDecreaseAmount: 100
+--- !u!114 &-5168152247919784183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3160377766424453908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26af480ba345f3c4d8e7fa7752a7dc43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

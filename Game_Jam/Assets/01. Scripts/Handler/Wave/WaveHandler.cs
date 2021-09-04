@@ -141,8 +141,18 @@ public class WaveHandler : MonoBehaviour
                 break;
 
             case EnemyType.BOSS:
+                
+                switch (GameManager.Instance.stage)
+                {
+                    case 0:
+                        enemy = PoolManager.GetItem<Enemy_Boss>();
+                        break;
 
-                enemy = PoolManager.GetItem<Enemy_Boss>();
+                    case 1:
+                        enemy = PoolManager.GetItem<Enemy_Boss_St2>().GetComponent<Enemy>();
+                        break;
+                }
+
                 break;
         }
 
