@@ -31,7 +31,7 @@ MonoBehaviour:
     - enemyType: 0
       floor: 3
       waitTime: 1.5
-      createCount: 15
+      createCount: 10
     - enemyType: 1
       floor: 3
       waitTime: 1
@@ -40,7 +40,7 @@ MonoBehaviour:
     - enemyType: 0
       floor: 3
       waitTime: 1
-      createCount: 20
+      createCount: 15
     - enemyType: 1
       floor: 3
       waitTime: 0.8
@@ -53,7 +53,7 @@ MonoBehaviour:
     - enemyType: 0
       floor: 3
       waitTime: 1
-      createCount: 20
+      createCount: 10
     - enemyType: 1
       floor: 3
       waitTime: 0.8
@@ -66,24 +66,24 @@ MonoBehaviour:
     - enemyType: 0
       floor: 3
       waitTime: 1
-      createCount: 20
+      createCount: 10
     - enemyType: 1
       floor: 3
       waitTime: 0.8
-      createCount: 15
+      createCount: 10
   - enemyInfos:
     - enemyType: 2
       floor: 4
       waitTime: 3
-      createCount: 10
+      createCount: 5
     - enemyType: 0
       floor: 3
       waitTime: 1
-      createCount: 10
+      createCount: 15
     - enemyType: 1
       floor: 3
       waitTime: 0.8
-      createCount: 20
+      createCount: 10
   - enemyInfos:
     - enemyType: 0
       floor: 3
@@ -92,16 +92,16 @@ MonoBehaviour:
     - enemyType: 2
       floor: 4
       waitTime: 2
-      createCount: 20
+      createCount: 15
     - enemyType: 1
       floor: 3
       waitTime: 0.8
-      createCount: 25
+      createCount: 15
   - enemyInfos:
     - enemyType: 2
       floor: 4
       waitTime: 2
-      createCount: 10
+      createCount: 5
     - enemyType: 1
       floor: 3
       waitTime: 0.8
@@ -109,7 +109,7 @@ MonoBehaviour:
     - enemyType: 2
       floor: 4
       waitTime: 2
-      createCount: 10
+      createCount: 5
     - enemyType: 1
       floor: 3
       waitTime: 0.8
@@ -117,7 +117,7 @@ MonoBehaviour:
     - enemyType: 2
       floor: 4
       waitTime: 2
-      createCount: 10
+      createCount: 5
     - enemyType: 1
       floor: 3
       waitTime: 0.8
@@ -130,4 +130,4 @@ MonoBehaviour:
     - enemyType: 2
       floor: 3
       waitTime: 2
-      createCount: 15
+      createCount: 10

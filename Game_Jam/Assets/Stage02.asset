@@ -17,12 +17,113 @@ MonoBehaviour:
     - enemyType: 0
       floor: 3
       waitTime: 4
-      createCount: 10
+      createCount: 12
+  - enemyInfos:
+    - enemyType: 0
+      floor: 3
+      waitTime: 1.5
+      createCount: 12
     - enemyType: 1
       floor: 3
-      waitTime: 4
+      waitTime: 1
+      createCount: 8
+  - enemyInfos:
+    - enemyType: 0
+      floor: 3
+      waitTime: 1.5
+      createCount: 12
+    - enemyType: 1
+      floor: 3
+      waitTime: 1
+      createCount: 12
+  - enemyInfos:
+    - enemyType: 0
+      floor: 3
+      waitTime: 1
+      createCount: 17
+    - enemyType: 1
+      floor: 3
+      waitTime: 0.8
+      createCount: 12
+  - enemyInfos:
+    - enemyType: 2
+      floor: 4
+      waitTime: 3
+      createCount: 3
+    - enemyType: 0
+      floor: 3
+      waitTime: 1
+      createCount: 12
+    - enemyType: 1
+      floor: 3
+      waitTime: 0.8
+      createCount: 12
+  - enemyInfos:
+    - enemyType: 2
+      floor: 4
+      waitTime: 3
+      createCount: 6
+    - enemyType: 0
+      floor: 3
+      waitTime: 1
+      createCount: 15
+    - enemyType: 1
+      floor: 3
+      waitTime: 0.8
+      createCount: 12
+  - enemyInfos:
+    - enemyType: 2
+      floor: 4
+      waitTime: 3
+      createCount: 10
+    - enemyType: 0
+      floor: 3
+      waitTime: 1
+      createCount: 15
+    - enemyType: 1
+      floor: 3
+      waitTime: 0.8
+      createCount: 10
+  - enemyInfos:
+    - enemyType: 0
+      floor: 3
+      waitTime: 1
       createCount: 10
     - enemyType: 2
+      floor: 4
+      waitTime: 2
+      createCount: 15
+    - enemyType: 1
       floor: 3
-      waitTime: 4
-      createCount: 10
+      waitTime: 0.8
+      createCount: 17
+  - enemyInfos:
+    - enemyType: 2
+      floor: 4
+      waitTime: 2
+      createCount: 7
+    - enemyType: 1
+      floor: 3
+      waitTime: 0.8
+      createCount: 12
+    - enemyType: 2
+      floor: 4
+      waitTime: 2
+      createCount: 7
+    - enemyType: 1
+      floor: 3
+      waitTime: 0.8
+      createCount: 12
+    - enemyType: 2
+      floor: 4
+      waitTime: 2
+      createCount: 7
+    - enemyType: 1
+      floor: 3
+      waitTime: 0.8
+      createCount: 12
+  - enemyInfos:
+    - enemyType: 2
+      floor: 3
+      waitTime: 2
+      createCount: 15
