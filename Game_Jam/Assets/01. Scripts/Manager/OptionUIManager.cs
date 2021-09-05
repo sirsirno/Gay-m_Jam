@@ -48,7 +48,6 @@ public class OptionUIManager : MonoBehaviour
     [SerializeField] private Button bgmBtn;
     [SerializeField] private Button sfxBtn;
     [SerializeField] private Button creditBtn;
-    [SerializeField] private Button restartBtn;
     
 
 
